@@ -30,7 +30,7 @@ jobs:
       - name: publishing documents
         uses: peaceiris/actions-gh-pages@v3
         env:
-          actions_deploy_key: ${{ secrets.DEPLOY_KEY }}
-          publish_branch: gh-pages
-          publish_dir: ./public
-          cname: https://themetaversefestival.io/
+          ACTIONS_DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./public
+          CNAME: https://themetaversefestival.io/
