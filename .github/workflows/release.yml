@@ -33,3 +33,4 @@ jobs:
           ACTIONS_DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./public
+          CNAME: https://themetaversefestival.io/
