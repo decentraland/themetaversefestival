@@ -24,13 +24,13 @@ jobs:
 
       - name: building
         # run: npm run build
-        run: mkdir -p public && echo "<h1>Hello Metaverse Festival</h1>"
+        run: mkdir -p public && echo "<h1>Hello Metaverse Festival</h1>" >> public/index.html
 
       # publish to gh pages
       - name: publishing documents
-        uses: peaceiris/actions-gh-pages@v2
+        uses: peaceiris/actions-gh-pages@v3
         env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./public
-          CNAME: https://themetaversefestival.io/
+          actions_deploy_key: ${{ secrets.DEPLOY_KEY }}
+          publish_branch: gh-pages
+          publish_dir: ./public
+          cname: https://themetaversefestival.io/
