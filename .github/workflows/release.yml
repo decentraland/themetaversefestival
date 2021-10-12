@@ -30,6 +30,6 @@ jobs:
       - name: publishing documents
         uses: peaceiris/actions-gh-pages@v2
         env:
-          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          ACTIONS_DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./public
