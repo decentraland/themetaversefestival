@@ -1,0 +1,36 @@
+{
+  "name": "metaverse-festival",
+  "version": "1.0.0",
+  "private": true,
+  "description": "metaverse-festival",
+  "author": "Guido La Rosa",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.13.2",
+    "gatsby": "^3.13.0",
+    "gatsby-plugin-humans-txt": "^1.1.4",
+    "gatsby-plugin-image": "^1.13.0",
+    "gatsby-plugin-react-helmet": "^4.13.0",
+    "gatsby-plugin-sharp": "^3.13.0",
+    "gatsby-plugin-styled-components": "^4.13.0",
+    "gatsby-source-filesystem": "^3.13.0",
+    "gatsby-transformer-sharp": "^3.13.0",
+    "polished": "^4.1.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-fast-marquee": "^1.2.1",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.3.1",
+    "react-player": "^2.9.0",
+    "styled-components": "^5.3.1"
+  }
+}
