@@ -45,7 +45,7 @@ const Hero = (props) => {
             <p>©DECENTRALAND</p>
             </section>
             <form onSubmit={handleSubmit}>
-                <input placeholder={'Get the latest festival news'} value={email} onChange={onInputChange} />
+                <input placeholder={'Get the latest festival news'} value={email} onChange={onInputChange} type={'email'} required />
                 <button type={'submit'}>
                     <RiMailSendLine size={25}/>
                 </button>

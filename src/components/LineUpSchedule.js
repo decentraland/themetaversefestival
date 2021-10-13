@@ -8,7 +8,7 @@ import DaySchedule from './DaySchedule';
 
 // markup
 const LineUpSchedule = (props) => {
-    const [currentSection, setCurrentSection] = useState('comin-soon');
+    const [currentSection, setCurrentSection] = useState('lineup');
     const [currentDay, setCurrentDay] = useState(1);
 
 const handleDaySelection = (day) => {
