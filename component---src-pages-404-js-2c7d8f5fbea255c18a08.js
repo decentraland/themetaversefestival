@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmetaverse_festival=self.webpackChunkmetaverse_festival||[]).push([[883],{9616:function(e,t,a){a.r(t);var n=a(7294);a(5444);t.default=function(){return n.createElement("main",null)}}}]);
+//# sourceMappingURL=component---src-pages-404-js-2c7d8f5fbea255c18a08.js.map
