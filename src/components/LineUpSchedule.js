@@ -100,7 +100,7 @@ const StyledLineUpSchedule = styled.div`
         /* background: blue; */
         display: flex;
         flex-direction: column;
-        transition: 0.25s ease-in-out all;
+        /* transition: 0.25s ease-in-out all; */
         @media screen and (max-width: ${breakpoints.md}) {
             padding: 52px 24px;
         }
