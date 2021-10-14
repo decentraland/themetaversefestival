@@ -6,7 +6,7 @@ const BannerMarquee = (props) => {
   return (
     <StyledBannerMarquee>
         <Marquee speed={100} delay={props.delay && props.delay}>
-            → OCTOBER 7–10 → 8PM UTC → FESTIVAL LAND,[50, 70] → ©️DECENTRALAND → OCTOBER 7–10 → 8PM UTC → FESTIVAL LAND,[50, 70] → ©️DECENTRALAND →
+            → OCTOBER 21-24 → 8PM UTC → FESTIVAL LAND,[50, 70] → ©️DECENTRALAND → OCTOBER 21-24 → 8PM UTC → FESTIVAL LAND,[50, 70] → ©️DECENTRALAND →
         </Marquee>
     </StyledBannerMarquee>
   )
