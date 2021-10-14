@@ -1,13 +1,14 @@
 import React, {useState, Fragment} from "react"
 import styled from 'styled-components';
 import Button from './Button';
+import {StaticImage} from 'gatsby-plugin-image';
 import { breakpoints } from "../../utils/theme";
 import { days } from "../../utils/days-data"
 import DaySchedule from './DaySchedule';
 
 // markup
 const LineUpSchedule = (props) => {
-    const [currentSection, setCurrentSection] = useState('schedule');
+    const [currentSection, setCurrentSection] = useState('lineup');
     const [currentDay, setCurrentDay] = useState(1);
 
 const handleDaySelection = (day) => {
@@ -77,7 +78,6 @@ const lineup = [
             'Bemet',
             'Chaim',
             'Christian Smith',
-            'Danny Tenaglia',
             'Drunken Kong',
             'Effective',
             'Kate Ozz',
@@ -224,9 +224,9 @@ return (
             )}
             {currentSection == 'schedule' && (
                 <>
-                    <Button
+                    <Button 
                         onClick={() => (setCurrentSection('lineup'))}
-                        label={'⟶ Full Lineup'}
+                        label={'⟶ Full Lineup'} 
                     />
                     <div className="day-selector">
                         {days.map((dayInfo, i) => (
@@ -238,19 +238,19 @@ return (
                         ))}
                     </div>
                     <h2 className="column-title">SCHEDULE</h2>
-                    <DaySchedule
-                        dayNumber={currentDay}
+                    <DaySchedule 
+                        dayNumber={currentDay} 
                         dayInfo={days[currentDay - 1]}
                     />
                 </>
             )}
             {currentSection == 'lineup' && (
                 <>
-                    <Button
+                    {/* <Button 
                         type={'black'}
-                        label={'⟶ Schedule'}
+                        label={'⟶ Schedule'} 
                         onClick={() => (setCurrentSection('schedule'))}
-                    />
+                    /> */}
                     <h2 className="column-title">FULL LINEUP</h2>
                     <section className="lineup-body">
                         {/* {lineup.map((stage, key) => (

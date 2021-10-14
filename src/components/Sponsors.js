@@ -1,5 +1,6 @@
-import React from "react"
+import React, {useEffect, useState} from "react"
 import styled from 'styled-components';
+import { StaticImage } from "gatsby-plugin-image";
 import Decentraland from './../images/sponsors/decentraland.png';
 import { breakpoints } from "../../utils/theme";
 

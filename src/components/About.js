@@ -24,7 +24,7 @@ const About = (props) => {
             <p>
                 We can’t wait to see you in the metaverse!
             </p>
-            <Button download href={'MusicFestivalFAQs.pdf'} label={'⟶ Festival FAQ'} type={'black'}/>
+            <Button download href={'MusicFestivalFAQs.pdf'} label={'⟶ Festival FAQs'} type={'black'}/>
         </div>
         <div className="about-image-container">
             <div className="about-image" style={{backgroundImage: `url('${AboutImage}')`}}/>
