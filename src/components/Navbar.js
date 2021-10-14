@@ -22,10 +22,10 @@ const Navbar = (props) => {
         //   label: 'MERCH',
         //   targetId: 'merch'
         // },
-        {
-          label: 'SPONSORS',
-          targetId: 'sponsors'
-        },
+        // {
+        //   label: 'SPONSORS',
+        //   targetId: 'sponsors'
+        // },
       ];
     
       const scrollTo = (targetId) => {
