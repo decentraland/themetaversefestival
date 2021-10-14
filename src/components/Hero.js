@@ -131,7 +131,7 @@ const StyledHero = styled.div`
                 font-family: 'Inter';
                 font-size: 16px;
                 padding: 0 32px;
-                z-index: 100;
+                z-index: 99;
                 transition: 0.2s ease-in-out all;
                 &:focus {
                     box-shadow: 0 0 5px 0px #d53fc4;
