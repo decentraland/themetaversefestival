@@ -29,9 +29,7 @@ const Navbar = (props) => {
       ];
     
       const scrollTo = (targetId) => {
-        console.log('hello')
         const target = document.getElementById(targetId);
-        console.log(target);
         if (target) {
           target.scrollIntoView();
         }
