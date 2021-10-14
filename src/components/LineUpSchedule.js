@@ -133,6 +133,88 @@ const lineup = [
     },
 ]
 
+const lineupRaw = [
+    '3LAU',
+    'AARON SEVILLA',
+    'ADAM BEATTIE',
+    'AKIRA THE DON',
+    'ALABASTER DE PLUME',
+    'ALISON WONDERLAND',
+    'ALUNA [OF ALUNAGEORGE]',
+    'AMADIS AND THE AMBASSADORS',
+    'AMBER VAN DAY',
+    'AUTOGRAF',
+    'AWALE',
+    'BEMET',
+    'BEN WALKER & KIRSTY MERRYN',
+    'BENJ PATTERSON',
+    'BERRY GALAZKA',
+    'BOOMBOXHEAD',
+    'BROOKE SHARKEY',
+    'CHAIM',
+    'CHARLIE G',
+    'CHRISTIAN SMITH',
+    'COCO MAMBA',
+    'CODY FROST',
+    'CONNIE DIGITAL',
+    'CONOR BYRNE',
+    'CROOKED COLOURS',
+    'DAN KORN',
+    'DANA IMMANUEL & THE STOLEN BAND',
+    'DANNY TENAGLIA',
+    'DEADMAU5',
+    'DIZRAELI',
+    'DJANAN TURAN',
+    'DRUNKEN KONG',
+    'EFFECTIVE',
+    'EYES OF BEL',
+    'FLATS & SHARPS',
+    'HARRISON FIRST',
+    'ICHI',
+    'ILARIO FERRARI TRIO',
+    'ISAK\'S ISLAND',
+    'KATE OZZ',
+    'LÈA MONDO',
+    'LEONIE EVANS',
+    'LOKYII',
+    'LOUIS III',
+    'M G BOULTER',
+    'MAGA',
+    'MAGIT CACOON',
+    'MAGNOS',
+    'MAI WORLD',
+    'MARCUS BONFANTI IN THE DELTA TRIO',
+    'MIGHTY 33',
+    'MIKEY KENNEY & FRIENDS',
+    'MIYA MIYA',
+    'MORSKI',
+    'NANCY',
+    'NICK HART & TOM DIPPER',
+    'NINA NESBITT',
+    'ORII',
+    'OVY ON THE DRUMS',
+    'PARIS HILTON',
+    'RAY GELATO GIANTS',
+    'RENU',
+    'RIOGHNACH CONNOLLY & ELLIS DAVIES',
+    'RIZ LA VIE',
+    'SADANDSOLO',
+    'SAMRA',
+    'SAWLEAD',
+    'SCRILLA',
+    'SHAMA RAHMAN',
+    'SOFIA CAMPOS',
+    'STUDIO NOUVEAU',
+    'THE BRITISH COLLECTIVE',
+    'THE LUNA TAPES',
+    'THE TURBANS',
+    'THE TURBANS UNPLUGGED',
+    'VANDAL',
+    'VIRTUNAUT',
+    'WILL JEURGENS',
+    'YOUNG WATERS',
+]
+
 return (
     <StyledLineUpSchedule id="lineup">
         <section className={`${currentSection} ${currentSection == 'schedule' ? `day-${currentDay}` : ''} content-toggler`}>
@@ -172,7 +254,7 @@ return (
                     />
                     <h2 className="column-title">FULL LINEUP</h2>
                     <section className="lineup-body">
-                        {lineup.map((stage, key) => (
+                        {/* {lineup.map((stage, key) => (
                             <div key={key} className="stage-lineup">
                                 <h3>{stage.stageName}</h3>
                                 <p>
@@ -184,7 +266,15 @@ return (
                                     ))}
                                 </p>
                             </div>
-                        ))}
+                        ))} */}
+                        <p className="raw-lineup">
+                            {lineupRaw.map((artist, key) => (
+                                <>
+                                    <span key={key}>{artist}</span>
+                                    <span className="dash"> / </span>
+                                </>
+                            ))}
+                        </p>
                     </section>
                     {/* <p>
                         3LAU - AARON SEVILLA - ADAM BEATTIE - AKIRA THE DON - ALABASTER DE PLUME - ALISON WONDERLAND - ALUNA [OF ALUNAGEORGE] - AMADIS AND THE AMBASSADORS - AMBER VAN DAY - AUTOGRAF - AWALE - BEMET - BEN WALKER & KIRSTY MERRYN - BENJ PATTERSON - BERRY GALAZKA - BOOMBOXHEAD - BROOKE SHARKEY - CHAIM - CHARLIE G - CHRISTIAN SMITH - COCO MAMBA - CODY FROST - CONNIE DIGITAL - CONOR BYRNE - CROOKED COLOURS - DAN KORN - DANA IMMANUEL & THE STOLEN BAND - DANNY TENAGLIA - DEADMAU5 - DIZRAELI - DJANAN TURAN - DRUNKEN KONG - EFFECTIVE - EYES OF BEL - FLATS & SHARPS - HARRISON FIRST - ICHI - ILARIO FERRARI TRIO - ISAK'S ISLAND - KATE OZZ - LÈA MONDO - LEONIE EVANS - LOKYII - LOUIS III - M G BOULTER - MAGA - MAGIT CACOON - MAGNOS - MAI WORLD - MARCUS BONFANTI IN THE DELTA TRIO - MIGHTY 33 - MIKEY KENNEY & FRIENDS - MIYA MIYA - MORSKI - NANCY - NICK HART & TOM DIPPER - NINA NESBITT - ORII - OVY ON THE DRUMS - PARIS HILTON - RAY GELATO GIANTS - RENU - RIOGHNACH CONNOLLY & ELLIS DAVIES - RIZ LA VIE - SADANDSOLO - SAMRA - SAWLEAD - SCRILLA - SHAMA RAHMAN - SOFIA CAMPOS - SPOTTIE WIFI - STUDIO NOUVEAU - THE BRITISH COLLECTIVE - THE LUNA TAPES - THE TURBANS - THE TURBANS UNPLUGGED - VANDAL - VIRTUNAUT - WILL JEURGENS - YOUNG WATERS
@@ -278,6 +368,21 @@ const StyledLineUpSchedule = styled.div`
         @media screen and (max-width: ${breakpoints.md}) {
             padding: 52px 24px;
             flex-direction: column;
+        }
+        .raw-lineup {
+            font-size: 42px;
+            line-height: 58px;
+            width: 80%;
+            @media screen and (max-width: ${breakpoints.md}) {
+                font-size: 27px;
+                line-height: 50px;
+                span {
+                    display: block;
+                    &.dash {
+                        display: none;
+                    }
+                }
+            }
         }
         .stage-lineup {
             margin-top: 20px;
