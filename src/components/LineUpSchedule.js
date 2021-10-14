@@ -280,7 +280,7 @@ const StyledLineUpSchedule = styled.div`
             flex-direction: column;
         }
         .stage-lineup {
-            margin-top: 80px;
+            margin-top: 20px;
             margin-bottom: 120px;
             h3 {
                 font-size: 52px;
