@@ -21,6 +21,8 @@ const seo = {
 
 const meta = {
   ...seo,
+  'og:title': seo.title || '',
+  'twitter:title': seo.title || '',
   'og:description': seo.description || '',
   'twitter:description': seo.description || '',
   'og:image': seo.image || '',
