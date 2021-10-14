@@ -13,18 +13,19 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # - name: node.js 12
-      #   uses: actions/setup-node@v2
-      #   with:
-      #     node-version: 12
-      #     cache: 'npm'
+      - name: node.js 12
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          cache: 'npm'
 
-      # - name: installing
-      #   run: npm ci
+      - name: installing
+        run: npm ci
 
       - name: building
-        # run: npm run build
-        run: mkdir -p public && echo "<h1>Hello Metaverse Festival</h1>" >> public/index.html
+        run: npm run build
+        env:
+          CI: true
 
       # publish to gh pages
       - name: publishing documents
