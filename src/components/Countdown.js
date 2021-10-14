@@ -22,7 +22,7 @@ const Countdown = () => {
       // console.log(t);
       let days, hours, mins, secs;
       if (t >= 0) {
-
+  
           days = Math.floor(t / (1000 * 60 * 60 * 24));
           hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
           mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
@@ -32,7 +32,7 @@ const Countdown = () => {
           hours = ("0" + hours).slice(-2)
           mins = ("0" + mins).slice(-2)
           secs = ("0" + secs).slice(-2)
-
+      
           setRemainingDays(days);
           setRemainingHours(hours);
           setRemainingMins(mins);
@@ -41,7 +41,7 @@ const Countdown = () => {
       }
     }, 1000);
   }, [])
-
+  
   return (
     <StyledCountdown>
       <div className="time-block days-wrapper">

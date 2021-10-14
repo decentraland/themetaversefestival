@@ -8,7 +8,7 @@ const About = (props) => {
   return (
     <StyledAbout id="about" className="what-is-metaverse">
         <div className="about-content">
-            <h2>Welcome to the <br/>Metaverse Festival</h2>
+            <h2>Welcome<br/> to the <br/>Metaverse Festival</h2>
             <p>
                 A four-day celebration of music, culture and creativity in the virtual social world of Decentraland, the Metaverse Festival is a grand collision of light, sound and portable toilets.
             </p>
