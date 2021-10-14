@@ -16,7 +16,7 @@ import Footer from './../components/Footer';
 const seo = {
   title: 'Metaverse Festival | Decentraland',
   description: 'A four-day celebration of music, culture and creativity in the virtual social world of Decentraland, the Metaverse Festival is a grand collision of light, sound and portable toilets.',
-  image: '/festival.jpg',
+  image: 'https://themetaversefestival.io/festival.jpg',
 }
 
 const meta = {
