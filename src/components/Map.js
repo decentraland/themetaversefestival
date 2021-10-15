@@ -6,7 +6,6 @@ import { breakpoints } from "../../utils/theme";
 const Map = (props) => {
   return (
     <StyledMap id="map">
-      <h2 className="show-desktop">SITEMAP</h2>
       <StaticImage className="map show-desktop" src={'./../images/mapa_desktop.png'} title="Metaverse Festival Map" alt="Metaverse Festival Map" />
       <StaticImage className="map show-mobile" src={'./../images/mapa_mobile.png'} title="Metaverse Festival Map" alt="Metaverse Festival Map" />
     </StyledMap>
@@ -17,7 +16,7 @@ const StyledMap = styled.div`
     background: black;
     display: flex;
     flex-direction: column;
-    padding: 24px 0;
+    padding: 0 0;
     h2 {
       font-size: 81px;
       margin: 24px 70px;
