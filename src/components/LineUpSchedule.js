@@ -146,7 +146,7 @@ const lineupRaw = [
     'AWALE',
     'BEMET',
     'BEN WALKER & KIRSTY MERRYN',
-    'BENJ PATTERSON',
+    'BENJI PATTERSON',
     'BERRY GALAZKA',
     'BOOMBOXHEAD',
     'BROOKE SHARKEY',
@@ -224,9 +224,9 @@ return (
             )}
             {currentSection == 'schedule' && (
                 <>
-                    <Button 
+                    <Button
                         onClick={() => (setCurrentSection('lineup'))}
-                        label={'⟶ Full Lineup'} 
+                        label={'⟶ Full Lineup'}
                     />
                     <div className="day-selector">
                         {days.map((dayInfo, i) => (
@@ -238,17 +238,17 @@ return (
                         ))}
                     </div>
                     <h2 className="column-title">SCHEDULE</h2>
-                    <DaySchedule 
-                        dayNumber={currentDay} 
+                    <DaySchedule
+                        dayNumber={currentDay}
                         dayInfo={days[currentDay - 1]}
                     />
                 </>
             )}
             {currentSection == 'lineup' && (
                 <>
-                    {/* <Button 
+                    {/* <Button
                         type={'black'}
-                        label={'⟶ Schedule'} 
+                        label={'⟶ Schedule'}
                         onClick={() => (setCurrentSection('schedule'))}
                     /> */}
                     <h2 className="column-title">FULL LINEUP</h2>
@@ -276,7 +276,7 @@ return (
                         </p>
                     </section>
                     {/* <p>
-                        3LAU - AARON SEVILLA - ADAM BEATTIE - AKIRA THE DON - ALABASTER DE PLUME - ALISON WONDERLAND - ALUNA [OF ALUNAGEORGE] - AMADIS AND THE AMBASSADORS - AMBER VAN DAY - AUTOGRAF - AWALE - BEMET - BEN WALKER & KIRSTY MERRYN - BENJ PATTERSON - BERRY GALAZKA - BOOMBOXHEAD - BROOKE SHARKEY - CHAIM - CHARLIE G - CHRISTIAN SMITH - COCO MAMBA - CODY FROST - CONNIE DIGITAL - CONOR BYRNE - CROOKED COLOURS - DAN KORN - DANA IMMANUEL & THE STOLEN BAND - DANNY TENAGLIA - DEADMAU5 - DIZRAELI - DJANAN TURAN - DRUNKEN KONG - EFFECTIVE - EYES OF BEL - FLATS & SHARPS - HARRISON FIRST - ICHI - ILARIO FERRARI TRIO - ISAK'S ISLAND - KATE OZZ - LÈA MONDO - LEONIE EVANS - LOKYII - LOUIS III - M G BOULTER - MAGA - MAGIT CACOON - MAGNOS - MAI WORLD - MARCUS BONFANTI IN THE DELTA TRIO - MIGHTY 33 - MIKEY KENNEY & FRIENDS - MIYA MIYA - MORSKI - NANCY - NICK HART & TOM DIPPER - NINA NESBITT - ORII - OVY ON THE DRUMS - PARIS HILTON - RAY GELATO GIANTS - RENU - RIOGHNACH CONNOLLY & ELLIS DAVIES - RIZ LA VIE - SADANDSOLO - SAMRA - SAWLEAD - SCRILLA - SHAMA RAHMAN - SOFIA CAMPOS - SPOTTIE WIFI - STUDIO NOUVEAU - THE BRITISH COLLECTIVE - THE LUNA TAPES - THE TURBANS - THE TURBANS UNPLUGGED - VANDAL - VIRTUNAUT - WILL JEURGENS - YOUNG WATERS
+                        3LAU - AARON SEVILLA - ADAM BEATTIE - AKIRA THE DON - ALABASTER DE PLUME - ALISON WONDERLAND - ALUNA [OF ALUNAGEORGE] - AMADIS AND THE AMBASSADORS - AMBER VAN DAY - AUTOGRAF - AWALE - BEMET - BEN WALKER & KIRSTY MERRYN - BENJI PATTERSON - BERRY GALAZKA - BOOMBOXHEAD - BROOKE SHARKEY - CHAIM - CHARLIE G - CHRISTIAN SMITH - COCO MAMBA - CODY FROST - CONNIE DIGITAL - CONOR BYRNE - CROOKED COLOURS - DAN KORN - DANA IMMANUEL & THE STOLEN BAND - DANNY TENAGLIA - DEADMAU5 - DIZRAELI - DJANAN TURAN - DRUNKEN KONG - EFFECTIVE - EYES OF BEL - FLATS & SHARPS - HARRISON FIRST - ICHI - ILARIO FERRARI TRIO - ISAK'S ISLAND - KATE OZZ - LÈA MONDO - LEONIE EVANS - LOKYII - LOUIS III - M G BOULTER - MAGA - MAGIT CACOON - MAGNOS - MAI WORLD - MARCUS BONFANTI IN THE DELTA TRIO - MIGHTY 33 - MIKEY KENNEY & FRIENDS - MIYA MIYA - MORSKI - NANCY - NICK HART & TOM DIPPER - NINA NESBITT - ORII - OVY ON THE DRUMS - PARIS HILTON - RAY GELATO GIANTS - RENU - RIOGHNACH CONNOLLY & ELLIS DAVIES - RIZ LA VIE - SADANDSOLO - SAMRA - SAWLEAD - SCRILLA - SHAMA RAHMAN - SOFIA CAMPOS - SPOTTIE WIFI - STUDIO NOUVEAU - THE BRITISH COLLECTIVE - THE LUNA TAPES - THE TURBANS - THE TURBANS UNPLUGGED - VANDAL - VIRTUNAUT - WILL JEURGENS - YOUNG WATERS
                     </p> */}
                 </>
             )}
