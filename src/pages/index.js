@@ -74,7 +74,7 @@ const IndexPage = () => {
           <Marquee delay={2.5}/>
           {/* <Merch /> */}
           {/* <Marquee delay={3}/> */}
-          {/* <Sponsors /> */}
+          <Sponsors />
           <Footer />
         </main>
       </Layout>
