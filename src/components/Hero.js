@@ -50,7 +50,7 @@ const Hero = (props) => {
             <Countdown />
             <section className="event-data">
             <p>OCT. 21-24 <br/>•08PM UTC•</p>
-            <p>FESTIVAL LAND,<br/>[-65, 80]</p>
+            <p>FESTIVAL LAND,<br/>[-65,80]</p>
             <p>©DECENTRALAND</p>
             </section>
             <form onSubmit={handleSubmit}>
