@@ -58,6 +58,8 @@ const Hero = (props) => {
                 <button type={'submit'}>
                     <RiMailSendLine size={25}/>
                 </button>
+                <p> or </p>
+                <a className="button" href="https://play.decentraland.org/?position=-65,80">Jump In</a>
             </form>
             <small style={{ visibility: error ? 'visible' : 'hidden' }}>We could not register your email, please try again.</small>
         </div>
@@ -130,6 +132,7 @@ const StyledHero = styled.div`
         form {
             display: flex;
             margin-top: 30px;
+            width: 100%;
             input {
                 background: black;
                 height: 60px;
@@ -153,6 +156,13 @@ const StyledHero = styled.div`
                     font-size: 16px;
                 }
             }
+
+            p {
+                margin: 0 32px;
+                line-height: 60px
+            }
+
+            a.button,
             button {
                 width: fit-content;
                 border: 1px solid #B836A9;
@@ -161,9 +171,13 @@ const StyledHero = styled.div`
                 align-items: center;
                 display: flex;
                 border-radius: 60px;
-                width: 60px;
+                min-width: 60px;
                 justify-content: center;
                 cursor: pointer;
+            }
+
+            a.button {
+                padding: 0 30px
             }
         }
         small {
