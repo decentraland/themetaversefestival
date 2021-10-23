@@ -130,6 +130,38 @@ export const days = [
                         time: '- - -',
                         name: 'Virtunaut'
                     },
+                    {
+                        time: '- - -',
+                        name: 'MAI World'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Mighty 33'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Sadandsolo'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Vandal'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Will Jeurgens'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'COCO MAMBA'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Scrilla'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Studio Nouveau'
+                    },
                 ]
             },
         ]
@@ -245,6 +277,18 @@ export const days = [
                 acts: [
                     {
                         time: 'On loop all weekend',
+                        name: 'Connie Digital'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'BoomboxHead'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Virtunaut'
+                    },
+                    {
+                        time: '- - -',
                         name: 'MAI World'
                     },
                     {
@@ -254,6 +298,26 @@ export const days = [
                     {
                         time: '- - -',
                         name: 'Sadandsolo'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Vandal'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Will Jeurgens'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'COCO MAMBA'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Scrilla'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Studio Nouveau'
                     },
                 ]
             },
@@ -378,171 +442,215 @@ export const days = [
                 acts: [
                     {
                         time: 'On loop all weekend',
+                        name: 'Connie Digital'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'BoomboxHead'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Virtunaut'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'MAI World'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Mighty 33'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Sadandsolo'
+                    },
+                    {
+                        time: '- - -',
                         name: 'Vandal'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Will Jeurgens'
                     },
                     {
                         time: '- - -',
                         name: 'COCO MAMBA'
                     },
+                    {
+                        time: '- - -',
+                        name: 'Scrilla'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Studio Nouveau'
+                    },
                 ]
             },
         ]
     },
-    // {
-    //     linkLabel: <>DAY 04 → <span className="day-tag">OCT .24</span></>,
-    //     name: 'META',
-    //     date: 'OCT .21',
-    //     headerImageUrl: 'METAVERSE.png',
-    //     headerImageName: 'Metaverse',
-    //     stages: [
-    //         {
-    //             name: 'The Evolution Stage (main stage)',
-    //             type: 'main',
-    //             acts: [
-    //                 {
-    //                     time: '12am UTC',
-    //                     name: 'PARIS HILTON + Special Guest'
-    //                 },
-    //                 {
-    //                     time: '11pm -12am UTC',
-    //                     name: 'Chet Porter'
-    //                 },
-    //                 {
-    //                     time: '10pm -11pm UTC',
-    //                     name: 'SPOTTIE WIFI'
-    //                 },
-    //                 {
-    //                     time: '9pm - 10pm UTC',
-    //                     name: 'Akira the Don'
-    //                 },
-    //             ]
-    //         },
-    //         {
-    //             name: 'Psychedelic Techno Stage',
-    //             type: 'regular',
-    //             acts: [
-    //                 {
-    //                     time: '4-5 am UTC',
-    //                     name: 'Area 51 Presents - Sawlead'
-    //                 },
-    //                 {
-    //                     time: '3-4 am UTC',
-    //                     name: 'Area 51 Presents - SAMRA'
-    //                 },
-    //                 {
-    //                     time: '2-3 am UTC',
-    //                     name: 'Area 51 Presents - ORII '
-    //                 },
-    //                 {
-    //                     time: '1-2 am UTC',
-    //                     name: 'Area 51 Presents - Effective'
-    //                 },
-    //             ]
-    //         },
-    //         {
-    //             name: 'World Stage',
-    //             type: 'regular',
-    //             acts: [
-    //                 {
-    //                     time: '00:30 am UTC',
-    //                     name: 'Salmo (Italy)'
-    //                 },
-    //                 {
-    //                     time: '9pm UTC',
-    //                     name: 'Morski (Bulgaria)'
-    //                 },
-    //                 {
-    //                     time: '1pm UTC',
-    //                     name: 'RENU (India)'
-    //                 },
-    //             ]
-    //         },
-    //         {
-    //             name: 'Jazz Club',
-    //             type: 'regular',
-    //             acts: [
-    //                 {
-    //                     time: '1am - 2am UTC',
-    //                     name: 'Ray Gelato giants'
-    //                 },
-    //             ]
-    //         },
-    //         {
-    //             name: 'The Harrison Acoustic Stage',
-    //             type: 'regular',
-    //             acts: [
-    //                 {
-    //                     time: '7 - 8 pm UTC',
-    //                     name: 'The Turbans unplugged'
-    //                 },
-    //                 {
-    //                     time: '6 - 7 pm UTC',
-    //                     name: 'MARCUS BONFANTI IN THE DELTA TRIO'
-    //                 },
-    //                 {
-    //                     time: '5 - 6pm UTC',
-    //                     name: 'NICK HART & TOM DIPPER'
-    //                 },
-    //                 {
-    //                     time: '4 - 5pm UTC',
-    //                     name: 'MIKEY KENNEY & FRIENDS'
-    //                 },
-    //                 {
-    //                     time: '3 - 4pm UTC',
-    //                     name: 'DANA IMMANUEL & THE STOLEN BAND'
-    //                 },
-    //             ]
-    //         },
-    //         {
-    //             name: 'OG Smash Stage',
-    //             type: 'regular',
-    //             acts: [
-    //                 {
-    //                     time: 'On loop all weekend',
-    //                     name: 'Connie Digital'
-    //                 },
-    //                 {
-    //                     time: '- - -',
-    //                     name: 'BoomboxHead'
-    //                 },
-    //                 {
-    //                     time: '- - -',
-    //                     name: 'Virtunaut'
-    //                 },
-    //                 {
-    //                     time: '- - -',
-    //                     name: 'MAI World'
-    //                 },
-    //                 {
-    //                     time: '- - -',
-    //                     name: 'Mighty 33'
-    //                 },
-    //                 {
-    //                     time: '- - -',
-    //                     name: 'Sadandsolo'
-    //                 },
-    //                 {
-    //                     time: '- - -',
-    //                     name: 'Vandal'
-    //                 },
-    //                 {
-    //                     time: '- - -',
-    //                     name: 'Will Jeurgens'
-    //                 },
-    //                 {
-    //                     time: '- - -',
-    //                     name: 'COCO MAMBA'
-    //                 },
-    //                 {
-    //                     time: '- - -',
-    //                     name: 'Scrilla'
-    //                 },
-    //                 {
-    //                     time: '- - -',
-    //                     name: 'Studio Nouveau'
-    //                 },
-    //             ]
-    //         },
-    //     ]
-    // },
+    {
+        linkLabel: <>DAY 04 → <span className="day-tag">OCT .24</span></>,
+        name: 'META',
+        date: 'OCT .21',
+        headerImageUrl: 'METAVERSE.png',
+        headerImageName: 'Metaverse',
+        stages: [
+            {
+                name: 'The Evolution Stage (main stage)',
+                type: 'main',
+                acts: [
+                    {
+                        time: '12:00am UTC',
+                        name: 'PARIS HILTON + Special Guest'
+                    },
+                    {
+                        time: '11:25pm -11:44pm UTC',
+                        name: 'Fuze the MC'
+                    },
+                    {
+                        time: '11:00pm -11:20pm UTC',
+                        name: 'SPOTTIE WIFI'
+                    },
+                    {
+                        time: '9:25pm -10:55pm UTC',
+                        name: 'Akira the Don'
+                    },
+                    {
+                        time: '8:55pm - 9:50pm UTC',
+                        name: 'Harrison First'
+                    },
+                    {
+                        time: '8:40pm - 8:50pm UTC',
+                        name: 'Cody Frost'
+                    },
+                ]
+            },
+            {
+                name: 'Psychedelic Techno Stage',
+                type: 'regular',
+                acts: [
+                    {
+                        time: '4-5 am UTC',
+                        name: 'Area 51 Presents - Sawlead'
+                    },
+                    {
+                        time: '3-4 am UTC',
+                        name: 'Area 51 Presents - SAMRA'
+                    },
+                    {
+                        time: '2-3 am UTC',
+                        name: 'Area 51 Presents - ORII '
+                    },
+                    {
+                        time: '1-2 am UTC',
+                        name: 'Area 51 Presents - Effective'
+                    },
+                ]
+            },
+            {
+                name: 'World Stage',
+                type: 'regular',
+                acts: [
+                    {
+                        time: '00:30 am UTC',
+                        name: 'The Virtunaut'
+                    },
+                    {
+                        time: '9pm UTC',
+                        name: 'Morski (Bulgaria)'
+                    },
+                    {
+                        time: '1pm UTC',
+                        name: 'RENU (India)'
+                    },
+                ]
+            },
+            {
+                name: 'Jazz Club',
+                type: 'regular',
+                acts: [
+                    {
+                        time: '1am - 2am UTC',
+                        name: 'Ray Gelato giants'
+                    },
+                ]
+            },
+            {
+                name: 'The Harrison Acoustic Stage',
+                type: 'regular',
+                acts: [
+                    {
+                        time: '7 - 8 pm UTC',
+                        name: 'The Turbans unplugged'
+                    },
+                    {
+                        time: '6 - 7 pm UTC',
+                        name: 'MARCUS BONFANTI IN THE DELTA TRIO'
+                    },
+                    {
+                        time: '5 - 6pm UTC',
+                        name: 'NICK HART & TOM DIPPER'
+                    },
+                    {
+                        time: '4 - 5pm UTC',
+                        name: 'MIKEY KENNEY & FRIENDS'
+                    },
+                    {
+                        time: '3 - 4pm UTC',
+                        name: 'DANA IMMANUEL & THE STOLEN BAND'
+                    },
+                ]
+            },
+            {
+                name: 'OG Smash Stage',
+                type: 'regular',
+                acts: [
+                    {
+                        time: 'On loop all weekend',
+                        name: 'Connie Digital'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'BoomboxHead'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Virtunaut'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'MAI World'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Mighty 33'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Sadandsolo'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Vandal'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Will Jeurgens'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'COCO MAMBA'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Scrilla'
+                    },
+                    {
+                        time: '- - -',
+                        name: 'Studio Nouveau'
+                    },
+                ]
+            },
+        ]
+    },
 ];
