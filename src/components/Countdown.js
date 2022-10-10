@@ -10,9 +10,9 @@ const Countdown = () => {
   const [remainingMins, setRemainingMins] = useState(0);
   const [remainingSecs, setRemainingSecs] = useState(0);
 
-  let festivalDate = new Date('Oct 21, 2021 20:00:00');
+  let festivalDate = new Date('Nov 10, 2022 00:00:00');
   festivalDate = new Date(festivalDate);
-  festivalDate.setUTCHours(8);
+  festivalDate.setUTCHours(0);
   const UTCFestivalDate = new Date(festivalDate.toUTCString()).getTime();
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const Countdown = () => {
           mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
           secs = Math.floor((t % (1000 * 60)) / 1000);
 
-          days = ("0" + days).slice(-2)
+          days = ("0" + days).slice(1)
           hours = ("0" + hours).slice(-2)
           mins = ("0" + mins).slice(-2)
           secs = ("0" + secs).slice(-2)
@@ -45,20 +45,29 @@ const Countdown = () => {
   return (
     <StyledCountdown>
       <div className="time-block days-wrapper">
-        <span className="number">{remainingDays}:</span>
-        <span className="label">DAYS</span>
+        <span className="number">{remainingDays}</span>
+        <span className="label">D.</span>
+      </div>
+      <div className="time-block days-wrapper">
+        <span className="number">:</span>
       </div>
       <div className="time-block hours-wrapper">
-        <span className="number">{remainingHours}:</span>
-        <span className="label">HOURS</span>
+        <span className="number">{remainingHours}</span>
+        <span className="label">H.</span>
+      </div>
+      <div className="time-block days-wrapper">
+        <span className="number">:</span>
       </div>
       <div className="time-block minutes-wrapper">
-        <span className="number">{remainingMins}:</span>
-        <span className="label">MINUTES</span>
+        <span className="number">{remainingMins}</span>
+        <span className="label">M.</span>
       </div>
-      <div className="time-block seconds-wrapper">
+      <div className="time-block days-wrapper">
+        <span className="number">:</span>
+      </div>
+      <div className="time-block seconds-wrappe">
         <span className="number">{remainingSecs}</span>
-        <span className="label">SECONDS</span>
+        <span className="label">S.</span>
       </div>
     </StyledCountdown>
   )
@@ -66,23 +75,34 @@ const Countdown = () => {
 
 const StyledCountdown = styled.div`
   display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-  @media screen and (max-width: ${breakpoints.md}) {
-      margin-bottom: 42px;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  padding-right: 16px;
+  .days-wrapper {
+    display: flex;
+    jutify-content: center;
   }
   .time-block {
     display: flex;
     flex-direction: column;
+    text-align: center;
     .number {
-      font-size: 58px;
       color: white;
+      font-weight: 500;
       margin-bottom: 6px;
-      @media screen and (max-width: ${breakpoints.md}) {
-        font-size: 50px;
+      font-size: 26px;
+
+      @media screen and (min-width: ${breakpoints.md}) {
+        font-size: 34px;
+      }
+
+      @media screen and (min-width: ${breakpoints.l}) {
+        font-size: 44px;
       }
     }
     .label {
+      text-align: center;
       color: white;
       font-size: 16px;
       @media screen and (max-width: ${breakpoints.md}) {

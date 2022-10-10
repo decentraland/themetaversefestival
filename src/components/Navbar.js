@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from "react"
 import styled from 'styled-components';
-import { breakpoints } from "../../utils/theme";
 import { StaticImage } from "gatsby-plugin-image";
+import { breakpoints } from "../../utils/theme";
+import Logo from '../images/logo-metaverse.png';
 
 const Navbar = (props) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -37,13 +38,14 @@ const Navbar = (props) => {
   return (
     <StyledNavbar className="navbar">
         <nav>
-            <ul>
+            <StaticImage src={'./../images/logo-metaverse.svg'} height={140} />
+            {/* <ul>
             {Links.map((link, i) => (
               <li key={i}>
                 <a onClick={() => {scrollTo(link.targetId)}}>{link.label}</a>
               </li>
             ))}
-            </ul>
+            </ul> */}
         </nav>
         <div className="mobile-toggle" onClick={() => {setIsMobileMenuOpen(!isMobileMenuOpen)}}>
           <div></div>
@@ -69,7 +71,6 @@ const Navbar = (props) => {
 
 const StyledNavbar = styled.section`
     width: 100%;
-    background: black;
     z-index: 100;
     position: fixed;
     @media screen and (max-width: ${breakpoints.md}) {
@@ -85,8 +86,6 @@ const StyledNavbar = styled.section`
       bottom: 0;
       height: 1px;
       width: 100%;
-      background: #d53fc4;
-      box-shadow: 0 0 2px 0.3px #d53fc4;
       content: '';
       @media screen and (max-width: ${breakpoints.md}) {
         display: none;

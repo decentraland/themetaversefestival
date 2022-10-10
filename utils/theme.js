@@ -1,7 +1,7 @@
 import { rgba, lighten, darken, transparentize } from "polished";
 
 const themeConfig = {
-    accent: '#304FFE'
+    accent: '#FF5C9D'
 }
 
 const basicPalette = {
@@ -37,10 +37,11 @@ const theme = {
 
 export const breakpoints = {
     'xs': '416px',
-    's': '600px',
-    'md': '956px',
-    'l': '1365px',
-    'xl': '1620px'
+    's': '576px',
+    'md': '768px',
+    'l': '992px',
+    'xl': '1200px',
+    'xxl': '1400px'
 }
 
 export const boxShadow = {
