@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react"
 import styled from 'styled-components';
-import Discord from './../images/social_links/logo_discord.png';
-import Reddit from './../images/social_links/logo_reddit.png';
-import Github from './../images/social_links/logo_github.png';
-import Twitter from './../images/social_links/logo_twitter.png';
+import Discord from './../images/social_links/logo_discord_white.png';
+import Reddit from './../images/social_links/logo_reddit_white.png';
+import Github from './../images/social_links/logo_github_white.png';
+import Twitter from './../images/social_links/logo_twitter_white.png';
 import { breakpoints } from "../../utils/theme";
 
 const Footer = (props) => {
@@ -31,10 +31,15 @@ const Footer = (props) => {
     ]
   return (
     <StyledFooter>
-        <div className="primary-links">
+        {/* <div className="primary-links">
             <a href="MusicFestivalGeneralInfo.pdf" download>Legal Information</a>
             <a href="MusicFestivalGeneralInfo.pdf" download>Press Kit</a>
 
+        </div> */}
+        <div className="copyright">
+            <a href="https://decentraland.org/">
+                © 2022 Decentraland
+            </a>
         </div>
         <div className="social-links">
             <ul className="social-links-list">
@@ -47,22 +52,19 @@ const Footer = (props) => {
                 ))}
             </ul>
         </div>
-        <div className="copyright">
-            <a href="https://decentraland.org/">
-                © 2021 Decentraland
-            </a>
-        </div>
     </StyledFooter>
   )
 }
 
 const StyledFooter = styled.footer`
-    background: #F7F2ED;
-    padding: 38px 80px 38px;
+    padding: 38px 38px;
     display: flex;
     color: black;
     width: 100%;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     @media screen and (max-width: ${breakpoints.md}) {
         flex-direction: column;
         align-items: baseline;
@@ -70,11 +72,11 @@ const StyledFooter = styled.footer`
     }
     a {
         font-family: 'Inter';
-        color: black;
+        color: white;
     }
     .primary-links {
         a {
-            margin-right: 30px;
+            margin-right: 70px;
         }
         @media screen and (max-width: ${breakpoints.md}) {
             margin-bottom: 24px;
@@ -103,7 +105,6 @@ const StyledFooter = styled.footer`
         }
     }
     .copyright {
-        margin-left: 77px;
         color: black;
         font-family: 'Inter';
         @media screen and (max-width: ${breakpoints.md}) {
