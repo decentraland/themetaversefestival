@@ -10,7 +10,7 @@ const Banner = ({ setShowVideo }) => {
                 <div>
                     <ReactPlayer
                         autoPlay
-                        muted={true}
+                        muted={false}
                         url={'teaser-2022.mp4'}
                         poster={"first-frame.png"}
                         playing={true}
