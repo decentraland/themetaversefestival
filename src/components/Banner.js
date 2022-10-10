@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ReactPlayer from "react-player";
 import styled from "styled-components";
 
@@ -10,7 +10,7 @@ const Banner = ({ setShowVideo }) => {
                 <div>
                     <ReactPlayer
                         autoPlay
-                        muted={false}
+                        muted
                         url={'teaser-2022.mp4'}
                         poster={"first-frame.png"}
                         playing={true}
