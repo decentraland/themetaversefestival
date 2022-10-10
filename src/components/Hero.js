@@ -91,17 +91,17 @@ const Hero = () => {
                         src={gitHub}
                     />
                 </a>
-                <a href='https://github.com/decentraland' target="_blank" rel="noreferrer">
+                <a href='https://twitter.com/decentraland' target="_blank" rel="noreferrer">
                     <SocialIcon
                         src={twitter}
                     />
                 </a>
-                <a href='https://github.com/decentraland' target="_blank" rel="noreferrer">
+                <a href='https://www.reddit.com/r/decentraland/' target="_blank" rel="noreferrer">
                     <SocialIcon
                         src={reddit}
                     />
                 </a>
-                <a href='https://github.com/decentraland' target="_blank" rel="noreferrer">
+                <a href='https://decentraland.org/discord/' target="_blank" rel="noreferrer">
                     <SocialIcon
                         src={discord}
                     />
