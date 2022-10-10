@@ -11,7 +11,7 @@ export const Container  = styled.div`
         max-width: 720px;
     };
     @media screen and (min-width: ${breakpoints.l}) {
-        max-width: 960px;
+        max-width: 900px;
     };
     @media screen and (min-width: ${breakpoints.xl}) {
        max-width: 1140px;

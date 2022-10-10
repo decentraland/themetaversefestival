@@ -166,6 +166,7 @@ const DateComponent = styled.section`
     letter-spacing: 2px;
 
     @media screen and (min-width: ${breakpoints.md}) {
+        font-size: 18px;
         letter-spacing: 0;
         text-align: center;
     }
