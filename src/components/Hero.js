@@ -8,6 +8,7 @@ import dclLogo from '../images/logo-dcl.svg'
 import qrSeparator from '../images/qr-separator.svg'
 import decorator from '../images/corner_decoration.svg'
 import whiteRabbit from '../images/rabbit.svg'
+import polygon from '../images/STD-polygon.svg'
 import gitHub from '../images/Vector-1.svg'
 import twitter from '../images/Vector-3.svg'
 import reddit from '../images/Vector-2.svg'
@@ -60,7 +61,7 @@ const Hero = () => {
                     </EventDataItem>
                     <EventDataItem>
                         <SaveTheDate href="https://events.decentraland.org/event/?id=7148716b-ff25-4d5f-8267-55fed7ab15bc" target="_blank">
-                            <WhiteRabbit src={whiteRabbit} /> Save the date
+                            <WhiteRabbit src={whiteRabbit} /> Save the date <Polygon src={polygon} />
                         </SaveTheDate>
                     </EventDataItem>
                 </ EventDataBottom>
@@ -123,14 +124,13 @@ const StyledHero = styled.div`
 const StyledImage = styled.img`
     width: 100%;
     height: auto;
-    padding: 8px 0;
 `
 
 const EventData = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 11px 0;
+    padding-top: 9px;
     @media screen and (max-width: ${breakpoints.md}) {
         flex-direction: column;
     }
@@ -148,7 +148,6 @@ const EventDataBottom = styled.div`
 
 const EventDataItem = styled.div`
     flex: 0 0 100%;
-    margin: 8px 0;
     width: 100%;
     text-align: center;
 
@@ -224,6 +223,12 @@ const WhiteRabbit = styled.img`
     padding-right: 16px;
     margin-right: 16px;
     border-right: 4px solid ${theme.accent};
+`
+
+const Polygon = styled.img`
+    width: 15px;
+    height: 15px;
+    margin-left: 16px;
 `
 
 const Socials = styled.footer`
