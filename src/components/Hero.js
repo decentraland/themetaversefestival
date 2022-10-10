@@ -46,7 +46,7 @@ const Hero = () => {
                     </EventDataItem>
                     <EventDataItem>
                         <DateComponent className="event-data">
-                            <p>NOV. 10-13 <DateHighlight>-12PM UTC-</DateHighlight></p>
+                            <p>NOV. 10-13 <DateHighlight>-12 PM UTC-</DateHighlight></p>
                             <p>FESTIVAL LAND, [-62,70]</p>
                         </DateComponent>
                     </EventDataItem>
