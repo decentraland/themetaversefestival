@@ -9,9 +9,8 @@ import qrSeparator from '../images/qr-separator.svg'
 import decorator from '../images/corner_decoration.svg'
 import whiteRabbit from '../images/rabbit.svg'
 import polygon from '../images/STD-polygon.svg'
-import gitHub from '../images/Vector-1.svg'
 import twitter from '../images/Vector-3.svg'
-import reddit from '../images/Vector-2.svg'
+import instagram from '../images/Vector-4.svg'
 import discord from '../images/Vector.svg'
 import { Container } from "./Container"
 
@@ -54,10 +53,12 @@ const Hero = () => {
                 </EventData>
                 <EventDataBottom>
                     <EventDataItem>
-                        <StyledLogo
-                            alt={'Decentraland Logo'}
-                            src={dclLogo}
-                        />
+                        <a href="https://play.decentraland.org/" target="_blank">
+                            <StyledLogo
+                                alt={'Decentraland Logo'}
+                                src={dclLogo}
+                            />
+                        </a>
                     </EventDataItem>
                     <EventDataItem>
                         <SaveTheDate href="https://events.decentraland.org/event/?id=7148716b-ff25-4d5f-8267-55fed7ab15bc" target="_blank">
@@ -87,19 +88,14 @@ const Hero = () => {
                 right={40}
             />
             <Socials>
-                <a href='https://github.com/decentraland' target="_blank" rel="noreferrer">
-                    <SocialIcon
-                        src={gitHub}
-                    />
-                </a>
                 <a href='https://twitter.com/decentraland' target="_blank" rel="noreferrer">
                     <SocialIcon
                         src={twitter}
                     />
                 </a>
-                <a href='https://www.reddit.com/r/decentraland/' target="_blank" rel="noreferrer">
+                <a href='https://www.instagram.com/decentraland_foundation/' target="_blank" rel="noreferrer">
                     <SocialIcon
-                        src={reddit}
+                        src={instagram}
                     />
                 </a>
                 <a href='https://decentraland.org/discord/' target="_blank" rel="noreferrer">
