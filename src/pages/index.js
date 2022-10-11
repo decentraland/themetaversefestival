@@ -1,22 +1,14 @@
-import React, {useEffect} from "react"
-import styled from 'styled-components';
-import { Helmet } from "react-helmet";
-import Layout from './../components/Layout';
-import Navbar from './../components/Navbar';
-import Hero from './../components/Hero';
-import Marquee from './../components/Marquee';
-import Teaser from './../components/Teaser';
-import About from './../components/About';
-import LineUpSchedule from './../components/LineUpSchedule';
-import Map from './../components/Map';
-import Merch from './../components/Merch';
-import Sponsors from './../components/Sponsors';
-import Footer from './../components/Footer';
+import React, { useState } from "react"
+import styled from 'styled-components'
+import { Helmet } from "react-helmet"
+import Layout from './../components/Layout'
+import Hero from './../components/Hero'
+import Banner from "../components/Banner"
 
 const seo = {
-  title: 'Metaverse Festival | Decentraland',
+  title: 'Metaverse Music Festival | Decentraland',
   description: 'A four-day celebration of music, culture and creativity in the virtual social world of Decentraland, the Metaverse Festival is a grand collision of light, sound and portable toilets.',
-  image: 'https://themetaversefestival.io/festival.jpg',
+  image: 'https://themetaversemusicfestival.io/logo-metaverse.png',
 }
 
 const meta = {
@@ -34,6 +26,8 @@ const meta = {
 
 // markup
 const IndexPage = () => {
+  const [showVideo, setShowVideo] = useState(true)
+
   return (
     <StyledIndexPage>
       <Helmet>
@@ -50,32 +44,22 @@ const IndexPage = () => {
 
             return <meta key={name} name={name} content={meta[name]} />
           })}
-          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-          <link rel="manifest" href="/site.webmanifest" />
-          <meta name="msapplication-TileColor" content="#da532c" />
-          <meta name="theme-color" content="#ffffff"></meta>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff"></meta>
       </Helmet>
       <Layout>
         <header>
-          <Navbar />
           <Hero />
         </header>
         <main>
-          <Marquee delay={0.5}/>
-          <Teaser />
-          <Marquee delay={1}/>
-          <About />
-          <Marquee delay={1.5}/>
-          <LineUpSchedule />
-          <Marquee delay={2}/>
-          <Map />
-          <Marquee delay={2.5}/>
-          {/* <Merch /> */}
-          {/* <Marquee delay={3}/> */}
-          <Sponsors />
-          <Footer />
+          {
+            showVideo &&
+            <Banner setShowVideo={setShowVideo} />
+          }
         </main>
       </Layout>
     </StyledIndexPage>
@@ -83,14 +67,7 @@ const IndexPage = () => {
 }
 
 const StyledIndexPage = styled.div`
-  background: ${(props) => (props.theme[`black`])};
-  main {
-    .image-separator {
-      .separator-image {
-        width: 100%;
-        height: 800px;
-      }
-    }
-  }
-`;
+  background: ${(props) => (props.theme[`black`])}
+`
+
 export default IndexPage
