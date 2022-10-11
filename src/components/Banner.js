@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import styled from "styled-components";
+import volumeMuted from '../images/volume-muted.svg'
+import volume from '../images/volume.svg'
 import { breakpoints } from "../../utils/theme";
 
 const Banner = ({ setShowVideo }) => {
+    const [muted, setMuted] = useState(true)
 
     return (
         <section id="2022-banner">
             <StyledBanner>
                 <MobileVideo>
                     <ReactPlayer
-                        muted
+                        muted={muted}
                         autoPlay
                         playing={true}
                         url={'teaser-mobile-2022.mp4'}
@@ -23,7 +26,7 @@ const Banner = ({ setShowVideo }) => {
                 </MobileVideo>
                 <DesktopVideo>
                     <ReactPlayer
-                        muted
+                        muted={muted}
                         autoPlay
                         playing={true}
                         url={'teaser-2022.mp4'}
@@ -34,6 +37,10 @@ const Banner = ({ setShowVideo }) => {
                         playsinline
                     />
                 </DesktopVideo>
+                <SoundButton src={muted ? volumeMuted : volume} onClick={() => setMuted(false)} />
+                <SkipVideo onClick={() => setShowVideo(false)}>
+                    SKIP
+                </SkipVideo>
             </StyledBanner>
         </section>
     );
@@ -69,6 +76,22 @@ const DesktopVideo = styled.div`
     @media screen and (min-width: ${breakpoints.md}) {
         display: block;
     }
+`
+
+const SkipVideo = styled.a`
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    letter-spacing: 2px;
+`
+
+const SoundButton = styled.img`
+    position: fixed;
+    top: 40px;
+    width: 32px;
+    height: 32px;
+    left: 40px;
+    letter-spacing: 2px;
 `
 
 export default Banner;

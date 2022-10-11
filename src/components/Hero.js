@@ -183,8 +183,7 @@ const DateComponent = styled.section`
         font-size: 28px;
         line-height: 40px;
     }
-
- `
+`
 
 const DateHighlight = styled.span`
     color: ${theme.accent}
