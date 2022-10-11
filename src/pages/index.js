@@ -8,7 +8,7 @@ import Banner from "../components/Banner"
 const seo = {
   title: 'Metaverse Music Festival | Decentraland',
   description: 'A four-day celebration of music, culture and creativity in the virtual social world of Decentraland, the Metaverse Festival is a grand collision of light, sound and portable toilets.',
-  image: 'https://themetaversefestival.io/festival.jpg',
+  image: 'https://themetaversemusicfestival.io/logo-metaverse.png',
 }
 
 const meta = {

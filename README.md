@@ -1,3 +1,3 @@
-# the metaverse festival
+# MVMF 2022 - Metaverse Music Festival
 
-![festival](./static/festival.jpg)
+![festival](./static/logo-metaverse.png)
