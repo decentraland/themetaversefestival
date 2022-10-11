@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactPlayer from "react-player";
 import styled from "styled-components";
 import { breakpoints } from "../../utils/theme";
@@ -18,6 +18,7 @@ const Banner = ({ setShowVideo }) => {
                         width={'100vw'}
                         height={'100vh'}
                         onEnded={() => setShowVideo(false)}
+                        playsinline
                     />
                 </MobileVideo>
                 <DesktopVideo>
@@ -30,6 +31,7 @@ const Banner = ({ setShowVideo }) => {
                         width={'100vw'}
                         height={'100vh'}
                         onEnded={() => setShowVideo(false)}
+                        playsinline
                     />
                 </DesktopVideo>
             </StyledBanner>
