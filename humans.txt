@@ -6,14 +6,14 @@
                                                       
 
 /* TEAM */
-Developer: Guido La Rosa
-GitHub: https://github.com/guidolarosa
+Developer: Francisco Aboy
+GitHub: https://github.com/francisco-zx
 
-Designer: Guillermina Teves Bejar
-LinkedIn: https://www.linkedin.com/in/guillermina-teves-bejar-4a0265154/?originalSubdomain=ar
+Designer: GM Studios
+LinkedIn: https://github.com/gmstudiosgg
 
 /* SITE */
-Last update: 2021/4/16
+Last update: 2022/10/08
 Standards: JavaScript
 Components: humans-generator
 Softwares: Visual Studio Code, Mac OSX, Adobe Illustrator
