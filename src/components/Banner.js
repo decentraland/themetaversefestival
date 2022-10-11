@@ -1,34 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import styled from "styled-components";
 import { breakpoints } from "../../utils/theme";
 
 const Banner = ({ setShowVideo }) => {
-
+    const [playing, setPlaying] = useState(false)
     return (
         <section id="2022-banner">
             <StyledBanner>
                 <MobileVideo>
                     <ReactPlayer
                         autoPlay
-                        muted
+                        playing={playing}
                         url={'teaser-mobile-2022.mp4'}
                         poster={"first-frame.png"}
-                        playing={true}
                         width={'100vw'}
                         height={'100vh'}
+                        onReady={() => setPlaying(true)}
                         onEnded={() => setShowVideo(false)}
                     />
                 </MobileVideo>
                 <DesktopVideo>
                     <ReactPlayer
                         autoPlay
-                        muted
+                        playing={playing}
                         url={'teaser-2022.mp4'}
                         poster={"first-frame.png"}
-                        playing={true}
                         width={'100vw'}
                         height={'100vh'}
+                        onReady={() => setPlaying(true)}
                         onEnded={() => setShowVideo(false)}
                     />
                 </DesktopVideo>
