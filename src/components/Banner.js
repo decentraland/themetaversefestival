@@ -4,31 +4,31 @@ import styled from "styled-components";
 import { breakpoints } from "../../utils/theme";
 
 const Banner = ({ setShowVideo }) => {
-    const [playing, setPlaying] = useState(false)
+
     return (
         <section id="2022-banner">
             <StyledBanner>
                 <MobileVideo>
                     <ReactPlayer
+                        muted
                         autoPlay
-                        playing={playing}
+                        playing={true}
                         url={'teaser-mobile-2022.mp4'}
                         poster={"first-frame.png"}
                         width={'100vw'}
                         height={'100vh'}
-                        onReady={() => setPlaying(true)}
                         onEnded={() => setShowVideo(false)}
                     />
                 </MobileVideo>
                 <DesktopVideo>
                     <ReactPlayer
+                        muted
                         autoPlay
-                        playing={playing}
+                        playing={true}
                         url={'teaser-2022.mp4'}
                         poster={"first-frame.png"}
                         width={'100vw'}
                         height={'100vh'}
-                        onReady={() => setPlaying(true)}
                         onEnded={() => setShowVideo(false)}
                     />
                 </DesktopVideo>
