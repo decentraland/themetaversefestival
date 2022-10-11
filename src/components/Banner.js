@@ -32,7 +32,6 @@ const Banner = ({ setShowVideo }) => {
                         onEnded={() => setShowVideo(false)}
                     />
                 </DesktopVideo>
-                <iframe src="https://olafwempe.com/mp3/silence/silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style={{ display: "none" }}></iframe>
             </StyledBanner>
         </section>
     );
