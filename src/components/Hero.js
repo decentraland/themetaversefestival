@@ -5,7 +5,6 @@ import Countdown from './Countdown'
 import theme, { breakpoints } from "../../utils/theme"
 import mvmfLogo from '../images/logo-metaverse.png'
 import dclLogo from '../images/logo-dcl.svg'
-import qrSeparator from '../images/qr-separator.svg'
 import decorator from '../images/corner_decoration.svg'
 import whiteRabbit from '../images/rabbit.svg'
 import polygon from '../images/STD-polygon.svg'
@@ -106,7 +105,9 @@ const StyledHero = styled.div`
     width: 100%;   
 `
 export const LogoContainer = styled.div`
-    @media screen and (min-width: ${breakpoints.md}) {
+    margin-right: -5px;
+    margin-left: -24px;
+    @media (min-width: ${breakpoints.sm}) {
         margin-right: -46px;
         margin-left: -46px;
     }
