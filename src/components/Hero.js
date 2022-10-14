@@ -107,7 +107,7 @@ const StyledHero = styled.div`
 export const LogoContainer = styled.div`
     margin-right: -5px;
     margin-left: -24px;
-    @media (min-width: ${breakpoints.sm}) {
+    @media (min-width: ${breakpoints.md}) {
         margin-right: -46px;
         margin-left: -46px;
     }
