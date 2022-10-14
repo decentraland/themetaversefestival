@@ -18,7 +18,7 @@ const Hero = () => {
     return (
         <StyledHero sx={{ height: '100vh', display: 'flex', alignItems: 'center' }}>
             <Container>
-                <div>
+                <LogoContainer>
                     <StyledImage
                         placeholder={'none'}
                         backgroundColor={'black'}
@@ -28,18 +28,7 @@ const Hero = () => {
                         alt={'Metaverse Music Festival'}
                         src={mvmfLogo}
                     />
-                </div>
-                <div>
-                    <StyledImage
-                        placeholder={'none'}
-                        backgroundColor={'black'}
-                        objectFit={'contain'}
-                        loading={'eager'}
-                        className="index-hero-logo"
-                        alt={'Metaverse Music Festival'}
-                        src={qrSeparator}
-                    />
-                </div>
+                </LogoContainer>
                 <EventData>
                     <EventDataItem>
                         <Countdown />
@@ -115,6 +104,12 @@ const StyledHero = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;   
+`
+export const LogoContainer = styled.div`
+    @media screen and (min-width: ${breakpoints.md}) {
+        margin-right: -46px;
+        margin-left: -46px;
+    }
 `
 
 const StyledImage = styled.img`
