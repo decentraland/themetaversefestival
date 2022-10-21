@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import theme from './../../utils/theme';
 import styled, { ThemeProvider } from 'styled-components';
 import './../css/stylesheet.css';
@@ -15,7 +15,7 @@ const Layout = (props) => {
 }
 
 const StyledLayout = styled.div`
-  background: ${(props) => (props.theme.black)};
+  background: transparent;
   min-height: 100vh;
 `;
 

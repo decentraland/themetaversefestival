@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet"
 import Layout from './../components/Layout'
 import Hero from './../components/Hero'
 import Banner from "../components/Banner"
+import StarsScene from "../components/Stars"
 
 const seo = {
   title: 'Metaverse Music Festival | Decentraland',
@@ -62,12 +63,13 @@ const IndexPage = () => {
           }
         </main>
       </Layout>
+      <StarsScene />
     </StyledIndexPage>
   )
 }
 
 const StyledIndexPage = styled.div`
-  background: ${(props) => (props.theme[`black`])}
+  background: transparent;
 `
 
 export default IndexPage
