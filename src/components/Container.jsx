@@ -4,6 +4,8 @@ import { breakpoints } from "../../utils/theme"
 export const Container  = styled.div`
     max-width: 100%;
     padding: 0 16px;
+    margin-left: auto;
+    margin-right: auto;
     @media screen and (min-width: ${breakpoints.sm}) {
         max-width: 540px;
     };
