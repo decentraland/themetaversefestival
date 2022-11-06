@@ -12,7 +12,8 @@ import underground from '../../images/stages/underground.png';
 import kraken from '../../images/stages/kraken.png';
 import moda from '../../images/stages/moda.png';
 import jazz from '../../images/stages/jazz.png';
-import portaloo from '../../images/stages/Hour-Glass.png'
+import portaloo from '../../images/stages/Hour-Glass.png';
+import soundr from '../../images/stages/soundr.png';
 
 export default [
     {
@@ -32,6 +33,12 @@ export default [
         href: 'https://play.decentraland.org/?position=-70%2C57&realm=marvel&island=Ic5t9',
         src: degens,
         coord: "-70,57"
+    },
+    {
+        name: 'SoundR',
+        href: 'https://play.decentraland.org/?position=-70%2C67&realm=marvel&island=Ic5t9',
+        src: soundr,
+        coord: "-70,67"
     },
     {
         name: 'Tru Band Room',

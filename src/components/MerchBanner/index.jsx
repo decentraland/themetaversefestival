@@ -28,7 +28,7 @@ const Banner = styled.div`
     background: ${props => `url(${props.src})`};
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center right;
     display: flex;
     align-items: center;
     justify-content: flex-start;

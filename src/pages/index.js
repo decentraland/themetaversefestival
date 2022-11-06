@@ -15,7 +15,7 @@ import Stages from "../components/Stages";
 import Partners from "../components/Partners";
 import Experiences from "../components/Experiences";
 import MerchBanner from "../components/MerchBanner";
-import merchBanner from "../images/merch-banner.gif"
+import merchBanner from "../images/merch-banner.png"
 
 const seo = {
   title: "Metaverse Music Festival | Decentraland",

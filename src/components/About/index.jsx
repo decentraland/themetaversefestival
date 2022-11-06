@@ -30,31 +30,17 @@ const About = (props) => {
             </AboutBodyImgContainer>
             <AboutBodyText>
               <AboutBodyParagraph>
-                #DCLMVMF22 is a four-day celebration of{" "}
-                <TextHighlight>
-                  music, innovation, culture, and creativity,
-                </TextHighlight>{" "}
-                held online in the virtual social world of Decentraland. The festival is open for any and all to attend, no ticket or VR headset required.
-              </AboutBodyParagraph>
-              <br />
-              <AboutBodyParagraph>
+                #DCLMVMF22 is a four-day celebration of <TextHighlight>music, innovation, culture, and creativity</TextHighlight>, held online in the virtual social world of Decentraland. The festival is open for any and all to attend, no ticket or VR headset required.
                 Prepare yourself for a musical experience unlike any you’ve attended before:
-                  <br />
-                  <br />
-                  -Check the schedule of{" "}<TextHighlight>150+ global artists </TextHighlight> the futuristic, cyberpunk festival grounds and become familiar with 15 different stages of the like you’d never see IRL. 
-                  <br />
-                  <br />
-                  -<TextHighlight>Explore</TextHighlight> from across genres featuring names such as{" "} <TextHighlight>Ozzy Ozbourne, Soulja Boy, Dillon Fancis</TextHighlight>nd main headliner <TextHighlight>Björk</TextHighlight> who’s closing act you will NOT want to miss
-                  <br />
-                  -<TextHighlight>Explore</TextHighlight> the futuristic, cyberpunk festival grounds and become familiar with 15 different stages of the like you’d never see IRL
-                  <br />
-                  -Dive into numerous Decentraland <TextHighlight>experiences</TextHighlight> as you peek into portaloos, take on the quest for a backstage pass, chase a white rabbit, and feel connected at the Tower of Babel.
-                  <br />
-                  -And much more!
-              </AboutBodyParagraph>
-              <br />
-              <AboutBodyParagraph>
+                <br />
+                Check the schedule of <TextHighlight>150+ global artists </TextHighlight>the futuristic, cyberpunk festival grounds and become familiar with <TextHighlight>15 different stages</TextHighlight> of the like you’d never see IRL.
+                Explore from across genres featuring names such as <TextHighlight>Ozzy Ozbourne, Soulja Boy, Dillon Fancis</TextHighlight> and main headliner <TextHighlight>Björk</TextHighlight> who’s closing act you will NOT want to miss.
+                Dive into numerous Decentraland <TextHighlight>experiences</TextHighlight> as you peek into portaloos, take on the quest for a backstage pass, chase a white rabbit, and feel connected at the Tower of Babel.
+                And much more!
+                <br />
+                <br />
                 So get yourself some kaleidoscopic Wearables and killer dance Emotes in the Marketplace Festival Tab and jump into Decentraland on <TextHighlight>November 10.</TextHighlight>
+
               </AboutBodyParagraph>
             </AboutBodyText>
           </Aboutbody>
@@ -144,21 +130,21 @@ const AboutBodyIlluminati = styled.img`
 `;
 
 const AboutBodyText = styled.div`
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  line-height: 22.5px;
+  font-family: "Yapari", sans-serif;
   letter-spacing: 0.1em;
   @media screen and (min-width: ${breakpoints.md}) {
-      font-size: 18px;
-      line-height: 27px;
-      font-weight: 400;
-      padding-right: 64px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    padding-right: 64px;
   }
-`;
-
-const AboutBodyParagraph = styled.p`
-  font-family: "Roboto", sans-serif;
-  max-width: 464px;
+  `;
+  
+  const AboutBodyParagraph = styled.p`
+  font-size: 12px;
+  line-height: 21px;
+  font-family: "Yapari", sans-serif;
+  max-width: 600px;
 `;
 
 const AboutBodyImgContainer = styled.div`
@@ -185,7 +171,6 @@ const AboutBodyImg = styled.div`
 
 const TextHighlight = styled.span`
   color: ${theme.accent};
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
 `;
 

@@ -7,6 +7,8 @@ import dillon from '../../images/stages/dillon.png';
 import techno from '../../images/stages/techno.png';
 import rage from '../../images/stages/rage.png';
 import jerry from '../../images/stages/jerry.png';
+import OG from '../../images/stages/og.png';
+import soundr from '../../images/stages/soundr.png';
 
 export default [
     {
@@ -20,6 +22,12 @@ export default [
         href: 'https://play.decentraland.org/?position=-71%2C61&realm=marvel&island=Ic5t9',
         src: over,
         coord: "-71,61"
+    },
+    {
+        name: 'OG Stage',
+        href: 'https://play.decentraland.org/?position=-62%2C87&realm=marvel&island=Ic5t9',
+        src: OG,
+        coord: "-62,87"
     },
     {
         name: 'Jerry Garcia',

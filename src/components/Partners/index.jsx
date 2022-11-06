@@ -23,21 +23,41 @@ const Partners = () => {
                 <InnerSection>
                     <Title src={presenting} />
                     <PartnersSection>
-                        <PartnersImage src={kraken} />
+                        <a href="https://www.kraken.com/" target="_blank">
+                            <PartnersImage src={kraken} />
+                        </a>
                     </PartnersSection>
                 </InnerSection>
                 <InnerSection>
                     <Title src={curating} />
                     <CuratingSection>
-                        <CuratingImage src={soundr} />
-                        <CuratingImage src={limewire} />
-                        <CuratingImage src={meta} />
-                        <CuratingImage src={district} />
-                        <CuratingImage src={ozz} />
-                        <CuratingImage src={ravers} />
-                        <CuratingImage src={unpaired} />
-                        <CuratingImage src={over} />
-                        <CuratingImage src={vegas} />
+                        <a href="https://www.soundr.space/" target="_blank">
+                            <CuratingImage src={soundr} />
+                        </a>
+                        <a href="https://limewire.com/" target="_blank">
+                            <CuratingImage src={limewire} />
+                        </a>
+                        <a href="https://metatokyo.xyz/" target="_blank">
+                            <CuratingImage src={meta} />
+                        </a>
+                        <a target="_blank">
+                            <CuratingImage src={district} />
+                        </a>
+                        <a href="https://www.ozzfest.com/welcome.html" target="_blank">
+                            <CuratingImage src={ozz} />
+                        </a>
+                        <a href="https://randomravers.com/" target="_blank">
+                            <CuratingImage src={ravers} />  
+                        </a>
+                        <a target="_blank">
+                            <CuratingImage src={unpaired} />
+                        </a>
+                        <a href="https://www.overthereality.ai/" target="_blank">
+                            <CuratingImage src={over} />
+                        </a>
+                        <a href="https://www.vegascity.org/about" target="_blank">
+                            <CuratingImage src={vegas} />
+                        </a>
                     </CuratingSection>
                 </InnerSection>
                 <InnerSection>
