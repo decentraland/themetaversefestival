@@ -4,7 +4,6 @@ import styled from "styled-components"
 import { breakpoints } from "../../utils/theme"
 
 const Countdown = () => {
-
   const [remainingDays, setRemainingDays] = useState(0);
   const [remainingHours, setRemainingHours] = useState(0);
   const [remainingMins, setRemainingMins] = useState(0);
@@ -12,14 +11,15 @@ const Countdown = () => {
 
   let festivalDate = new Date('Nov 10, 2022 00:00:00');
   festivalDate = new Date(festivalDate);
-  festivalDate.setUTCHours(0);
-  const UTCFestivalDate = new Date(festivalDate.toUTCString()).getTime();
+  // festivalDate.setUTCHours(0);
+  const UTCFestivalDate = new Date(festivalDate).getTime();
 
   useEffect(() => {
     let interval = setInterval(() => {
       let now = new Date().getTime();
       let t = UTCFestivalDate - now;
       // console.log(t);
+      debugger
       let days, hours, mins, secs;
       if (t >= 0) {
   
