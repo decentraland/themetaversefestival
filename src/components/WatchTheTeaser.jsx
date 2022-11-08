@@ -28,13 +28,13 @@ const WatchTeaser = styled.div`
   backdrop-filter: blur(12px);
   justify-content: center;
   line-height: 22px;
-  font-family: "Yapari Ultra expanded";
+  font-family: "Yapari Expanded";
   font-weight: 500;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.11em;
   padding: 80px 0;
   cursor: crosshair;
   p {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   span {

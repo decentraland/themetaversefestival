@@ -132,7 +132,7 @@ const AboutBodyIlluminati = styled.img`
 const AboutBodyText = styled.div`
 letter-spacing: 0.1em;
 font-weight: 300;
-margin-left: 48px;
+margin-left: 8px;
 @media screen and (min-width: ${breakpoints.md}) {
   margin-left: 120px;
   font-size: 18px;

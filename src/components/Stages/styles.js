@@ -26,7 +26,7 @@ export const Title = styled.img`
 `;
 
 export const StagesContainer = styled.div`
-    margin: 32px 0;
+    margin: 32px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -35,20 +35,23 @@ export const StagesContainer = styled.div`
     justify-content: center;
     flex-wrap: no-wrap;
     justify-items: center;
-
-    @media screen and (min-width: ${breakpoints.md}) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    @media screen and (min-width: ${breakpoints.xl}) {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
 `;
 
-export const Stage = styled.a`
-    margin-bottom: 16px;
-    cursor: crosshair;
+export const Stage = styled.div`
+    margin-bottom: 32px;
+    margin-left: 8px;
+    margin-right: 16px;
     margin: 0 8px;
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+
+    :active {
+      cursor: grabbing;
+      cursor: -moz-grabbing;
+      cursor: -webkit-grabbing;
+  }
 `
 
 export const StageCard = styled.div`
@@ -56,7 +59,10 @@ export const StageCard = styled.div`
     border-top-right-radius: 8px;
     border: 3px solid white;
     margin-bottom: 8px;
+    overflow: hidden;
     transition: box-shadow 0.4s ease;
+    margin-bottom: 32px;
+
     :hover {
         box-shadow:
           0 0 14px #fff,
@@ -75,6 +81,7 @@ export const StageCard = styled.div`
 export const StageImage = styled.img`
     aspect-ratio: 1 / 1.5;
     object-fit: cover;
+    width: 100%;
     height: 400px;
 `
 
@@ -95,6 +102,7 @@ export const StageLocation = styled.caption`
     line-height: 16px
     font-weight: 600;
     text-transform: uppercase;
+    margin-bottom: 32px;
     color: ${theme.accent};
 `
 

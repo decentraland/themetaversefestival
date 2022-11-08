@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import 'react-multi-carousel/lib/styles.css';
 import { Helmet } from "react-helmet";
 import Layout from "./../components/Layout";
 import Hero from "./../components/Hero";
@@ -89,6 +90,9 @@ const IndexPage = () => {
         <header>
           <Navbar />
           <Hero />
+        </header>
+        <main>
+          {showVideo && <Banner setShowVideo={setShowVideo} />}
           <BannerMarquee />
           <About />
           <BannerMarquee />
@@ -105,8 +109,7 @@ const IndexPage = () => {
           <BannerMarquee />
           <Faq />
           <Footer />
-        </header>
-        <main>{showVideo && <Banner setShowVideo={setShowVideo} />}</main>
+        </main>
       </Layout>
     </StyledIndexPage>
   );
