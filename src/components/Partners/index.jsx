@@ -52,6 +52,7 @@ const Partners = () => {
                         <a target="_blank" href="https://partydegenerates.com">
                             <CuratingImage src={unpaired} />
                         </a>
+                        <div style={{ width: '160px'}}></div>
                         <a href="https://partydegenerates.com/" target="_blank">
                             <CuratingImage src={district} />
                         </a>

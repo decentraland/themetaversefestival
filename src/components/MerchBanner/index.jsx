@@ -23,7 +23,7 @@ const Link = styled.a`
 
 const Banner = styled.div`
     width: 100%;
-    height: 320px;
+    height: 160px;
     object-fit: cover;
     background: ${props => `url(${props.src})`};
     background-repeat: no-repeat;

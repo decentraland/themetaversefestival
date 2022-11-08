@@ -50,9 +50,8 @@ export const CuratingSection = styled.div`
 `
 
 export const CuratingImage = styled.img`
-    height: 49px;
-    margin: 24px;
-    width: auto;
+    height: 48px;
+    margin: 24px 28px;
 `
 
 export const ThanksSection = styled.div`
