@@ -44,6 +44,7 @@ export const Question = styled.div`
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
+    font-family: "Yapari";
 
   p {
     max-width: 95%;

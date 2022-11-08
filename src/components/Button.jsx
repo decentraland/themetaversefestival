@@ -1,23 +1,32 @@
-import * as React from "react"
-import styled from 'styled-components';
+import * as React from "react";
+import styled from "styled-components";
 import theme, { breakpoints } from "../../utils/theme";
-import bgImage from "../images/boton.png"
+import bgImage from "../images/boton.png";
 
-const Button = ({ onClick, type, className, href, download, children, ...rest }) => {
+const Button = ({
+  onClick,
+  type,
+  className,
+  href,
+  download,
+  children,
+  ...rest
+}) => {
   return (
     <StyledButton
       onClick={onClick && onClick}
       href={href}
       download={download}
-      style={{ backgroundImage: '../images/boton.png' }}
+      style={{ backgroundImage: "../images/boton.png" }}
       {...rest}
     >
       {children}
     </StyledButton>
-  )
-}
+  );
+};
 
 const StyledButton = styled.a`
+  font-family: "Yapari";
   height: 60px;
   padding: 0 32px;
   display: flex;
@@ -45,12 +54,12 @@ const StyledButton = styled.a`
 };
   :hover {
     color: ${theme.accent};
-  };
+  }
   img {
-    path { 
-      fill: ${theme.accent}
+    path {
+      fill: ${theme.accent};
     }
   }
 `;
 
-export default Button
+export default Button;

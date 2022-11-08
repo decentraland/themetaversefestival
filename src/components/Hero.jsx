@@ -152,12 +152,11 @@ const DateComponent = styled.section`
   @media screen and (min-width: ${breakpoints.md}) {
     font-size: 18px;
     text-align: center;
-    letter-spacing: 2px;
   }
   
   @media screen and (min-width: ${breakpoints.l}) {
-    font-size: 18px;
-    line-height: 88%;
+    font-size: 12.4px;
+    line-height: 120%;
     width: 100%;
   }
 `;
