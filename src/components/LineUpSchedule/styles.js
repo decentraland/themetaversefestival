@@ -121,11 +121,20 @@ export const StyledFullLineUpList = styled.p`
   font-size: 32px;
   letter-spacing: 0.05em;
   color: #ffffff;
+  span {
+    transition: text-shadow 0.2s ease;
+  }
+    span:hover {
+      text-shadow: 0 0 6px #fff;
+    }
 `;
 
 export const StyledHighLight = styled.span`
   font-family: "Yapari Wide";
   font-weight: 800;
+  &:hover {
+
+  }
   text-shadow: 0 0 6px #fff;
 `;
 
