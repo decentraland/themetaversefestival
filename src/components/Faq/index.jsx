@@ -33,7 +33,7 @@ const Faq = () => {
                                     />
                                 </Question>
                                 <Answer open={selectedItem === index}>
-                                    {item.answer}
+                                    {item.answer()}
                                 </Answer>
                             </FaqItem>
                         )

@@ -44,14 +44,12 @@ const About = (props) => {
               </AboutBodyParagraph>
             </AboutBodyText>
           </Aboutbody>
-          <AboutFooter>
-            <AboutButtonContainer>
-              <AboutButtonLink href="https://play.decentraland.org/?position=-62%2C63&realm=marvel&island=Ic5t9" target="_blank">
-                SEE YOU IN THE METAVERSE!
-                <ButtonDecorator src={Logo} />
-              </AboutButtonLink>
-            </AboutButtonContainer>
-          </AboutFooter>
+          <AboutButtonContainer href="https://play.decentraland.org/?position=-62%2C63&realm=marvel&island=Ic5t9" target="_blank">
+            <AboutButtonLink>
+              RSVP to the festival
+              <ButtonDecorator src={Logo} />
+            </AboutButtonLink>
+          </AboutButtonContainer>
         </StyledAbout>
       </Container>
     </Section>
@@ -76,6 +74,7 @@ const AboutHeader = styled.section`
 const AboutTitle = styled.img`
   width: 100%;
   height: auto;
+  object-fit: contain;
   @media screen and (min-width: ${breakpoints.md}) {
     width: 90%;
   }
@@ -100,7 +99,6 @@ const RabbitAnimation = styled.img`
 
 const Aboutbody = styled.section`
   display: flex;
-  justify-content: space-between;
 `;
 
 const AboutBodyCodebar = styled.img`
@@ -130,21 +128,23 @@ const AboutBodyIlluminati = styled.img`
 `;
 
 const AboutBodyText = styled.div`
-  font-family: "Yapari", sans-serif;
-  letter-spacing: 0.1em;
-  @media screen and (min-width: ${breakpoints.md}) {
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 400;
-    padding-right: 64px;
-  }
-  `;
-  
-  const AboutBodyParagraph = styled.p`
-  font-size: 12px;
+letter-spacing: 0.1em;
+font-weight: 300;
+margin-left: 48px;
+@media screen and (min-width: ${breakpoints.md}) {
+  margin-left: 120px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  padding-right: 64px;
+  max-width: 700px;
+}
+`;
+
+const AboutBodyParagraph = styled.p`
+font-family: "Gotham", sans-serif;
+font-size: 16px;
   line-height: 21px;
-  font-family: "Yapari", sans-serif;
-  max-width: 600px;
 `;
 
 const AboutBodyImgContainer = styled.div`
@@ -170,24 +170,23 @@ const AboutBodyImg = styled.div`
 `;
 
 const TextHighlight = styled.span`
+  font-family: "Gotham", sans-serif;
   color: ${theme.accent};
-  font-weight: 500;
+  font-weight: 700;
 `;
 
-const AboutFooter = styled.section`
-`;
-
-const AboutButtonContainer = styled.div`
+const AboutButtonContainer = styled.a`
   margin-top: 32px;
+  width: 100%;
   @media screen and (min-width: ${breakpoints.md}) {
-    margin-top: 72px;
+    margin-top: 165px;
   }
 `;
 
-const AboutButtonLink = styled.a`
-  unset: all;
+const AboutButtonLink = styled.button`
   position: relative;
   width: 100%;
+  text-transform: uppercase;
   height: auto;
   background: transparent;
   font-size: 12px;
@@ -200,6 +199,7 @@ const AboutButtonLink = styled.a`
   transition: all 0.4s ease;
   backdrop-filter: blur(2px);
   cursor: crosshair;
+  margin-top: 48px;
 
   img {
     -webkit-animation: rotating 10s linear infinite;
@@ -237,8 +237,8 @@ const AboutButtonLink = styled.a`
 
   @media screen and (min-width: ${breakpoints.md}) {
     font-size: 22px;
-    padding: 32px 42px;
-
+    padding: 48px 72px;
+    
     img {
       -webkit-animation: unset;
       -moz-animation: unset;
@@ -246,11 +246,6 @@ const AboutButtonLink = styled.a`
       -o-animation: unset;
       animation: unset;
     }
-  }
-
-  @media screen and (min-width: ${breakpoints.l}) {
-    font-size: 26px;
-    padding: 48px 60px;
   }
 `;
 

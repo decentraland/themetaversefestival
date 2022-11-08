@@ -21,8 +21,8 @@ const Partners = () => {
         <Section id="partners">
             <Container>
                 <InnerSection>
-                    <Title src={presenting} />
                     <PartnersSection>
+                        <Title src={presenting} />
                         <a href="https://www.kraken.com/" target="_blank">
                             <PartnersImage src={kraken} />
                         </a>

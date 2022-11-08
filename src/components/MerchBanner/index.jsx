@@ -18,7 +18,7 @@ export const MerchBanner = ({ src, href }) => (
 )
 
 const Link = styled.a`
- cusrsor: crosshair;
+ cursor: crosshair;
 `
 
 const Banner = styled.div`

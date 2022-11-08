@@ -11,16 +11,16 @@ export const Title = styled.img`
     height: auto;
     margin-bottom: 62px;
     @media screen and (min-width: ${breakpoints.md}) {
-    width: 80%;
+    width: 95%;
     }
     @media screen and (min-width: ${breakpoints.l}) {
-    width: 70%;
+    width: 90%;
     }
     @media screen and (min-width: ${breakpoints.xl}) {
-    width: 60%;
+    width: 80%;
     }
     @media screen and (min-width: ${breakpoints.xxl}) {
-    width: 50%;
+    width: 70%;
     }
 `;
 

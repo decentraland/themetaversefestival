@@ -48,14 +48,25 @@ export const Question = styled.div`
 `
 
 export const Answer = styled.p`
-    margin-top: 12px;
-    padding: 0 12px;
-    font-size: 16px;
-    line-height: 200%;
-    transition: max-height 1s ease;
-    overflow: hidden;
-    text-transform: none;
-    max-height: ${props => props.open ? "auto" : 0}
+    p {
+        font-family: "Gotham", sans-serif;
+        font-weight: 300;
+        margin-top: 12px;
+        padding: 0 12px;
+        font-size: 16px;
+        line-height: 200%;
+        transition: max-height 1s ease;
+        overflow: hidden;
+        text-transform: none;
+        max-height: ${props => props.open ? "auto" : 0}
+    }
+
+    a {
+        color: ${theme.accent};
+        font-family: "Gotham", sans-serif;
+        text-decoration: underline;
+        cursor: crosshair;
+    }
 `
 
 export const Toggle = styled.img`

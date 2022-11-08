@@ -11,6 +11,7 @@ export const Title = styled.img`
     height: 82px;
     width: auto;
     margin-bottom: 42px;
+    display: inline-block;
 `;
 
 export const ThanksTitle = styled.img`
@@ -26,12 +27,18 @@ export const InnerSection = styled.div`
 
 export const PartnersSection = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+
+    @media screen and (min-width: ${breakpoints.md}) {
+       flex-direction: row;
+    }
 `
 export const PartnersImage = styled.img`
-    height: 50px;
+    height: 100px;
     width: auto;
+    display: inline-block;
 `
 
 export const CuratingSection = styled.div`
@@ -51,16 +58,15 @@ export const CuratingImage = styled.img`
 export const ThanksSection = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 `
 
 export const ThanksItem = styled.a`
-    font-family: "Yapari Expanded";
-    font-size: 16px;
+    font-family: "Gotham";
+    font-size: 24px;
+    line-height: 58px;
     font-weight: 700;
     margin: 8px 16px 0;
-    text-transform: uppercase;
-    line-height: 250%;
     letter-spacing: 2px;
     transition: color 0.4s ease;
 
@@ -69,6 +75,6 @@ export const ThanksItem = styled.a`
     }
 
     @media screen and (min-width: ${breakpoints.md}) {
-        font-size: 19px;
+        font-size: 33px;
     }
 `
