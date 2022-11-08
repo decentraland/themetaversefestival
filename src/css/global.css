@@ -1,61 +1,60 @@
 :root {
-    --main-bg-color: black;
-    --xl-bp: 1400px;
-    --l-bp: 1365px;
-    --md-bp: 956px;
-    --s-bp: 600px;
-    --xs-bp: 416px;
+  --main-bg-color: black;
+  --xl-bp: 1400px;
+  --l-bp: 1365px;
+  --md-bp: 956px;
+  --s-bp: 600px;
+  --xs-bp: 416px;
 }
 
 * {
-    color: white;
-    font-family: 'Yapari';
+  color: white;
 }
 
 html {
-    background: var(--main-bg-color);
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+  background: var(--main-bg-color);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 #root {
-    overflow: hidden;
-    color: white;
-    background: var(--main-bg-color);
+  overflow: hidden;
+  color: white;
+  background: var(--main-bg-color);
 }
 
 .full-width {
-    width: 100%;
+  width: 100%;
 }
 
 .main-width {
-    width: 1164px;
-    margin: 0 auto;
+  width: 1164px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1365px) {
-    .main-width {
-        width: 896px;
-        padding: 0 24px;
-    }
+  .main-width {
+    width: 896px;
+    padding: 0 24px;
+  }
 }
 
 @media screen and (max-width: 956px) {
-    .main-width {
-        width: 592px !important;
-    }
+  .main-width {
+    width: 592px !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .main-width {
-        width: 100% !important;
-        padding: 0 24px;
-    }
+  .main-width {
+    width: 100% !important;
+    padding: 0 24px;
+  }
 }
 
 @media screen and (max-width: 360px) {
-    .main-width {
-        width: 100% !important;
-        padding: 0 16px;
-    }
+  .main-width {
+    width: 100% !important;
+    padding: 0 16px;
+  }
 }

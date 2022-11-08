@@ -22,14 +22,49 @@
 @font-face {
   font-family: "Yapari Wide";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
+  src: url(./../fonts/Yapari-SemiBoldWide.ttf);
+}
+
+@font-face {
+  font-family: "Yapari Wide";
+  font-style: normal;
+  font-weight: 800;
   src: url(./../fonts/Yapari-BoldWide.ttf);
+}
+
+@font-face {
+  font-family: "Yapari Extended";
+  font-style: normal;
+  font-weight: 600;
+  src: url(./../fonts/Yapari-MediumExtended.ttf);
+}
+
+@font-face {
+  font-family: "Yapari Extended";
+  font-style: normal;
+  font-weight: 700;
+  src: url(./../fonts/Yapari-SemiBoldExtended.ttf);
+}
+
+@font-face {
+  font-family: "Yapari Extended";
+  font-style: normal;
+  font-weight: 800;
+  src: url(./../fonts/Yapari-SemiBoldExtended.ttf);
 }
 
 @font-face {
   font-family: "Yapari Expanded";
   font-style: normal;
   font-weight: 500;
+  src: url(./../fonts/Yapari-MediumExpanded.ttf);
+}
+
+@font-face {
+  font-family: "Yapari Expanded";
+  font-style: normal;
+  font-weight: 600;
   src: url(./../fonts/Yapari-SemiBoldExpanded.ttf);
 }
 
@@ -60,6 +95,7 @@
   font-weight: 700;
   src: url(./../fonts/Yapari-ExtraBold.ttf);
 }
+
 
 
 @font-face {
