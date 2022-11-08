@@ -46,7 +46,7 @@ const About = (props) => {
               </AboutBodyParagraph>
             </AboutBodyText>
           </Aboutbody>
-          <AboutButtonContainer href="https://play.decentraland.org/?position=-62%2C63&realm=marvel&island=Ic5t9" target="_blank">
+          <AboutButtonContainer href="https://events.decentraland.org/event/?id=7148716b-ff25-4d5f-8267-55fed7ab15bc" target="_blank">
             <AboutButtonLink>
               RSVP to the festival
               <ButtonDecorator src={Logo} />

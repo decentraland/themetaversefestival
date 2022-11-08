@@ -37,23 +37,23 @@ const Partners = () => {
                         <a href="https://limewire.com/" target="_blank">
                             <CuratingImage src={limewire} />
                         </a>
-                        <a href="https://metatokyo.xyz/" target="_blank">
-                            <CuratingImage src={meta} />
-                        </a>
-                        <a href="https://partydegenerates.com/" target="_blank">
-                            <CuratingImage src={district} />
-                        </a>
                         <a href="https://www.ozzfest.com/welcome.html" target="_blank">
                             <CuratingImage src={ozz} />
+                        </a>
+                        <a href="https://www.overthereality.ai/" target="_blank">
+                            <CuratingImage src={over} />
+                        </a>
+                        <a href="https://metatokyo.xyz/" target="_blank">
+                            <CuratingImage src={meta} />
                         </a>
                         <a href="https://randomravers.com/" target="_blank">
                             <CuratingImage src={ravers} />  
                         </a>
-                        <a target="_blank">
+                        <a target="_blank" href="https://partydegenerates.com">
                             <CuratingImage src={unpaired} />
                         </a>
-                        <a href="https://www.overthereality.ai/" target="_blank">
-                            <CuratingImage src={over} />
+                        <a href="https://partydegenerates.com/" target="_blank">
+                            <CuratingImage src={district} />
                         </a>
                         <a href="https://www.vegascity.org/about" target="_blank">
                             <CuratingImage src={vegas} />

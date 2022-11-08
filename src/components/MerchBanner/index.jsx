@@ -32,7 +32,7 @@ const Banner = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 24px 72px;
+    padding: 12px 72px;
 `
 
 const Wrapper = styled(Container)`
