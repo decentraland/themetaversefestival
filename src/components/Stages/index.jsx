@@ -17,8 +17,6 @@ const Stages = () => (
                     infinite={true}
                     draggable={true}
                     autoplay={true}
-                    autoPlaySpeed={1}
-                    customTransition="all 1s linear"
                     renderArrowsWhenDisabled={false}
                     renderButtonGroupOutside={false}
                     renderDotsOutside={false}
