@@ -9,10 +9,9 @@ const Countdown = () => {
   const [remainingMins, setRemainingMins] = useState(0);
   const [remainingSecs, setRemainingSecs] = useState(0);
 
-  let festivalDate = new Date('Nov 10, 2022 12:00:00');
+  let festivalDate = new Date('Nov 10, 2022 12:00:00 GMT');
   festivalDate = new Date(festivalDate);
   const UTCFestivalDate = new Date(festivalDate.toUTCString()).getTime();
-  debugger
 
   useEffect(() => {
     let interval = setInterval(() => {
