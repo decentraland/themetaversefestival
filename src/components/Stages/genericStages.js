@@ -4,7 +4,6 @@ import district from "../../images/stages/district.png";
 import limewire from "../../images/stages/limewire.png";
 import truband from "../../images/stages/truband.png";
 import rare from "../../images/stages/rare.png";
-import kraken from "../../images/stages/kraken.png";
 import soundr from "../../images/stages/soundr.png";
 
 export default [
@@ -39,12 +38,5 @@ export default [
     href: "https://play.decentraland.org/?position=-58%2C92&realm=marvel&island=Ic88c",
     src: rare,
     coord: "-58,92",
-  },
-
-  {
-    name: "Kraken HQ",
-    href: "https://play.decentraland.org/?position=-62%2C77&realm=marvel&island=Ic5t9",
-    src: kraken,
-    coord: "-62,77",
   },
 ];

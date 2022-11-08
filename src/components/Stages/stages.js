@@ -16,6 +16,7 @@ import portaloo from "../../images/stages/Hour-Glass.png";
 import moda from "../../images/stages/moda.jpg";
 import jazz from "../../images/stages/jazz.png";
 import hex from "../../images/stages/hex.png";
+import kraken from "../../images/stages/kraken.png";
 import oxArena from "../../images/stages/oxArena.png";
 import soundr from "../../images/stages/soundr.png";
 
@@ -121,6 +122,12 @@ export default [
     href: "https://play.decentraland.org/?position=-71%2C96&realm=marvel&island=Ic88c",
     src: hex,
     coord: "-71,96",
+  },
+  {
+    name: "Kraken HQ",
+    href: "https://play.decentraland.org/?position=-62%2C77&realm=marvel&island=Ic5t9",
+    src: kraken,
+    coord: "-62,77",
   },
   {
     name: "Ox Arena",
