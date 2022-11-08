@@ -12,6 +12,10 @@
 
 }
 
+.react-multi-carousel-list{
+  position: unset !important;
+}
+
 *::selection {
   background:transparent;
 }
