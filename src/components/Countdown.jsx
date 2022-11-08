@@ -9,17 +9,15 @@ const Countdown = () => {
   const [remainingMins, setRemainingMins] = useState(0);
   const [remainingSecs, setRemainingSecs] = useState(0);
 
-  let festivalDate = new Date('Nov 10, 2022 00:00:00');
+  let festivalDate = new Date('Nov 10, 2022 12:00:00');
   festivalDate = new Date(festivalDate);
-  // festivalDate.setUTCHours(0);
-  const UTCFestivalDate = new Date(festivalDate).getTime();
+  const UTCFestivalDate = new Date(festivalDate.toUTCString()).getTime();
+  debugger
 
   useEffect(() => {
     let interval = setInterval(() => {
       let now = new Date().getTime();
       let t = UTCFestivalDate - now;
-      // console.log(t);
-      debugger
       let days, hours, mins, secs;
       if (t >= 0) {
   
