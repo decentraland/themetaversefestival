@@ -117,12 +117,18 @@ export const StyledLineUpBody = styled.section`
 export const StyledFullLineUpList = styled.p`
   font-family: "Yapari Wide";
   font-weight: 600;
-  line-height: 80px;
-  font-size: 32px;
+  line-height: 62px;
+  font-size: 24px;
   letter-spacing: 0.05em;
   color: #ffffff;
+  @media screen and (min-width: ${breakpoints.md}) {
+    font-size: 32px;
+    line-height: 80px;
+  }
+
   span {
     transition: text-shadow 0.2s ease;
+    
   }
     span:hover {
       text-shadow: 0 0 6px #fff;

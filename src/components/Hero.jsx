@@ -141,17 +141,18 @@ const EventDataItem = styled.div`
 `;
 
 const DateComponent = styled.section`
-  font-size: 16px;
+  font-size: 9px;
   font-weight: 500;
-  line-height: 88%;
+  line-height: 16px;
+  margin-top: 24px;
   font-family: "Yapari Expanded";
   padding-left: 0;
   width: 100%;
-  text-align: center;
+  text-align: justify;
   
   @media screen and (min-width: ${breakpoints.md}) {
     font-size: 18px;
-    text-align: center;
+    text-align: justify;
   }
   
   @media screen and (min-width: ${breakpoints.l}) {
@@ -209,8 +210,9 @@ const Decorator = styled.img`
 `;
 
 const WhiteRabbit = styled.img`
-  width: 60px;
+  width: 48px;
   box-sizing: border-box;
+  padding-right: 8px;
   margin-right: 8px;
   border-right: 4px solid ${theme.accent};
   
@@ -226,7 +228,10 @@ const WhiteRabbit = styled.img`
 const Polygon = styled.img`
   width: 15px;
   height: 15px;
-  margin-left: 16px;
+  margin-left: 8px;
+  @media screen and (min-width: ${breakpoints.md}) {
+    margin-left: 16px;
+  }
 `;
 
 export default Hero;

@@ -90,6 +90,9 @@ const IndexPage = () => {
         <header>
           <Navbar />
           <Hero />
+        </header>
+        <main>
+          {showVideo && <Banner setShowVideo={setShowVideo} />}
           <BannerMarquee />
           <About />
           <BannerMarquee />
@@ -106,8 +109,7 @@ const IndexPage = () => {
           <BannerMarquee />
           <Faq />
           <Footer />
-        </header>
-        <main>{showVideo && <Banner setShowVideo={setShowVideo} />}</main>
+        </main>
       </Layout>
     </StyledIndexPage>
   );

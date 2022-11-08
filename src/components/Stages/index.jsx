@@ -109,7 +109,7 @@ const Stages = () => (
                                 max: 1240,
                                 min: 464
                             },
-                            items: 3,
+                            items: 2,
                             partialVisibilityGutter: 30
                         }
                     }}

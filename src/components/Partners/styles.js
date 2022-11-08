@@ -17,6 +17,7 @@ export const Title = styled.img`
 export const ThanksTitle = styled.img`
     height: 56px;
     width: auto;
+    max-width: 90%;
     margin-bottom: 42px;
 `;
 
@@ -36,9 +37,12 @@ export const PartnersSection = styled.div`
     }
 `
 export const PartnersImage = styled.img`
-    height: 100px;
+    height: 70px;
     width: auto;
     display: inline-block;
+    @media screen and (min-width: ${breakpoints.md}) {
+        height: 100px;
+     }
 `
 
 export const CuratingSection = styled.div`
