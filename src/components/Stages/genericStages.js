@@ -8,7 +8,7 @@ import hex from '../../images/stages/hex.png';
 import rare from '../../images/stages/rare.png';
 import nuggs from '../../images/stages/nuggs.png';
 import azul from '../../images/stages/azul.png';
-import underground from '../../images/stages/underground.png';
+import underground from '../../images/stages/underground.jpeg';
 import kraken from '../../images/stages/kraken.png';
 import moda from '../../images/stages/moda.png';
 import jazz from '../../images/stages/jazz.png';

@@ -8,7 +8,6 @@ import EyeTriengleIcon from "../../images/eye-triangle-icon.svg";
 import AboutTitleImg from "../../images/about-title.png";
 import Rabbit from "../../images/rabbit.gif";
 import { Container } from "../Container";
-import ThreeDee from '../ThreeDee';
 
 const About = (props) => {
   return (
@@ -30,16 +29,19 @@ const About = (props) => {
             </AboutBodyImgContainer>
             <AboutBodyText>
               <AboutBodyParagraph>
-                #DCLMVMF22 is a four-day celebration of <TextHighlight>music, innovation, culture, and creativity</TextHighlight>, held online in the virtual social world of Decentraland. The festival is open for any and all to attend, no ticket or VR headset required.
+                #DCLMVMF22 is a four-day celebration of <TextHighlight>music</TextHighlight>, <TextHighlight>innovation</TextHighlight>, <TextHighlight>culture</TextHighlight> and <TextHighlight>creativity</TextHighlight>, held online in the virtual social world of Decentraland. The festival is open for any and all to attend, no ticket or VR headset required.
+                <br />
+                <br />
                 Prepare yourself for a musical experience unlike any you’ve attended before:
+                <ul>
+                  <li><TextHighlight>Explore the futuristic</TextHighlight>, <TextHighlight>cyberpunk festival grounds </TextHighlight>and become familiar with 15 different stages of the like you’d never see IRL</li>
+                  <li> Check the schedule of <TextHighlight>150+ global artists</TextHighlight> from across genres featuring names such as <TextHighlight>Ozzy Ozbourne</TextHighlight>, <TextHighlight>Soulja Boy</TextHighlight>, <TextHighlight>Dillon Fancis</TextHighlight>, and main headliner <TextHighlight>Björk</TextHighlight> who’s closing act you will NOT want to miss</li>
+                  <li>Dive into numerous Decentraland <TextHighlight><a href="#experiences">experiences</a></TextHighlight> as you peek into portaloos, take on the quest for a backstage pass, chase a white rabbit, and feel connected at the Tower of Babel</li>
+                  <li>And much more!</li>
+                </ul>
                 <br />
-                Check the schedule of <TextHighlight>150+ global artists </TextHighlight>the futuristic, cyberpunk festival grounds and become familiar with <TextHighlight>15 different stages</TextHighlight> of the like you’d never see IRL.
-                Explore from across genres featuring names such as <TextHighlight>Ozzy Ozbourne, Soulja Boy, Dillon Fancis</TextHighlight> and main headliner <TextHighlight>Björk</TextHighlight> who’s closing act you will NOT want to miss.
-                Dive into numerous Decentraland <TextHighlight>experiences</TextHighlight> as you peek into portaloos, take on the quest for a backstage pass, chase a white rabbit, and feel connected at the Tower of Babel.
-                And much more!
                 <br />
-                <br />
-                So get yourself some kaleidoscopic Wearables and killer dance Emotes in the Marketplace Festival Tab and jump into Decentraland on <TextHighlight>November 10.</TextHighlight>
+                So get yourself some kaleidoscopic Wearables and killer dance Emotes in the Marketplace Festival Tab and jump into Decentraland on November 10.
 
               </AboutBodyParagraph>
             </AboutBodyText>
@@ -142,9 +144,23 @@ margin-left: 48px;
 `;
 
 const AboutBodyParagraph = styled.p`
-font-family: "Gotham", sans-serif;
-font-size: 16px;
+  font-family: "Gotham", sans-serif;
+  font-size: 16px;
   line-height: 21px;
+
+  ul {
+    list-style: inside;
+    padding: 16px;
+
+    li {
+      font-family: Gotham;
+      padding: 16px 0;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
 `;
 
 const AboutBodyImgContainer = styled.div`
@@ -173,6 +189,13 @@ const TextHighlight = styled.span`
   font-family: "Gotham", sans-serif;
   color: ${theme.accent};
   font-weight: 700;
+
+  a {
+    font-family: "Gotham", sans-serif;
+    color: ${theme.accent};
+    font-weight: 700;
+    text-decoration: underline;
+  }
 `;
 
 const AboutButtonContainer = styled.a`

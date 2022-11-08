@@ -21,16 +21,16 @@ const Navbar = (props) => {
     //   targetId: "lineup",
     // },
     {
-      label: "SITEMAP",
-      targetId: "sitemap",
-    },
-    {
       label: "STAGES",
       targetId: "stages",
     },
     {
       label: "EXPERIENCES",
       targetId: "experiences",
+    },
+    {
+      label: "SITEMAP",
+      targetId: "sitemap",
     },
     {
       label: "FAQ",

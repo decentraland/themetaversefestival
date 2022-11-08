@@ -91,12 +91,12 @@ const IndexPage = () => {
           <BannerMarquee />
           <About />
           <WatchTheTeaser setShowVideo={setShowVideo} />
-          <Sitemap />
+          <Stages />
+          <Experiences />
           <BannerMarquee noBorderBottom />
           <MerchBanner src={merchBanner} href="https://market.decentraland.org/MVMF22?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true" target="_blank" />
           <BannerMarquee noBorderTop direction="right" />
-          <Stages />
-          <Experiences />
+          <Sitemap />
           <BannerMarquee />
           <Partners />
           <BannerMarquee />

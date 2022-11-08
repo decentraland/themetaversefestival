@@ -40,7 +40,7 @@ const Partners = () => {
                         <a href="https://metatokyo.xyz/" target="_blank">
                             <CuratingImage src={meta} />
                         </a>
-                        <a target="_blank">
+                        <a href="https://partydegenerates.com/" target="_blank">
                             <CuratingImage src={district} />
                         </a>
                         <a href="https://www.ozzfest.com/welcome.html" target="_blank">
