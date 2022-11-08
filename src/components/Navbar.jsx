@@ -16,10 +16,10 @@ const Navbar = (props) => {
       label: "ABOUT",
       targetId: "about",
     },
-    // {
-    //   label: "LINE UP",
-    //   targetId: "lineup",
-    // },
+    {
+      label: "LINE UP",
+      targetId: "lineup",
+    },
     {
       label: "STAGES",
       targetId: "stages",
