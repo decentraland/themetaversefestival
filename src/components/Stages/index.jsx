@@ -48,7 +48,6 @@ const Stages = () => (
                         }
                     }}
                     rewindWithAnimation={false}
-                    rtl={true}
                     shouldResetAutoplay={true}
                     showDots={false}
                     sliderClass=""
@@ -113,7 +112,6 @@ const Stages = () => (
                         }
                     }}
                     rewindWithAnimation={false}
-                    rtl={true}
                     shouldResetAutoplay={true}
                     showDots={false}
                     sliderClass=""
