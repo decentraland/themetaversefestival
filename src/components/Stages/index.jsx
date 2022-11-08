@@ -56,13 +56,15 @@ const Stages = () => (
                 >
                      {
                         stages.map(({ name, href, src, coord }) => (
-                            <Stage href={href} target="_blank">
+                            <Stage>
                                 <StageCard>
                                     <StageImage src={src} />
                                     <StageHover>
-                                        <StageButton>
-                                            Jump in
-                                        </StageButton>
+                                        <a  href={href} target="_blank">
+                                            <StageButton>
+                                                Jump in
+                                            </StageButton>
+                                        </a>
                                     </StageHover>
                                 </StageCard>
                                 <StageName>
@@ -125,9 +127,11 @@ const Stages = () => (
                                 <StageCard>
                                     <StageImage src={src} />
                                     <StageHover>
-                                        <StageButton>
-                                            Jump in
-                                        </StageButton>
+                                        <a  href={href} target="_blank">
+                                            <StageButton>
+                                                Jump in
+                                            </StageButton>
+                                        </a>
                                     </StageHover>
                                 </StageCard>
                                 <StageName>
