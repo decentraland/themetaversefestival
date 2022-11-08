@@ -81,6 +81,7 @@ export const StageCard = styled.div`
 export const StageImage = styled.img`
     aspect-ratio: 1 / 1.5;
     object-fit: cover;
+    width: 100%;
     height: 400px;
 `
 
