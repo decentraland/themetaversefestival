@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import 'react-multi-carousel/lib/styles.css';
 import { Helmet } from "react-helmet";
 import Layout from "./../components/Layout";
 import Hero from "./../components/Hero";
