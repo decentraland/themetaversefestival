@@ -9,6 +9,8 @@ import {
 } from "./styles";
 import EyeVector from "../../images/Eye-Vector.svg";
 import LineUpTitle from "../../images/lineUpTitle-png.png";
+import DaySchedule from "../DaySchedule/index.jsx";
+import { days } from "../../../utils/days-data-2022";
 
 // markup
 const LineUpSchedule = (props) => {
@@ -136,21 +138,54 @@ const LineUpSchedule = (props) => {
     },
   ];
 
-  const lineupRaw = ["BJÖRK", "OZZY OSBOURNE", "DILLON FRANCIS", "SOULJA BOY", "MOTORHEAD", "DJ REGARD", "MEGADETH", "AKIRA THE DON", "VLADIMIR CAUCHEMAR", "MAIA WRIGHT", "IZZY BIZU", "BRELAND", "KYARY PAMYU PAMYU", "HARRISON FIRST", "MORGAN", "MIYA MIYA", "THE STICKMEN PROJECT", "ELLYSE MASON", "ELIJAH BLAKE", "IZZY BIZU", "ATARASHII GAKKO", "MANON", "A$AP TYY", "FRUITS ZIPPER", "SNH48", "NICOLA FASANO", "GRAMATIK + LUXAS", "YOTAM AVNI", "APE RAVE CLUB", "JAMIS", "AND MANY MORE"];
+  const lineupRaw = [
+    "BJÖRK",
+    "OZZY OSBOURNE",
+    "DILLON FRANCIS",
+    "SOULJA BOY",
+    "MOTORHEAD",
+    "DJ REGARD",
+    "MEGADETH",
+    "AKIRA THE DON",
+    "VLADIMIR CAUCHEMAR",
+    "MAIA WRIGHT",
+    "IZZY BIZU",
+    "BRELAND",
+    "KYARY PAMYU PAMYU",
+    "HARRISON FIRST",
+    "MORGAN",
+    "MIYA MIYA",
+    "THE STICKMEN PROJECT",
+    "ELLYSE MASON",
+    "ELIJAH BLAKE",
+    "IZZY BIZU",
+    "ATARASHII GAKKO",
+    "MANON",
+    "A$AP TYY",
+    "FRUITS ZIPPER",
+    "SNH48",
+    "NICOLA FASANO",
+    "GRAMATIK + LUXAS",
+    "YOTAM AVNI",
+    "APE RAVE CLUB",
+    "JAMIS",
+    "AND MANY MORE",
+  ];
 
   return (
     <StyledLineUpSchedule id="lineup">
       <Container>
         <Title src={LineUpTitle} />
         <StyledLineUpBody>
-          <StyledFullLineUpList className="raw-lineup">
+          {/* <StyledFullLineUpList className="raw-lineup">
             {lineupRaw.map((artist, key) => (
               <>
                 <span key={key}>{artist.toUpperCase()}</span>
                 <StyledEyeIcon src={EyeVector} />
               </>
             ))}
-          </StyledFullLineUpList>
+          </StyledFullLineUpList> */}
+          <DaySchedule dayNumber={0} dayInfo={days[0]} />
         </StyledLineUpBody>
       </Container>
     </StyledLineUpSchedule>
