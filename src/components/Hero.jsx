@@ -28,9 +28,6 @@ const Hero = () => {
         <EventDetails>
           <EventData>
             <EventDataItem>
-              <Countdown />
-            </EventDataItem>
-            <EventDataItem>
               <DateComponent className="event-data">
                 <p>
                   NOV. 10-13 • <DateHighlight>-12PM UTC</DateHighlight> •
@@ -47,10 +44,10 @@ const Hero = () => {
             </EventDataItem>
             <EventDataItem>
               <SaveTheDate
-                href="https://events.decentraland.org/event/?id=7148716b-ff25-4d5f-8267-55fed7ab15bc"
+                href="https://play.decentraland.org/?position=-62%2C63&realm=marvel&island=Ic5t9"
                 target="_blank"
               >
-                <WhiteRabbit src={whiteRabbit} /> Save the date{" "}
+                <WhiteRabbit src={whiteRabbit} /> ENTER HERE{" "}
                 <Polygon src={polygon} />
               </SaveTheDate>
             </EventDataItem>
@@ -150,13 +147,14 @@ const DateComponent = styled.section`
   width: 100%;
   text-align: justify;
   
-  @media screen and (min-width: ${breakpoints.md}) {
-    font-size: 18px;
+  @media screen and (min-width: ${breakpoints.l}) {
+    font-size: 19px;
     text-align: justify;
   }
   
-  @media screen and (min-width: ${breakpoints.l}) {
-    font-size: 12.4px;
+  @media screen and (min-width: ${breakpoints.xl}) {
+    font-size: 24px;
+    letter-spacing: 4px;
     line-height: 120%;
     width: 100%;
   }
@@ -172,11 +170,18 @@ const DateLocation = styled.span`
   line-height: 32px;
   font-weight: 600;
   letter-spacing: 2px;
+  text-align: justify;
   
-  @media screen and (min-width: ${breakpoints.md}) {
-    font-size: 18px;
-    line-height: 48px;
-    letter-spacing: 2px;
+  @media screen and (min-width: ${breakpoints.l}) {
+    font-size: 26px;
+    line-height: 72px;
+    letter-spacing: 5px;
+  }
+
+  @media screen and (min-width: ${breakpoints.xl}) {
+    font-size: 32px;
+    line-height: 72px;
+    letter-spacing: 11px;
   }
 `;
 

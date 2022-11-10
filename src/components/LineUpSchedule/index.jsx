@@ -1,47 +1,27 @@
-import React, { useState, Fragment } from "react";
-import Button from "../Button";
-import { StaticImage } from "gatsby-plugin-image";
-import { breakpoints } from "../../../utils/theme";
-import styled from "styled-components";
-import { days } from "../../../utils/days-data";
-import DaySchedule from "../DaySchedule";
+import React, { useState } from "react";
 import { Container } from "../Container";
+import { days } from "../../../utils/days-data-2022";
 import {
   StyledLineUpSchedule,
-  StyledLineUpHeader,
   StyledLineUpBody,
-  StyledLineUpFooter,
-  StyledLineUpBtn,
-  StyledLineUpBtnSection,
-  StyledLineUpLogo,
   StyledFullLineUpList,
   StyledEyeIcon,
-  StyledTextHighLight,
-  StyledArrowBtn,
-  StyledBodyBtnSection,
-  Decorator,
-  StyledHeaderImg,
-  StyledHeaderVector,
-  StyledHighLight,
+  StyledLineUpHeader,
+  StyledLineUpBtnSection,
+  StyledLineUpBtn,
   Title,
 } from "./styles";
-import Logo from "../../images/logo-navbar.svg";
 import EyeVector from "../../images/Eye-Vector.svg";
-import ArrowUp from "../../images/arrowUp-vector.svg";
-import ArrowDown from "../../images/arrowDown-vector.svg";
-import star from "../../images/star.svg";
-import LineUpHeaderSvgGroup from "../../images/LineUpHeader-svgGroup.svg";
-import LineUpBarLine from "../../images/LineUpBarLine-Vector.svg";
-import LineUpBarLineInverted from "../../images/LineUpBarLineInverted-Vector.svg";
-import RectangleLine from "../../images/Rectangle-line.svg";
 import LineUpTitle from "../../images/lineUpTitle-png.png";
+import DaySchedule from "../DaySchedule/index.jsx";
 
 // markup
 const LineUpSchedule = (props) => {
-  const [currentSection, setCurrentSection] = useState("schedule");
+  const [currentSection, setCurrentSection] = useState("lineup");
   const [currentDay, setCurrentDay] = useState(1);
 
   const handleDaySelection = (day) => {
+    setCurrentSection("schedule")
     setCurrentDay(day);
   };
 
@@ -162,141 +142,86 @@ const LineUpSchedule = (props) => {
     },
   ];
 
-  const lineupRawHighLights = [
-    "Björk",
-    "Ozzy Osbourne",
-    "Dillon Francis",
-    "Soulja Boy",
-    "Izzy Bizu",
-    "Megadeth",
-  ];
   const lineupRaw = [
-    "Vladimir Cauchemar",
+    "BJÖRK",
+    "OZZY OSBOURNE",
+    "DILLON FRANCIS",
+    "SOULJA BOY",
+    "MOTORHEAD",
+    "DJ REGARD",
+    "MEGADETH",
+    "AKIRA THE DON",
+    "VLADIMIR CAUCHEMAR",
+    "MAIA WRIGHT",
+    "IZZY BIZU",
+    "BRELAND",
+    "KYARY PAMYU PAMYU",
+    "HARRISON FIRST",
+    "MORGAN",
+    "MIYA MIYA",
+    "THE STICKMEN PROJECT",
+    "ELLYSE MASON",
+    "ELIJAH BLAKE",
+    "IZZY BIZU",
+    "ATARASHII GAKKO",
+    "MANON",
+    "A$AP TYY",
+    "FRUITS ZIPPER",
     "SNH48",
-    "Maia Wright",
-    "Spottie WiFi",
-    "Atarashii Gakko!",
-    "Nicola Fasano",
-    "Gramatik + Luxas",
-    "Maija Kauhanen",
-    "Stickmen Project",
-    "Breland",
-    "Akira the Don",
-    "Losers",
-    "Harrison First",
-    "Steve Saiko",
-    "Eliane Correa",
-    "2AM + PIP",
-    "Erika Krall",
-    "Lian Gold",
-    "and many more",
+    "NICOLA FASANO",
+    "GRAMATIK + LUXAS",
+    "YOTAM AVNI",
+    "APE RAVE CLUB",
+    "JAMIS",
+    "AND MANY MORE",
   ];
-
-  // const lineupRaw = [
-  //   "3LAU",
-  //   "AARON SEVILLA",
-  //   "ADAM BEATTIE",
-  //   "AKIRA THE DON",
-  //   "ALABASTER DE PLUME",
-  //   "ALISON WONDERLAND",
-  //   "ALUNA [OF ALUNAGEORGE]",
-  //   "AMADIS AND THE AMBASSADORS",
-  //   "AMBER VAN DAY",
-  //   "AUTOGRAF",
-  //   "AWALE",
-  //   "BEMET",
-  //   "BEN WALKER & KIRSTY MERRYN",
-  //   "BENJI PATTERSON",
-  //   "BERRY GALAZKA",
-  //   "BOOMBOXHEAD",
-  //   "BROOKE SHARKEY",
-  //   "CHAIM",
-  //   "CHARLIE G",
-  //   "CHRISTIAN SMITH",
-  //   "COCO MAMBA",
-  //   "CODY FROST",
-  //   "CONNIE DIGITAL",
-  //   "CONOR BYRNE",
-  //   "CROOKED COLOURS",
-  //   "DAN KORN",
-  //   "DANA IMMANUEL & THE STOLEN BAND",
-  //   "DANNY TENAGLIA",
-  //   "DEADMAU5",
-  //   "DIZRAELI",
-  //   "DJANAN TURAN",
-  //   "DRUNKEN KONG",
-  //   "EFFECTIVE",
-  //   "EYES OF BEL",
-  //   "FLATS & SHARPS",
-  //   "HARRISON FIRST",
-  //   "ICHI",
-  //   "ILARIO FERRARI TRIO",
-  //   "ISAK'S ISLAND",
-  //   "KATE OZZ",
-  //   "LÈA MONDO",
-  //   "LEONIE EVANS",
-  //   "LOKYII",
-  //   "LOUIS III",
-  //   "M G BOULTER",
-  //   "MAGA",
-  //   "MAGIT CACOON",
-  //   "MAGNOS",
-  //   "MAI WORLD",
-  //   "MARCUS BONFANTI IN THE DELTA TRIO",
-  //   "MIGHTY 33",
-  //   "MIKEY KENNEY & FRIENDS",
-  //   "MIYA MIYA",
-  //   "MORSKI",
-  //   "NANCY",
-  //   "NICK HART & TOM DIPPER",
-  //   "NINA NESBITT",
-  //   "ORII",
-  //   "OVY ON THE DRUMS",
-  //   "PARIS HILTON",
-  //   "RAY GELATO GIANTS",
-  //   "RENU",
-  //   "RIOGHNACH CONNOLLY & ELLIS DAVIES",
-  //   "RIZ LA VIE",
-  //   "SADANDSOLO",
-  //   "SAMRA",
-  //   "SAWLEAD",
-  //   "SCRILLA",
-  //   "SHAMA RAHMAN",
-  //   "SOFIA CAMPOS",
-  //   "STUDIO NOUVEAU",
-  //   "THE BRITISH COLLECTIVE",
-  //   "THE LUNA TAPES",
-  //   "THE TURBANS",
-  //   "THE TURBANS UNPLUGGED",
-  //   "VANDAL",
-  //   "VIRTUNAUT",
-  //   "WILL JEURGENS",
-  //   "YOUNG WATERS",
-  // ];
 
   return (
     <StyledLineUpSchedule id="lineup">
-      {/* <StyledLineUpHeader>
-        <StyledHeaderImg src={LineUpHeaderSvgGroup} />
-        <StyledLineUpLogo src={Logo} />
-      </StyledLineUpHeader> */}
       <Container>
         <Title src={LineUpTitle} />
+        <StyledLineUpHeader>
+          <StyledLineUpBtnSection>
+            <StyledLineUpBtn
+              onClick={() => setCurrentSection("lineup")}
+              label={"⟶ Full Lineup"}
+              className={currentSection === "lineup" ? "selected" : ""}
+            >
+              {"FULL LINE UP"}
+            </StyledLineUpBtn>
+            {days.map((dayInfo, i) => (
+              <StyledLineUpBtn
+                className={currentDay === i + 1 && currentSection === "schedule" ? "selected" : ""}
+                onClick={() => {
+                  handleDaySelection(i + 1);
+                }}
+                label={`⟶ Day 0${i + 1}`}
+              >
+                {`${dayInfo.date}`}
+              </StyledLineUpBtn>
+            ))}
+          </StyledLineUpBtnSection>
+        </StyledLineUpHeader>
         <StyledLineUpBody>
-          <StyledFullLineUpList className="raw-lineup">
-            {lineupRawHighLights.map((artist, key) => (
-              <>
-                <span key={key}>{artist.toUpperCase()}</span>
-                <StyledEyeIcon src={EyeVector} />
-              </>
-            ))}
-            {lineupRaw.map((artist, key) => (
-              <>
-                <span key={key}>{artist.toUpperCase()}</span>
-                <StyledEyeIcon src={EyeVector} />
-              </>
-            ))}
-          </StyledFullLineUpList>
+          {
+            currentSection === 'lineup' &&
+              <StyledFullLineUpList className="raw-lineup">
+                {lineupRaw.map((artist, key) => (
+                  <>
+                    <span key={key}>{artist.toUpperCase()}</span>
+                    <StyledEyeIcon src={EyeVector} />
+                  </>
+                ))}
+              </StyledFullLineUpList>
+          }
+          {currentSection === "schedule" && (
+            <>
+              <DaySchedule
+                dayNumber={currentDay}
+                dayInfo={days[currentDay - 1]}
+              />
+            </>
+          )}
         </StyledLineUpBody>
       </Container>
     </StyledLineUpSchedule>

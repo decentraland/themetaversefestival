@@ -14,6 +14,7 @@ import unpaired from '../../images/logo-unpaired.png';
 import over from '../../images/logo-over.png';
 import soundr from '../../images/logo-soundr.png';
 import vegas from '../../images/logo-vegas.png';
+import multi from '../../images/logo-multi.png';
 
 
 const Partners = () => {
@@ -52,7 +53,9 @@ const Partners = () => {
                         <a target="_blank" href="https://partydegenerates.com">
                             <CuratingImage src={unpaired} />
                         </a>
-                        <div style={{ width: '160px'}}></div>
+                        <a target="_blank" href="https://www.multinft.io/">
+                            <CuratingImage src={multi} />
+                        </a>
                         <a href="https://partydegenerates.com/" target="_blank">
                             <CuratingImage src={district} />
                         </a>
