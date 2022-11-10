@@ -56,6 +56,7 @@ export const StyledLineUpBtnSection = styled.div`
   width: 100%;
   justify-content: space-between;
   margin-top: 72px;
+  overflow-x: auto;
   align-items: center;
 `;
 

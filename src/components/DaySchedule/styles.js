@@ -21,11 +21,17 @@ export const StyledDayHeader = styled.section`
 `;
 
 export const StyledDayTitle = styled.h2`
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   line-height: 36px;
   font-family: "Yapari";
   font-weight: 500;
-  font-size: 40px;
+  font-size: 20px;
   color: #ffffff;
   letter-spacing: 0.22em;
+
+  @media screen and (min-width: ${breakpoints.md}) {
+    font-size: 40px;
+    padding-bottom: 80px;
+    letter-spacing: 0.22em;
+  }
 `;
