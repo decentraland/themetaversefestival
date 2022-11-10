@@ -1,23 +1,27 @@
 import React, { useState } from "react";
 import { Container } from "../Container";
+import { days } from "../../../utils/days-data-2022";
 import {
   StyledLineUpSchedule,
   StyledLineUpBody,
   StyledFullLineUpList,
   StyledEyeIcon,
+  StyledLineUpHeader,
+  StyledLineUpBtnSection,
+  StyledLineUpBtn,
   Title,
 } from "./styles";
 import EyeVector from "../../images/Eye-Vector.svg";
 import LineUpTitle from "../../images/lineUpTitle-png.png";
 import DaySchedule from "../DaySchedule/index.jsx";
-import { days } from "../../../utils/days-data-2022";
 
 // markup
 const LineUpSchedule = (props) => {
-  const [currentSection, setCurrentSection] = useState("schedule");
+  const [currentSection, setCurrentSection] = useState("lineup");
   const [currentDay, setCurrentDay] = useState(1);
 
   const handleDaySelection = (day) => {
+    setCurrentSection("schedule")
     setCurrentDay(day);
   };
 
@@ -176,16 +180,48 @@ const LineUpSchedule = (props) => {
     <StyledLineUpSchedule id="lineup">
       <Container>
         <Title src={LineUpTitle} />
-        <StyledLineUpBody>
-          {/* <StyledFullLineUpList className="raw-lineup">
-            {lineupRaw.map((artist, key) => (
-              <>
-                <span key={key}>{artist.toUpperCase()}</span>
-                <StyledEyeIcon src={EyeVector} />
-              </>
+        <StyledLineUpHeader>
+          <StyledLineUpBtnSection>
+            <StyledLineUpBtn
+              onClick={() => setCurrentSection("lineup")}
+              label={"⟶ Full Lineup"}
+              className={currentSection === "lineup" ? "selected" : ""}
+            >
+              {"FULL LINE UP"}
+            </StyledLineUpBtn>
+            {days.map((dayInfo, i) => (
+              <StyledLineUpBtn
+                className={currentDay === i + 1 && currentSection === "schedule" ? "selected" : ""}
+                onClick={() => {
+                  handleDaySelection(i + 1);
+                }}
+                label={`⟶ Day 0${i + 1}`}
+              >
+                {`${dayInfo.date}`}
+              </StyledLineUpBtn>
             ))}
-          </StyledFullLineUpList> */}
-          <DaySchedule dayNumber={0} dayInfo={days[0]} />
+          </StyledLineUpBtnSection>
+        </StyledLineUpHeader>
+        <StyledLineUpBody>
+          {
+            currentSection === 'lineup' &&
+              <StyledFullLineUpList className="raw-lineup">
+                {lineupRaw.map((artist, key) => (
+                  <>
+                    <span key={key}>{artist.toUpperCase()}</span>
+                    <StyledEyeIcon src={EyeVector} />
+                  </>
+                ))}
+              </StyledFullLineUpList>
+          }
+          {currentSection === "schedule" && (
+            <>
+              <DaySchedule
+                dayNumber={currentDay}
+                dayInfo={days[currentDay - 1]}
+              />
+            </>
+          )}
         </StyledLineUpBody>
       </Container>
     </StyledLineUpSchedule>
