@@ -9,20 +9,22 @@ import whiteRabbit from "../images/rabbit.svg";
 import polygon from "../images/STD-polygon.svg";
 import Countdown from './Countdown';
 import { Container } from "./Container";
+import ReactPlayer from "react-player";
 
 const Hero = () => {
   return (
     <StyledHero sx={{ height: "100vh", display: "flex", alignItems: "center" }}>
       <Container>
         <LogoContainer>
-          <StyledImage
-            placeholder={"blur"}
-            backgroundColor={"black"}
-            objectFit={"contain"}
-            loading={"eager"}
-            className="index-hero-logo"
-            alt={"Metaverse Music Festival"}
-            src={mvmfLogo}
+          <ReactPlayer
+            muted
+            autoPlay
+            loop
+            playing={true}
+            url={'logo-animated.mp4'}
+            poster={"logo-metaverse.png"}
+            width={'100%'}
+            playsinline
           />
         </LogoContainer>
         <EventDetails>
@@ -88,7 +90,7 @@ margin-bottom: 24px;
 }
 `;
 
-const StyledImage = styled.img`
+const StyledVideo = styled.video`
   width: 100%;
   height: auto;
 `;
