@@ -31,11 +31,16 @@ const WatchTeaser = styled.div`
   font-family: "Yapari Expanded";
   font-weight: 500;
   letter-spacing: 0.11em;
-  padding: 80px 0;
+  padding: 120px 0;
   cursor: crosshair;
+  background: url('/teaser-banner.png');
+  background-position: center; 
+  background-attachment: fixed; 
+
   p {
     font-size: 10px;
   }
+  transition: background 0.5s ease;
 
   span {
     padding-right: 8px;
@@ -43,7 +48,7 @@ const WatchTeaser = styled.div`
     transition: padding 0.4s ease;
   }
 
-  :hover {
+  &:hover {
     span {
       padding-right: 4px;
       padding-left: 4px;

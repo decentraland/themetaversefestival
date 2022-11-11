@@ -11,20 +11,6 @@ const Banner = ({ setShowVideo }) => {
     return (
         <section id="2022-banner">
             <StyledBanner>
-                <MobileVideo>
-                    <ReactPlayer
-                        muted={muted}
-                        autoPlay
-                        playing={true}
-                        url={'teaser-mobile-2022.mp4'}
-                        poster={"first-frame.png"}
-                        width={'100vw'}
-                        height={'100vh'}
-                        onEnded={() => setShowVideo(false)}
-                        playsinline
-                    />
-                </MobileVideo>
-                <DesktopVideo>
                     <ReactPlayer
                         muted={muted}
                         autoPlay
@@ -36,7 +22,6 @@ const Banner = ({ setShowVideo }) => {
                         onEnded={() => setShowVideo(false)}
                         playsinline
                     />
-                </DesktopVideo>
                 <SkipVideo onClick={() => setShowVideo(false)}>
                     X
                 </SkipVideo>
@@ -51,8 +36,9 @@ const StyledBanner = styled.div`
     left: 0;
     top: 0;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
+    background: #000;
     align-items: center; 
     justify-content: center;
     overflow: hidden;
@@ -62,38 +48,14 @@ const StyledBanner = styled.div`
     }
 `
 
-const MobileVideo = styled.div`
-    display: block;
-
-    @media screen and (min-width: ${breakpoints.md}) {
-        display: none
-    }
-`
-
-const DesktopVideo = styled.div`
-    display: none;
-    
-    @media screen and (min-width: ${breakpoints.md}) {
-        display: block;
-    }
-`
-
 const SkipVideo = styled.a`
+    font-family: 'Yapari Expanded';
     position: fixed;
     top: 40px;
     right: 40px;
     letter-spacing: 2px;
     cursor: crosshair;
     padding: 8px;
-`
-
-const SoundButton = styled.img`
-    position: fixed;
-    top: 40px;
-    width: 32px;
-    height: 32px;
-    left: 40px;
-    letter-spacing: 2px;
 `
 
 export default Banner;
