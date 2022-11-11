@@ -31,7 +31,7 @@ const Banner = ({ setShowVideo }) => {
 };
 
 const StyledBanner = styled.div`
-    z-index: 666;
+    z-index: 9999;
     position: fixed;
     left: 0;
     top: 0;
