@@ -15,7 +15,7 @@ const Banner = ({ setShowVideo, muted, setMuted }) => {
                         autoPlay
                         playing={true}
                         url={'teaser-2022.mp4'}
-                        poster={"first-frame.png"}
+                        poster={"teaser-banner.png"}
                         width={'100vw'}
                         height={'100vh'}
                         onEnded={() => {

@@ -22,7 +22,7 @@ const Hero = () => {
             loop
             playing={true}
             url={'logo-animated.mp4'}
-            poster={"logo-metaverse.png"}
+            poster={"logo-poster.png"}
             width={'100%'}
             playsinline
           />
