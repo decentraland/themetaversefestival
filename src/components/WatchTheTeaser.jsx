@@ -3,11 +3,16 @@ import styled from "styled-components";
 import theme, { breakpoints } from "../../utils/theme";
 import BannerMarquee from "./Marquee";
 
-const WatchTheTeaser = ({ setShowVideo }) => {
+const WatchTheTeaser = ({ setShowVideo, setMuted }) => {
   return (
     <>
       <BannerMarquee noBorderBottom />
-      <WatchTeaser onClick={() => setShowVideo(true)}>
+      <WatchTeaser
+        onClick={() => {
+          setMuted(false)
+          setShowVideo(true)
+        }}
+      >
         <p>
           <TextHighlight>→</TextHighlight>
           Watch the teaser

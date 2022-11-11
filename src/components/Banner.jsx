@@ -5,8 +5,7 @@ import volumeMuted from '../images/volume-muted.svg'
 import volume from '../images/volume.svg'
 import { breakpoints } from "../../utils/theme";
 
-const Banner = ({ setShowVideo }) => {
-    const [muted, setMuted] = useState(false)
+const Banner = ({ setShowVideo, muted, setMuted }) => {
 
     return (
         <section id="2022-banner">
@@ -19,10 +18,19 @@ const Banner = ({ setShowVideo }) => {
                         poster={"first-frame.png"}
                         width={'100vw'}
                         height={'100vh'}
-                        onEnded={() => setShowVideo(false)}
+                        onEnded={() => {
+                            localStorage.setItem('hasWatchedVideo', true)
+                            setShowVideo(false)
+                        }}
                         playsinline
                     />
-                <SkipVideo onClick={() => setShowVideo(false)}>
+                <SoundButton src={muted ? volumeMuted : volume} onClick={() => setMuted(!muted)} />  
+                <SkipVideo
+                    onClick={() => {
+                        localStorage.setItem('hasWatchedVideo', true)
+                        setShowVideo(false)
+                    }}
+                >
                     X
                 </SkipVideo>
             </StyledBanner>
@@ -42,10 +50,6 @@ const StyledBanner = styled.div`
     align-items: center; 
     justify-content: center;
     overflow: hidden;
-    video {
-        -o-object-fit: cover;
-        object-fit: cover;
-    }
 `
 
 const SkipVideo = styled.a`
@@ -56,6 +60,15 @@ const SkipVideo = styled.a`
     letter-spacing: 2px;
     cursor: crosshair;
     padding: 8px;
+`
+
+const SoundButton = styled.img`
+    position: fixed;
+    top: 40px;
+    width: 32px;
+    height: 32px;
+    left: 40px;
+    letter-spacing: 2px;
 `
 
 export default Banner;
