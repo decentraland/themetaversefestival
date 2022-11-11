@@ -611,10 +611,6 @@ export const days = [
         name: "OG COMMUNITY STAGE",
         acts: [
           {
-            name: "HARRISON FIRST",
-            time: "0:00 UTC",
-          },
-          {
             name: "ECLECTIC METHOD",
             time: "23:00 UTC",
           },
