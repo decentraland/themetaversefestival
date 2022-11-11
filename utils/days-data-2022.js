@@ -564,10 +564,6 @@ export const days = [
         name: "KRAKEN AFTER PARTY",
         acts: [
           {
-            name: "CJ TRAXX",
-            time: "0:00 UTC",
-          },
-          {
             name: "HARRISON FIRST",
             time: "23:40 UTC",
           },
