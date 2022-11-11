@@ -125,6 +125,10 @@ export const days = [
         name: "OZZFEST",
         acts: [
           {
+            name: "OZZY OSBOURNE",
+            time: "00:00 UTC",
+          },
+          {
             name: "MEGADETH",
             time: "23:00 UTC",
           },
@@ -488,16 +492,16 @@ export const days = [
         name: "OZZFEST",
         acts: [
           {
-            name: "OZZY OSBOURNE",
+            name: "MOTORHEAD",
             time: "00:00 UTC",
           },
           {
             name: "RAVEN AGE",
-            time: "20:00 UTC",
+            time: "23:00 UTC",
           },
           {
             name: "SKID ROW",
-            time: "23:00 UTC",
+            time: "22:00 UTC",
           },
           {
             name: "BRITOF",
@@ -560,10 +564,6 @@ export const days = [
         name: "KRAKEN AFTER PARTY",
         acts: [
           {
-            name: "CJ TRAXX",
-            time: "0:00 UTC",
-          },
-          {
             name: "HARRISON FIRST",
             time: "23:40 UTC",
           },
@@ -610,10 +610,6 @@ export const days = [
       {
         name: "OG COMMUNITY STAGE",
         acts: [
-          {
-            name: "HARRISON FIRST",
-            time: "0:00 UTC",
-          },
           {
             name: "ECLECTIC METHOD",
             time: "23:00 UTC",
@@ -872,7 +868,7 @@ export const days = [
         name: "OZZFEST",
         acts: [
           {
-            name: "MOTORHEAD",
+            name: "OZZY OSBOURNE",
             time: "00:00 UTC",
           },
           {
@@ -1309,23 +1305,23 @@ export const days = [
         acts: [
           {
             name: "OZZY OSBOURNE",
-            time: "23:00 UTC",
+            time: "00:00 UTC",
           },
           {
             name: "MEGADETH",
-            time: "22:00 UTC",
+            time: "23:00 UTC",
           },
           {
             name: "MOTORHEAD",
+            time: "22:00 UTC",
+          },
+          {
+            name: "SKID ROW",
             time: "21:00 UTC",
           },
           {
-            name: "RAVEN AGE",
-            time: "19:00 UTC",
-          },
-          {
-            name: "RAVEN AGE",
-            time: "19:00 UTC",
+            name: "BLACK LABEL SOCIETY",
+            time: "20:00 UTC",
           },
           {
             name: "RAVEN AGE",

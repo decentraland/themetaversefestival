@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import 'react-multi-carousel/lib/styles.css';
 import { Helmet } from "react-helmet";
@@ -41,7 +41,15 @@ const meta = {
 
 // markup
 const IndexPage = () => {
-  const [showVideo, setShowVideo] = useState(false);
+  const [showVideo, setShowVideo] = useState(false)
+  const [muted, setMuted] = useState(true)
+
+  useEffect(() => {
+    if(!localStorage.getItem('hasWatchedVideo')) {
+      setShowVideo(true)
+    }
+  }, [])
+
 
   return (
     <StyledIndexPage>
@@ -92,12 +100,12 @@ const IndexPage = () => {
           <Hero />
         </header>
         <main>
-          {showVideo && <Banner setShowVideo={setShowVideo} />}
+          {showVideo && <Banner muted={muted} setMuted={setMuted} setShowVideo={setShowVideo} />}
           <BannerMarquee />
           <About />
           <BannerMarquee />
           <LineUpSchedule />
-          <WatchTheTeaser setShowVideo={setShowVideo} />
+          <WatchTheTeaser setShowVideo={setShowVideo} setMuted={setMuted} />
           <Stages />
           <Experiences />
           <BannerMarquee noBorderBottom />

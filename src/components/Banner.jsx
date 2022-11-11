@@ -5,39 +5,32 @@ import volumeMuted from '../images/volume-muted.svg'
 import volume from '../images/volume.svg'
 import { breakpoints } from "../../utils/theme";
 
-const Banner = ({ setShowVideo }) => {
-    const [muted, setMuted] = useState(false)
+const Banner = ({ setShowVideo, muted, setMuted }) => {
 
     return (
         <section id="2022-banner">
             <StyledBanner>
-                <MobileVideo>
-                    <ReactPlayer
-                        muted={muted}
-                        autoPlay
-                        playing={true}
-                        url={'teaser-mobile-2022.mp4'}
-                        poster={"first-frame.png"}
-                        width={'100vw'}
-                        height={'100vh'}
-                        onEnded={() => setShowVideo(false)}
-                        playsinline
-                    />
-                </MobileVideo>
-                <DesktopVideo>
                     <ReactPlayer
                         muted={muted}
                         autoPlay
                         playing={true}
                         url={'teaser-2022.mp4'}
-                        poster={"first-frame.png"}
+                        poster={"teaser-banner.png"}
                         width={'100vw'}
                         height={'100vh'}
-                        onEnded={() => setShowVideo(false)}
+                        onEnded={() => {
+                            localStorage.setItem('hasWatchedVideo', true)
+                            setShowVideo(false)
+                        }}
                         playsinline
                     />
-                </DesktopVideo>
-                <SkipVideo onClick={() => setShowVideo(false)}>
+                <SoundButton src={muted ? volumeMuted : volume} onClick={() => setMuted(!muted)} />  
+                <SkipVideo
+                    onClick={() => {
+                        localStorage.setItem('hasWatchedVideo', true)
+                        setShowVideo(false)
+                    }}
+                >
                     X
                 </SkipVideo>
             </StyledBanner>
@@ -46,39 +39,21 @@ const Banner = ({ setShowVideo }) => {
 };
 
 const StyledBanner = styled.div`
-    z-index: 666;
+    z-index: 9999;
     position: fixed;
     left: 0;
     top: 0;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
+    background: #000;
     align-items: center; 
     justify-content: center;
     overflow: hidden;
-    video {
-        -o-object-fit: cover;
-        object-fit: cover;
-    }
-`
-
-const MobileVideo = styled.div`
-    display: block;
-
-    @media screen and (min-width: ${breakpoints.md}) {
-        display: none
-    }
-`
-
-const DesktopVideo = styled.div`
-    display: none;
-    
-    @media screen and (min-width: ${breakpoints.md}) {
-        display: block;
-    }
 `
 
 const SkipVideo = styled.a`
+    font-family: 'Yapari Expanded';
     position: fixed;
     top: 40px;
     right: 40px;
