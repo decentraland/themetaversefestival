@@ -1,6 +1,5 @@
 import React from "react";
 import { Section, Title, ComingSoon ,Map } from "./styles";
-import title from '../../images/sitemap-title.png';
 import { Container } from "../Container";
 import { StaticImage } from "gatsby-plugin-image";
 
