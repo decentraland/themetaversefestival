@@ -53,7 +53,7 @@ const StyledBanner = styled.div`
 `
 
 const SkipVideo = styled.a`
-    font-family: 'Yapari Expanded';
+    font-family: 'Gothic';
     position: fixed;
     top: 40px;
     right: 40px;

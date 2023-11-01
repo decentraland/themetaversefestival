@@ -38,7 +38,7 @@ const StyledBannerMarquee = styled.div`
       min-width: unset;
     }
     * {
-      font-family: "Yapari expanded";
+      font-family: "Gothic";
       font-size: 12px;
       letter-spacing: 2px;
       font-weight: 700;

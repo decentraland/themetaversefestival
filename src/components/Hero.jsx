@@ -32,9 +32,9 @@ const Hero = () => {
             <EventDataItem>
               <DateComponent className="event-data">
                 <p>
-                  NOV. 10-13 • <DateHighlight>-12PM UTC</DateHighlight> •
+                  NOV. 16-18 • <DateHighlight>-12PM UTC</DateHighlight> •
                 </p>
-                <DateLocation>FESTIVAL LAND, [-62,70]</DateLocation>
+                <DateLocation>FESTIVAL LAND, [-62,58]</DateLocation>
               </DateComponent>
             </EventDataItem>
           </EventData>
@@ -46,7 +46,7 @@ const Hero = () => {
             </EventDataItem>
             <EventDataItem>
               <SaveTheDate
-                href="https://play.decentraland.org/?position=-62%2C63&realm=marvel&island=Ic5t9"
+                href="https://play.decentraland.org/?position=-62%2C58"
                 target="_blank"
               >
                 <WhiteRabbit src={whiteRabbit} /> ENTER HERE{" "}
@@ -144,7 +144,7 @@ const DateComponent = styled.section`
   font-weight: 500;
   line-height: 16px;
   margin-top: 24px;
-  font-family: "Yapari Expanded";
+  font-family: "Gothic";
   padding-left: 0;
   width: 100%;
   text-align: justify;
@@ -167,7 +167,7 @@ const DateHighlight = styled.span`
 `;
 
 const DateLocation = styled.span`
-  font-family: "Yapari";
+  font-family: "Gothic";
   font-size: 13px;
   line-height: 32px;
   font-weight: 600;

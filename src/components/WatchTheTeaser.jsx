@@ -33,7 +33,7 @@ const WatchTeaser = styled.div`
   backdrop-filter: blur(12px);
   justify-content: center;
   line-height: 22px;
-  font-family: "Yapari Expanded";
+  font-family: "Gothic";
   font-weight: 500;
   letter-spacing: 0.11em;
   padding: 120px 0;

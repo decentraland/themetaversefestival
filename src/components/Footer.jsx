@@ -121,7 +121,7 @@ const StyledLinksList = styled.ul`
 `;
 
 const PageLink = styled.li`
-  font-family: "Yapari";
+  font-family: "Gothic";
   text-align: center;
   line-height: 22px;
   margin: 16px 0;

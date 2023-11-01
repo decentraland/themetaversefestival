@@ -214,7 +214,7 @@ const AboutButtonLink = styled.button`
   background: transparent;
   font-size: 12px;
   letter-spacing: 120%;
-  font-family: "Yapari Expanded";
+  font-family: "Gothic";
   padding: 16px 32px;
   border: 4px solid ${theme.white};
   border-radius: 120px;

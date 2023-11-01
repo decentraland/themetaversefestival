@@ -166,7 +166,7 @@ const LogoContainer = styled.a`
 `
 
 const MenuItem = styled.li`
-  font-family: "Yapari";
+  font-family: "Gothic";
   font-size: 16px;
   font-weight: 700;
   padding-left: 40px;

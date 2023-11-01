@@ -86,7 +86,7 @@ export const StageImage = styled.img`
 `
 
 export const StageName = styled.p`
-    font-family: 'Yapari Expanded';
+    font-family: 'Gothic';
     font-size: 16px;
     line-height: 120%;
     font-weight: 600;
@@ -97,7 +97,7 @@ export const StageName = styled.p`
     min-height: 42px;
 `
 export const StageLocation = styled.caption`
-    font-family: 'Yapari';
+    font-family: 'Gothic';
     font-size: 16px;
     line-height: 16px
     font-weight: 600;
@@ -147,7 +147,7 @@ export const StyledBannerMarquee = styled.div`
       min-width: unset;
     }
     * {
-      font-family: "Yapari expanded";
+      font-family: "Gothic";
       font-size: 12px;
       letter-spacing: 2px;
       font-weight: 700;

@@ -26,7 +26,7 @@ const Button = ({
 };
 
 const StyledButton = styled.a`
-  font-family: "Yapari";
+  font-family: "Gothic";
   height: 60px;
   padding: 0 32px;
   display: flex;

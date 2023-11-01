@@ -63,7 +63,7 @@ export const StyledLineUpBtnSection = styled.div`
 export const StyledLineUpBtn = styled.button`
   cursor: crosshair;
   box-sizing: border-box;
-  font-family: "Yapari wide";
+  font-family: "Gothic";
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -111,7 +111,7 @@ export const StyledLineUpBody = styled.section`
 `;
 
 export const StyledFullLineUpList = styled.p`
-  font-family: "Yapari Wide";
+  font-family: "Gothic";
   font-weight: 600;
   line-height: 62px;
   font-size: 24px;
@@ -132,7 +132,7 @@ export const StyledFullLineUpList = styled.p`
 `;
 
 export const StyledHighLight = styled.span`
-  font-family: "Yapari Wide";
+  font-family: "Gothic";
   font-weight: 800;
   &:hover {
 
@@ -141,7 +141,7 @@ export const StyledHighLight = styled.span`
 `;
 
 export const StyledTextHighLight = styled.span`
-  font-family: "Yapari Expanded";
+  font-family: "Gothic";
   font-weight: 700;
 `;
 
