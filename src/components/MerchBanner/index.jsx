@@ -8,7 +8,7 @@ export const MerchBanner = ({ src, href }) => (
 )
 
 const Link = styled.a`
- cursor: crosshair;
+ cursor: pointer;
 `
 
 const Banner = styled.img`

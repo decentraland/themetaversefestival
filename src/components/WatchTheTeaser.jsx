@@ -15,7 +15,7 @@ const WatchTheTeaser = ({ setShowVideo, setMuted }) => {
       >
         <p>
           <TextHighlight>→</TextHighlight>
-          Watch the teaser
+          Watch Last Year's Recap
           <TextHighlight>←</TextHighlight>
         </p>
       </WatchTeaser>
@@ -37,8 +37,7 @@ const WatchTeaser = styled.div`
   font-weight: 500;
   letter-spacing: 0.11em;
   padding: 120px 0;
-  cursor: crosshair;
-  background: url('/teaser-banner.png');
+  cursor: pointer;
   background-position: center; 
   background-attachment: fixed; 
 

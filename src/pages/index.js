@@ -18,9 +18,10 @@ import Experiences from "../components/Experiences";
 import MerchBanner from "../components/MerchBanner";
 import merchBanner from "../images/merch-banner.png"
 import LineUpSchedule from "../components/LineUpSchedule";
+import { Subscribe } from "../components/Subscribe";
 
 const seo = {
-  title: "Metaverse Music Festival | Decentraland",
+  title: "Decentraland Music Festival | Decentraland",
   description:
     "A four-day celebration of music, culture and creativity in the virtual social world of Decentraland, the Metaverse Festival is a grand collision of light, sound and portable toilets.",
   image: "https://themetaversefestival.io/social.png",
@@ -108,14 +109,13 @@ const IndexPage = () => {
           <WatchTheTeaser setShowVideo={setShowVideo} setMuted={setMuted} />
           <Stages />
           <Experiences />
-          <BannerMarquee noBorderBottom />
-          <MerchBanner src={merchBanner} href="https://market.decentraland.org/MVMF22?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true" target="_blank" />
-          <BannerMarquee noBorderTop direction="right" />
+          <BannerMarquee/>
+          {/* <MerchBanner src={merchBanner} href="https://market.decentraland.org/MF23?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true" target="_blank" /> */}
+          {/* <BannerMarquee noBorderTop direction="right" /> */}
           <Sitemap />
           <BannerMarquee />
-          <Partners />
-          <BannerMarquee />
           <Faq />
+          <Subscribe />
           <Footer />
         </main>
       </Layout>

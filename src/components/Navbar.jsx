@@ -119,7 +119,7 @@ const StyledNavbar = styled.section`
 
 const SocialIcon = styled.a`
   margin-left: 24px;
-  cursor: crosshair;
+  cursor: pointer;
   svg {
     width: 24px;
     height: 24px;
@@ -148,7 +148,7 @@ const Nav = styled.nav`
 `;
 
 const LogoContainer = styled.a`
-  cursor: crosshair;
+  cursor: pointer;
   -webkit-animation: rotating 10s linear infinite;
   -moz-animation: rotating 10s linear infinite;
   -ms-animation: rotating 10s linear infinite;
@@ -171,7 +171,7 @@ const MenuItem = styled.li`
   font-weight: 700;
   padding-left: 40px;
   letter-spacing: 2px;
-  cursor: crosshair;
+  cursor: pointer;
 
   a {
     transition: color 0.5s ease;

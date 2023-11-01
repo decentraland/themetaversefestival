@@ -1,5 +1,5 @@
 import React from "react";
-import { Section, Title, Map } from "./styles";
+import { Section, Title, ComingSoon ,Map } from "./styles";
 import title from '../../images/sitemap-title.png';
 import { Container } from "../Container";
 import { StaticImage } from "gatsby-plugin-image";
@@ -7,12 +7,17 @@ import { StaticImage } from "gatsby-plugin-image";
 const Sitemap = () => (
     <Section id="sitemap">
         <Container>
-            <Title src={title} />
-            <Map>
+            <Title>
+                SITEMAP
+            </Title>
+            <ComingSoon>
+                Coming soon...
+            </ComingSoon>
+            {/* <Map>
                 <StaticImage
                     src={'./../../images/sitemap.svg'}
                 />
-            </Map>
+            </Map> */}
         </Container>
     </Section>
 )

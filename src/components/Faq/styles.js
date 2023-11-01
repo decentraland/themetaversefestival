@@ -7,21 +7,23 @@ export const Section = styled.section`
   backdrop-filter: blur(2px);
 `;
 
-export const Title = styled.img`
-  width: 100%;
-  height: auto;
-  margin-bottom: 62px;
+export const Title = styled.h2`
+  font-size: 80px;
+  font-family: Gothic;
+  letter-spacing: 10px;
+  margin-bottom: 40px;
+
   @media screen and (min-width: ${breakpoints.md}) {
-    width: 90%;
+    font-size: 80px;
   }
   @media screen and (min-width: ${breakpoints.l}) {
-    width: 80%;
+    font-size: 80px;
   }
   @media screen and (min-width: ${breakpoints.xl}) {
-    width: 70%;
+    font-size: 80px;
   }
   @media screen and (min-width: ${breakpoints.xxl}) {
-    width: 60%;
+    font-size: 80px;
   }
 `;
 
@@ -48,7 +50,7 @@ export const Question = styled.div`
 
   p {
     max-width: 95%;
-    cursor: crosshair;
+    cursor: pointer;
   }
 `;
 
@@ -70,7 +72,7 @@ export const Answer = styled.p`
     color: ${theme.accent};
     font-family: "Gotham", sans-serif;
     text-decoration: underline;
-    cursor: crosshair;
+    cursor: pointer;
   }
 `;
 
@@ -81,6 +83,6 @@ export const Toggle = styled.img`
   height: auto;
   transition: all 0.4s ease;
   box-sizing: content-box;
-  cursor: crosshair;
+  cursor: pointer;
   transform: ${(props) => props.open && "rotate(-180deg)"};
 `;

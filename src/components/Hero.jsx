@@ -2,30 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import theme, { breakpoints } from "../../utils/theme";
-import mvmfLogo from "../images/logo-metaverse.png";
 import dclLogo from "../images/logo-dcl.svg";
-import star from "../images/star.svg";
-import whiteRabbit from "../images/rabbit.svg";
+import starBust from "../images/Starbust1.png";
 import polygon from "../images/STD-polygon.svg";
-import Countdown from './Countdown';
 import { Container } from "./Container";
-import ReactPlayer from "react-player";
 
 const Hero = () => {
   return (
     <StyledHero sx={{ height: "100vh", display: "flex", alignItems: "center" }}>
       <Container>
         <LogoContainer>
-          <ReactPlayer
-            muted
-            autoPlay
-            loop
-            playing={true}
-            url={'logo-animated.mp4'}
-            poster={"logo-poster.png"}
-            width={'100%'}
-            playsinline
-          />
+          <img src="dmf-logo-white.png" width="100%" />
         </LogoContainer>
         <EventDetails>
           <EventData>
@@ -49,23 +36,21 @@ const Hero = () => {
                 href="https://play.decentraland.org/?position=-62%2C58"
                 target="_blank"
               >
-                <WhiteRabbit src={whiteRabbit} /> ENTER HERE{" "}
+                <p style={{ fontSize: "20px" }}>ENTER HERE</p>{" "}
                 <Polygon src={polygon} />
               </SaveTheDate>
             </EventDataItem>
           </EventDataBottom>
           <Decorator
-            src={star}
+            src={starBust}
             top="50%"
-            left="-60px"
-            width="22px"
+            left="-64px"
             height="62px"
           />
           <Decorator
-            src={star}
+            src={starBust}
             top="50%"
-            right="-60px"
-            width="22px"
+            right="-64px"
             height="62px"
           />
         </EventDetails>
@@ -198,7 +183,6 @@ const StyledLogo = styled.img`
 
 const SaveTheDate = styled(Button)`
   width: 100%;
-  background-image: url(../images/boton.png);
 `;
 
 const Decorator = styled.img`

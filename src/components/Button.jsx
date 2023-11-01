@@ -1,7 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
 import theme, { breakpoints } from "../../utils/theme";
-import bgImage from "../images/boton.png";
 
 const Button = ({
   onClick,
@@ -17,7 +16,6 @@ const Button = ({
       onClick={onClick && onClick}
       href={href}
       download={download}
-      style={{ backgroundImage: "../images/boton.png" }}
       {...rest}
     >
       {children}
@@ -26,7 +24,9 @@ const Button = ({
 };
 
 const StyledButton = styled.a`
-  font-family: "Gothic";
+  font-family: Gothic;
+  border: 2px solid #f37877;
+  border-radius: 5px;
   height: 60px;
   padding: 0 32px;
   display: flex;
@@ -37,10 +37,9 @@ const StyledButton = styled.a`
   letter-spacing: 0.165rem;
   text-transform: uppercase;
   width: 100%;
-  cursor: crosshair;
+  cursor: pointer;
   transition: 0.1s ease-in-out all;
   white-space: nowrap;
-  background: url(${bgImage});
   background-size: 100% 100%;
   background-repeat: no-repeat;
   @media screen and (max-width: ${breakpoints.md}) {

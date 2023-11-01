@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import theme, { breakpoints } from "../../../utils/theme";
-import AboutThinIcon from "../../images/about-thin-icon.png";
 import Logo from "../../images/logo-navbar.svg";
-import AboutMobileThinIcon from "../../images/about-mobile-thin-icon.png";
 import EyeTriengleIcon from "../../images/eye-triangle-icon.svg";
-import AboutTitleImg from "../../images/about-title.png";
-import Rabbit from "../../images/rabbit.gif";
+import sideIcon from "../../images/stage3.png";
+import starBust5 from "../../images/Starbust5.png";
+import starBust6 from "../../images/Starbust6.png";
+import starBust7 from "../../images/Starbust7.png";
 import { Container } from "../Container";
 
 const About = (props) => {
@@ -15,21 +15,20 @@ const About = (props) => {
       <Container>
         <StyledAbout>
           <AboutHeader>
-            {" "}
-            <AboutTitle src={AboutTitleImg} />
-            <RabbitAnimation src={Rabbit} alt="Follow the white rabbit" width={200} />
+            <AboutTitle>Decentraland Music Festival</AboutTitle>
+            <SideIcon src={sideIcon} width="150px" />
           </AboutHeader>
           <Aboutbody>
             <AboutBodyImgContainer>
               <AboutBodyImg>
-                <AboutBodyCodebar src={AboutThinIcon} />
-                <AboutMobileBodyCodebar src={AboutMobileThinIcon} />
-                <AboutBodyIlluminati src={EyeTriengleIcon} width="76px" height="76px" />
+                <StarBustSideIcon src={starBust5} width="80px" height="80px" />
+                <StarBustSideIcon src={starBust6} width="80px" height="80px" />
+                <StarBustSideIcon src={starBust7} width="80px" height="80px" />
               </AboutBodyImg>
             </AboutBodyImgContainer>
             <AboutBodyText>
               <AboutBodyParagraph>
-                #DCLMVMF22 is a four-day celebration of <TextHighlight>music</TextHighlight>, <TextHighlight>innovation</TextHighlight>, <TextHighlight>culture</TextHighlight> and <TextHighlight>creativity</TextHighlight>, held online in the virtual social world of Decentraland. The festival is open for any and all to attend, no ticket or VR headset required.
+                #DCLMF23 is a four-day celebration of <TextHighlight>music</TextHighlight>, <TextHighlight>innovation</TextHighlight>, <TextHighlight>culture</TextHighlight> and <TextHighlight>creativity</TextHighlight>, held online in the virtual social world of Decentraland. The festival is open for any and all to attend, no ticket or VR headset required.
                 <br />
                 <br />
                 Prepare yourself for a musical experience unlike any you’ve attended before:
@@ -42,13 +41,12 @@ const About = (props) => {
                 <br />
                 <br />
                 So get yourself some kaleidoscopic Wearables and killer dance Emotes in the Marketplace Festival Tab and jump into Decentraland on November 10.
-
               </AboutBodyParagraph>
             </AboutBodyText>
           </Aboutbody>
           <AboutButtonContainer href="https://play.decentraland.org/?position=-62%2C63&realm=marvel&island=Ic5t9" target="_blank">
             <AboutButtonLink>
-              ENTER THE FESTIVAL
+              Sign Up For DCL Newsletter
               <ButtonDecorator src={Logo} />
             </AboutButtonLink>
           </AboutButtonContainer>
@@ -57,6 +55,24 @@ const About = (props) => {
     </Section>
   );
 };
+
+const AboutTitle = styled.h2`
+  font-family: Gothic;
+  font-size: 50px;
+  text-align: center;
+  @media screen and (min-width: ${breakpoints.md}) {
+    font-size: 70px;
+  }
+  @media screen and (min-width: ${breakpoints.l}) {
+    font-size: 70px;
+  }
+  @media screen and (min-width: ${breakpoints.xl}) {
+    font-size: 70px;
+  }
+  @media screen and (min-width: ${breakpoints.xxl}) {
+    font-size: 70px;
+  }
+`
 
 const Section = styled.section`
 position: relative;
@@ -70,28 +86,12 @@ const StyledAbout = styled.div`
 const AboutHeader = styled.section`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 56px;
 `;
 
-const AboutTitle = styled.img`
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  @media screen and (min-width: ${breakpoints.md}) {
-    width: 90%;
-  }
-  @media screen and (min-width: ${breakpoints.l}) {
-    width: 80%;
-  }
-  @media screen and (min-width: ${breakpoints.xl}) {
-    width: 80%;
-  }
-  @media screen and (min-width: ${breakpoints.xxl}) {
-    width: 70%;
-  }
-`;
-
-const RabbitAnimation = styled.img`
+const SideIcon = styled.img`
+  width: 150px;
   display: none;
 
   @media screen and (min-width: ${breakpoints.md}) {
@@ -103,25 +103,7 @@ const Aboutbody = styled.section`
   display: flex;
 `;
 
-const AboutBodyCodebar = styled.img`
-  display: none;
-  height: 100%;
-  padding-bottom: 38px;
-  @media screen and (min-width: ${breakpoints.md}) {
-    display: block;
-  }
-`;
-
-const AboutMobileBodyCodebar = styled.img`
-  height: 62vh;
-  display: block;
-
-  @media screen and (min-width: ${breakpoints.md}) {
-    display: none;
-  }
-`;
-
-const AboutBodyIlluminati = styled.img`
+const StarBustSideIcon = styled.img`
   display: none;
   @media screen and (min-width: ${breakpoints.md}) {
     display: block;
@@ -144,7 +126,7 @@ margin-left: 8px;
 `;
 
 const AboutBodyParagraph = styled.p`
-  font-family: "Gotham", sans-serif;
+  font-family: "Gothic", sans-serif;
   font-size: 16px;
   line-height: 21px;
 
@@ -153,7 +135,7 @@ const AboutBodyParagraph = styled.p`
     padding: 16px;
 
     li {
-      font-family: Gotham;
+      font-family: Gothic;
       padding: 16px 0;
 
       &:last-child {
@@ -186,12 +168,12 @@ const AboutBodyImg = styled.div`
 `;
 
 const TextHighlight = styled.span`
-  font-family: "Gotham", sans-serif;
+  font-family: "Gothic", sans-serif;
   color: ${theme.accent};
   font-weight: 700;
 
   a {
-    font-family: "Gotham", sans-serif;
+    font-family: "Gothic", sans-serif;
     color: ${theme.accent};
     font-weight: 700;
     text-decoration: underline;
@@ -221,7 +203,7 @@ const AboutButtonLink = styled.button`
   font-weight: 700;
   transition: all 0.4s ease;
   backdrop-filter: blur(2px);
-  cursor: crosshair;
+  cursor: pointer;
   margin-top: 48px;
 
   img {
@@ -234,7 +216,7 @@ const AboutButtonLink = styled.button`
 
   &:hover {
     color: black;
-    background: url('/texture.png');
+    background-color: #f37877;
     box-shadow:
           0 0 20px #fff,
           0 0 10px violet,
