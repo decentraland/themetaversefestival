@@ -28,26 +28,29 @@ const About = (props) => {
             </AboutBodyImgContainer>
             <AboutBodyText>
               <AboutBodyParagraph>
-                #DCLMF23 is a four-day celebration of <TextHighlight>music</TextHighlight>, <TextHighlight>innovation</TextHighlight>, <TextHighlight>culture</TextHighlight> and <TextHighlight>creativity</TextHighlight>, held online in the virtual social world of Decentraland. The festival is open for any and all to attend, no ticket or VR headset required.
+                Prepare to discover an alternative reality inspired by the themes of <TextHighlight>radical self-expression, communal growth, and artistic renewal</TextHighlight> in the 3rd, most innovative edition of Decentraland Music Festival yet!
                 <br />
                 <br />
-                Prepare yourself for a musical experience unlike any you’ve attended before:
+                With stages and experiences built by <TextHighlight>16 award-winning teams</TextHighlight> of virtual creators and game designers, #DCLMF23 will showcase the latest in immersive music experience, defining what music can be in the virtual world.
+                <br />
+                <br />
+                Stepping boldly towards the future, <TextHighlight>#DCLMF23</TextHighlight> leaves behind the banner of Metaverse Music Festival and traditional mainstream artists to offer only the most pioneering, digital-native performances with the spotlight fully on Decentraland’s community.
+                <br />
+                <br />
+                Free for all to attend with no VR headset required, #DCLMF23 will feature:
                 <ul>
-                  <li><TextHighlight>Explore the futuristic</TextHighlight>, <TextHighlight>cyberpunk festival grounds </TextHighlight>and become familiar with 15 different stages of the like you’d never see IRL</li>
-                  <li> Check the schedule of <TextHighlight>150+ global artists</TextHighlight> from across genres featuring names such as <TextHighlight>Ozzy Ozbourne</TextHighlight>, <TextHighlight>Soulja Boy</TextHighlight>, <TextHighlight>Dillon Fancis</TextHighlight>, and main headliner <TextHighlight>Björk</TextHighlight> who’s closing act you will NOT want to miss</li>
-                  <li>Dive into numerous Decentraland <TextHighlight><a href="#experiences">experiences</a></TextHighlight> as you peek into portaloos, take on the quest for a backstage pass, chase a white rabbit, and feel connected at the Tower of Babel</li>
+                  <li><TextHighlight>80+ interactive performances</TextHighlight> over 3 days from the world’s most innovative artists & independent labels</li>
+                  <li><TextHighlight>5 main stages & 10 new games and immersive experiences</TextHighlight> designed by award-winning virtual creators</li>
+                  <li>Headline sets by OG digital pioneers like Cora Novoa, Trick Daddy, GuccieToe, Bufalo, Glitch Rave, Steve Sai, and others</li>
                   <li>And much more!</li>
                 </ul>
                 <br />
-                <br />
-                So get yourself some kaleidoscopic Wearables and killer dance Emotes in the Marketplace Festival Tab and jump into Decentraland on November 10.
               </AboutBodyParagraph>
             </AboutBodyText>
           </Aboutbody>
           <AboutButtonContainer href="https://play.decentraland.org/?position=-62%2C63&realm=marvel&island=Ic5t9" target="_blank">
             <AboutButtonLink>
-              Sign Up For DCL Newsletter
-              <ButtonDecorator src={Logo} />
+              Sign up for the Decentraland Newsletter
             </AboutButtonLink>
           </AboutButtonContainer>
         </StyledAbout>
