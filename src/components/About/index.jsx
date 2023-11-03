@@ -16,25 +16,10 @@ const About = (props) => {
       <Container>        
         <StyledAbout>          
           <AboutHeader>
-            <AboutTitle>Decentraland Music Festival</AboutTitle>
-            <SideIcon src={sideIcon} width="150px" />
+            <AboutTitle>Decentraland Music Festival</AboutTitle>            
           </AboutHeader>
           <Aboutbody>
-            <AboutBodyImgContainer>
-              <AboutBodyImg>
-              <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <StaticImage
-                    src={starBust5} 
-                    alt="Icon"
-                    width={50} 
-                    height={50} 
-                />
-              </div>
-
-                <StarBustSideIcon src={starBust5} width="80px" height="80px" />
-                <StarBustSideIcon src={starBust6} width="80px" height="80px" />
-                <StarBustSideIcon src={starBust7} width="80px" height="80px" />
-              </AboutBodyImg>
+            <AboutBodyImgContainer>              
             </AboutBodyImgContainer>
             <AboutBodyText>
               <AboutBodyParagraph>
