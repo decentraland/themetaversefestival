@@ -53,7 +53,7 @@ const Navbar = (props) => {
       <StyledNavbar className="navbar">
         <Nav>
           <LogoContainer href="#">
-            <StaticImage src={"./../images/logo-navbar.svg"} height={140} />
+            {/* <StaticImage src={"./../images/logo-navbar.svg"} height={140} /> */}
           </LogoContainer>
 
           <div>

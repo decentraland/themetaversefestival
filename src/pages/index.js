@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import 'react-multi-carousel/lib/styles.css';
+import "react-multi-carousel/lib/styles.css";
 import { Helmet } from "react-helmet";
 import Layout from "./../components/Layout";
 import Hero from "./../components/Hero";
@@ -16,7 +16,7 @@ import Stages from "../components/Stages";
 import Partners from "../components/Partners";
 import Experiences from "../components/Experiences";
 import MerchBanner from "../components/MerchBanner";
-import merchBanner from "../images/merch-banner.png"
+import merchBanner from "../images/merch-banner.png";
 import LineUpSchedule from "../components/LineUpSchedule";
 import { Subscribe } from "../components/Subscribe";
 
@@ -42,15 +42,14 @@ const meta = {
 
 // markup
 const IndexPage = () => {
-  const [showVideo, setShowVideo] = useState(false)
-  const [muted, setMuted] = useState(true)
+  const [showVideo, setShowVideo] = useState(false);
+  const [muted, setMuted] = useState(true);
 
   useEffect(() => {
-    if(!localStorage.getItem('hasWatchedVideo')) {
-      setShowVideo(true)
+    if (!localStorage.getItem("hasWatchedVideo")) {
+      setShowVideo(true);
     }
-  }, [])
-
+  }, []);
 
   return (
     <StyledIndexPage>
@@ -101,7 +100,13 @@ const IndexPage = () => {
           <Hero />
         </header>
         <main>
-          {showVideo && <Banner muted={muted} setMuted={setMuted} setShowVideo={setShowVideo} />}
+          {showVideo && (
+            <Banner
+              muted={muted}
+              setMuted={setMuted}
+              setShowVideo={setShowVideo}
+            />
+          )}
           <BannerMarquee />
           <About />
           <BannerMarquee />
@@ -109,13 +114,12 @@ const IndexPage = () => {
           <WatchTheTeaser setShowVideo={setShowVideo} setMuted={setMuted} />
           <Stages />
           <Experiences />
-          <BannerMarquee/>
+          <BannerMarquee />
           {/* <MerchBanner src={merchBanner} href="https://market.decentraland.org/MF23?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true" target="_blank" /> */}
           {/* <BannerMarquee noBorderTop direction="right" /> */}
           <Sitemap />
           <BannerMarquee />
           <Faq />
-          <Subscribe />
           <Footer />
         </main>
       </Layout>

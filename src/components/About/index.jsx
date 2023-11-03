@@ -8,12 +8,13 @@ import starBust5 from "../../images/Starbust5.png";
 import starBust6 from "../../images/Starbust6.png";
 import starBust7 from "../../images/Starbust7.png";
 import { Container } from "../Container";
+import { StaticImage } from 'gatsby-plugin-image'; 
 
 const About = (props) => {
   return (
     <Section id="about">
-      <Container>
-        <StyledAbout>
+      <Container>        
+        <StyledAbout>          
           <AboutHeader>
             <AboutTitle>Decentraland Music Festival</AboutTitle>
             <SideIcon src={sideIcon} width="150px" />
@@ -21,6 +22,15 @@ const About = (props) => {
           <Aboutbody>
             <AboutBodyImgContainer>
               <AboutBodyImg>
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <StaticImage
+                    src={starBust5} 
+                    alt="Icon"
+                    width={50} 
+                    height={50} 
+                />
+              </div>
+
                 <StarBustSideIcon src={starBust5} width="80px" height="80px" />
                 <StarBustSideIcon src={starBust6} width="80px" height="80px" />
                 <StarBustSideIcon src={starBust7} width="80px" height="80px" />
@@ -48,7 +58,7 @@ const About = (props) => {
               </AboutBodyParagraph>
             </AboutBodyText>
           </Aboutbody>
-          <AboutButtonContainer href="https://play.decentraland.org/?position=-62%2C63&realm=marvel&island=Ic5t9" target="_blank">
+          <AboutButtonContainer href="https://decentraland.beehiiv.com/subscribe?utm_source=musicfestival.decentraland.org&utm_medium=organic&utm_campaign=DCLMF23" target="_blank">
             <AboutButtonLink>
               Sign up for the Decentraland Newsletter
             </AboutButtonLink>

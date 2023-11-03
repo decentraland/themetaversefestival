@@ -12,7 +12,15 @@ const Hero = () => {
     <StyledHero sx={{ height: "100vh", display: "flex", alignItems: "center" }}>
       <Container>
         <LogoContainer>
+          <div style={{'justify-content': 'center', 'display': 'flex'}}>
+            <img src="stage1.png" width="15%" />
+            <img src="stage2.png" width="15%"/>
+            <img src="stage3.png" width="15%"/>
+            <img src="stage4.png" width="15%"/>
+            <img src="stage5.png" width="15%"/>
+          </div>
           <img src="dmf-logo-white.png" width="100%" />
+
         </LogoContainer>
         <EventDetails>
           <EventData>
@@ -36,7 +44,7 @@ const Hero = () => {
                 href="https://play.decentraland.org/?position=-62%2C58"
                 target="_blank"
               >
-                <p style={{ fontSize: "20px" }}>ENTER HERE</p>{" "}
+                <p style={{ fontSize: "20px" }}>RSVP</p>{" "}
                 <Polygon src={polygon} />
               </SaveTheDate>
             </EventDataItem>
