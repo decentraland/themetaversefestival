@@ -5,6 +5,11 @@ import theme, { breakpoints } from "../../utils/theme";
 import dclLogo from "../images/logo-dcl.svg";
 import starBust from "../images/Starbust1.png";
 import polygon from "../images/STD-polygon.svg";
+import stage1 from "../images/stage1.png"
+import stage2 from "../images/stage2.png" 
+import stage3 from "../images/stage3.png" 
+import stage4 from "../images/stage4.png" 
+import stage5 from "../images/stage5.png" 
 import { Container } from "./Container";
 
 const Hero = () => {
@@ -13,11 +18,11 @@ const Hero = () => {
       <Container>
         <LogoContainer>
           <div style={{'justify-content': 'center', 'display': 'flex'}}>
-            <img src="stage1.png" width="15%" />
-            <img src="stage2.png" width="15%"/>
-            <img src="stage3.png" width="15%"/>
-            <img src="stage4.png" width="15%"/>
-            <img src="stage5.png" width="15%"/>
+            <img src={stage1} width="15%" />
+            <img src={stage2} width="15%"/>
+            <img src={stage3} width="15%"/>
+            <img src={stage4} width="15%"/>
+            <img src={stage5} width="15%"/>
           </div>
           <img src="dmf-logo-white.png" width="100%" />
 
