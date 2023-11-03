@@ -181,7 +181,7 @@ const LineUpSchedule = (props) => {
     <StyledLineUpSchedule id="lineup">
       <Container>
         <Title>
-          LINE UP
+          LINE <span style={{'font-family': 'SaintRegular'}}>U</span>P
         </Title>
         <StyledLineUpHeader>
           <StyledLineUpBtnSection>

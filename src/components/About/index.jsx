@@ -16,10 +16,13 @@ const About = (props) => {
       <Container>        
         <StyledAbout>          
           <AboutHeader>
-            <AboutTitle>Decentraland Music Festival</AboutTitle>            
+            <AboutTitle>DECENTRALAND M<MVFont>U</MVFont>SIC F<MVFont>E</MVFont>STIVAL</AboutTitle>            
           </AboutHeader>
           <Aboutbody>
-            <AboutBodyImgContainer>              
+            <AboutBodyImgContainer>             
+                <StarBustSideIcon src={starBust5} width="80px" height="80px" />
+                <StarBustSideIcon src={starBust6} width="80px" height="80px" />
+                <StarBustSideIcon src={starBust7} width="80px" height="80px" />             
             </AboutBodyImgContainer>
             <AboutBodyText>
               <AboutBodyParagraph>
@@ -54,21 +57,25 @@ const About = (props) => {
   );
 };
 
+const MVFont = styled.span `
+  font-family: 'SaintRegular';
+}`
+
 const AboutTitle = styled.h2`
   font-family: Gothic;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   @media screen and (min-width: ${breakpoints.md}) {
-    font-size: 70px;
+    font-size: 60px;
   }
   @media screen and (min-width: ${breakpoints.l}) {
-    font-size: 70px;
+    font-size: 60px;
   }
   @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 70px;
+    font-size: 60px;
   }
   @media screen and (min-width: ${breakpoints.xxl}) {
-    font-size: 70px;
+    font-size: 60px;
   }
 `
 
@@ -145,8 +152,10 @@ const AboutBodyParagraph = styled.p`
 
 const AboutBodyImgContainer = styled.div`
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column; 
+  justify-content: space-between;
+  align-items: center;  
+  margin: 45px 0;
 `;
 
 const AboutBodyImg = styled.div`

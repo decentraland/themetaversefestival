@@ -7,7 +7,7 @@ const Sitemap = () => (
     <Section id="sitemap">
         <Container>
             <Title>
-                SITEMAP
+                SITE<span style={{'font-family': 'SaintRegular'}}>M</span>AP
             </Title>
             <ComingSoon>
                 Coming soon...

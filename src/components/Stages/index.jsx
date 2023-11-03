@@ -11,7 +11,7 @@ const Stages = () => (
     <Section id="stages">
         <Container>
             <Title>
-                STAGES
+                STA<span style={{'font-family': 'SaintRegular'}}>G</span>ES
             </Title>
             <ComingSoon>
                 Coming soon...
@@ -152,6 +152,9 @@ const Stages = () => (
             </StyledBannerMarquee> */}
         </Container>
     </Section>
+    
 )
+
+
 
 export default Stages;

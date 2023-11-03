@@ -12,7 +12,7 @@ const Experiences = () => (
     <Section id="experiences">
         <Container>
             <Title>
-                EXPERIENCES
+                E<span style={{'font-family': 'SaintRegular'}}>X</span>PERIENCES
             </Title>
             <ComingSoon>
                 Coming soon...
