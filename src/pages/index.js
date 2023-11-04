@@ -46,9 +46,9 @@ const IndexPage = () => {
   const [muted, setMuted] = useState(true);
 
   useEffect(() => {
-    if (!localStorage.getItem("hasWatchedVideo")) {
-      setShowVideo(true);
-    }
+    // if (!localStorage.getItem("hasWatchedVideo")) {
+    //    setShowVideo(true);
+    // }
   }, []);
 
   return (
@@ -100,13 +100,13 @@ const IndexPage = () => {
           <Hero />
         </header>
         <main>
-          {/* {showVideo && (
+          {showVideo && (
             <Banner
               muted={muted}
               setMuted={setMuted}
               setShowVideo={setShowVideo}
             />
-          )} */}
+          )}
           <BannerMarquee />
           <About />
           <BannerMarquee />
