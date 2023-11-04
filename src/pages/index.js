@@ -100,13 +100,13 @@ const IndexPage = () => {
           <Hero />
         </header>
         <main>
-          {showVideo && (
+          {/* {showVideo && (
             <Banner
               muted={muted}
               setMuted={setMuted}
               setShowVideo={setShowVideo}
             />
-          )}
+          )} */}
           <BannerMarquee />
           <About />
           <BannerMarquee />

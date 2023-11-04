@@ -10,7 +10,7 @@ const WatchTheTeaser = ({ setShowVideo, setMuted }) => {
       <WatchTeaser
         onClick={() => {
           setMuted(false)
-          setShowVideo(false)
+          setShowVideo(true)
         }}
       >
         <p>
