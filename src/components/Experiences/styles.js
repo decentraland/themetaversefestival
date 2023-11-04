@@ -6,22 +6,31 @@ export const Section = styled.section`
     background: black;
 `;
 
-export const Title = styled.img`
-    width: 100%;
-    height: auto;
-    margin-bottom: 62px;
-    @media screen and (min-width: ${breakpoints.md}) {
-    width: 95%;
-    }
-    @media screen and (min-width: ${breakpoints.l}) {
-    width: 90%;
-    }
-    @media screen and (min-width: ${breakpoints.xl}) {
-    width: 80%;
-    }
-    @media screen and (min-width: ${breakpoints.xxl}) {
-    width: 70%;
-    }
+export const Title = styled.h2`
+  font-size: 80px;
+  font-family: Gothic;
+  text-align: center;
+  letter-spacing: 10px;
+
+  @media screen and (min-width: ${breakpoints.md}) {
+    font-size: 80px;
+  }
+  @media screen and (min-width: ${breakpoints.l}) {
+    font-size: 150px;
+  }
+  @media screen and (min-width: ${breakpoints.xl}) {
+    font-size: 150px;
+  }
+  @media screen and (min-width: ${breakpoints.xxl}) {
+    font-size: 150px;
+  }
+`;
+
+export const ComingSoon = styled.p`
+  font-family: Gothic;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 40px
 `;
 
 export const TextTitle = styled.p`
@@ -56,7 +65,7 @@ export const StagesContainer = styled.div`
 
 export const Stage = styled.a`
     margin-bottom: 16px;
-    cursor: crosshair;
+    cursor: pointer;
 `
 
 export const StageCard = styled.div`
@@ -96,7 +105,7 @@ export const StageImage = styled.img`
 `
 
 export const StageName = styled.p`
-    font-family: 'Yapari Expanded';
+    font-family: 'Gothic';
     font-size: 12px;
     line-height: 120%;
     font-weight: 600;
@@ -106,7 +115,7 @@ export const StageName = styled.p`
     min-height: 42px;
 `
 export const StageLocation = styled.caption`
-    font-family: 'Yapari';
+    font-family: 'Gothic';
     font-size: 16px;
     line-height: 16px
     font-weight: 600;
@@ -134,7 +143,7 @@ export const StageHover = styled.div`
 `
 
 export const StageButton = styled.button`
-      font-family: 'Yapari Expanded';
+      font-family: 'Gothic';
       border: unset;
       box-shadow: unset;
       text-transform: uppercase;
@@ -143,5 +152,5 @@ export const StageButton = styled.button`
       font-weight: 700;
       color: black;
       font-size: 10px;
-      cursor: crosshair;
+      cursor: pointer;
 `

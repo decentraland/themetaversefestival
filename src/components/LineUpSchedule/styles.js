@@ -22,21 +22,23 @@ export const StyledHeaderImg = styled.img`
   color: white;
 `;
 
-export const Title = styled.img`
-  width: 100%;
-  height: auto;
-  /* margin-bottom: 62px; */
+export const Title = styled.h2`
+  font-size: 80px;
+  font-family: Gothic;
+  text-align: center;
+  letter-spacing: 10px;
+
   @media screen and (min-width: ${breakpoints.md}) {
-    width: 80%;
+    font-size: 80px;
   }
   @media screen and (min-width: ${breakpoints.l}) {
-    width: 70%;
+    font-size: 150px;
   }
   @media screen and (min-width: ${breakpoints.xl}) {
-    width: 60%;
+    font-size: 150px;
   }
   @media screen and (min-width: ${breakpoints.xxl}) {
-    width: 50%;
+    font-size: 150px;
   }
 `;
 
@@ -61,9 +63,9 @@ export const StyledLineUpBtnSection = styled.div`
 `;
 
 export const StyledLineUpBtn = styled.button`
-  cursor: crosshair;
+  cursor: pointer;
   box-sizing: border-box;
-  font-family: "Yapari wide";
+  font-family: "Gothic";
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -88,13 +90,13 @@ export const StyledLineUpBtn = styled.button`
   color: #ffffff;
   transition: all 0.5s ease;
   &.selected {
-    background: url("/texture.png");
+    background:#f37877;
     color: black;
     box-shadow: 0px 0px 20px rgba(211, 207, 255, 0.7);
   }
   &:hover, .selected {
     /* background: #ffffff; */
-    background: url("/texture.png");
+    background: #f37877;
     color: black;
     box-shadow: 0px 0px 20px rgba(211, 207, 255, 0.7);
   }
@@ -111,7 +113,7 @@ export const StyledLineUpBody = styled.section`
 `;
 
 export const StyledFullLineUpList = styled.p`
-  font-family: "Yapari Wide";
+  font-family: "Gothic";
   font-weight: 600;
   line-height: 62px;
   font-size: 24px;
@@ -132,7 +134,7 @@ export const StyledFullLineUpList = styled.p`
 `;
 
 export const StyledHighLight = styled.span`
-  font-family: "Yapari Wide";
+  font-family: "Gothic";
   font-weight: 800;
   &:hover {
 
@@ -141,7 +143,7 @@ export const StyledHighLight = styled.span`
 `;
 
 export const StyledTextHighLight = styled.span`
-  font-family: "Yapari Expanded";
+  font-family: "Gothic";
   font-weight: 700;
 `;
 

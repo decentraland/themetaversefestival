@@ -19,7 +19,9 @@ const Faq = () => {
     return (
         <Section id="faq">
             <Container>
-                <Title src={title} />
+                <Title>
+                    FREQUENTLY <br /> ASKED <br /> QUESTIONS
+                </Title>
                 <FaqList>
                     {
                         questions.map((item, index) => (

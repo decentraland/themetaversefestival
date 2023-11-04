@@ -12,9 +12,9 @@ const BannerMarquee = (props) => {
         delay={props.delay && props.delay}
         gradient={false}
       >
-        • [-62,70] ©️DECENTRALAND NOV. 10-13 •
-        <DateHighlight> -12PM UTC </DateHighlight> • [-62,70] ©️DECENTRALAND
-        NOV. 10-13 •<DateHighlight> -12PM UTC </DateHighlight>
+        • [-62,58] ©️Decentraland Music Festival NOV. 16-18 •
+        <DateHighlight> -12PM UTC </DateHighlight> • [-62,58] ©️Decentraland Music Festival
+        NOV. 16-18 •<DateHighlight> -12PM UTC </DateHighlight>
       </Marquee>
     </StyledBannerMarquee>
   );
@@ -38,7 +38,7 @@ const StyledBannerMarquee = styled.div`
       min-width: unset;
     }
     * {
-      font-family: "Yapari expanded";
+      font-family: "Gothic";
       font-size: 12px;
       letter-spacing: 2px;
       font-weight: 700;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from '../Container';
-import { Section, Stage, StyledBannerMarquee, Title, StageCard, StageImage, StageName, StageLocation, StageHover, StageButton } from './styles';
+import { Section, Stage, StyledBannerMarquee, Title, ComingSoon, StageCard, StageImage, StageName, StageLocation, StageHover, StageButton } from './styles';
 import title from '../../images/stages-title.png';
 import stages from './stages';
 import Carousel from "react-multi-carousel";
@@ -10,8 +10,13 @@ import genericStages from './genericStages';
 const Stages = () => (
     <Section id="stages">
         <Container>
-            <Title src={title} />
-            <StyledBannerMarquee>
+            <Title>
+                STA<span style={{'font-family': 'SaintRegular'}}>G</span>ES
+            </Title>
+            <ComingSoon>
+                Coming soon...
+            </ComingSoon>
+            {/* <StyledBannerMarquee>
                 <Carousel
                     centerMode={false}
                     infinite={true}
@@ -144,9 +149,12 @@ const Stages = () => (
                         ))
                     }
                 </Carousel>
-            </StyledBannerMarquee>
+            </StyledBannerMarquee> */}
         </Container>
     </Section>
+    
 )
+
+
 
 export default Stages;

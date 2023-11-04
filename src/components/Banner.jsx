@@ -6,7 +6,6 @@ import volume from '../images/volume.svg'
 import { breakpoints } from "../../utils/theme";
 
 const Banner = ({ setShowVideo, muted, setMuted }) => {
-
     return (
         <section id="2022-banner">
             <StyledBanner>
@@ -14,8 +13,7 @@ const Banner = ({ setShowVideo, muted, setMuted }) => {
                         muted={muted}
                         autoPlay
                         playing={true}
-                        url={'teaser-2022.mp4'}
-                        poster={"teaser-banner.png"}
+                        url={'https://www.youtube.com/watch?v=CPcOk2sKzCM'}
                         width={'100vw'}
                         height={'100vh'}
                         onEnded={() => {
@@ -53,13 +51,15 @@ const StyledBanner = styled.div`
 `
 
 const SkipVideo = styled.a`
-    font-family: 'Yapari Expanded';
+    font-family: 'Gothic';
     position: fixed;
     top: 40px;
     right: 40px;
     letter-spacing: 2px;
-    cursor: crosshair;
+    cursor: pointer;
     padding: 8px;
+    font-size: 50px;
+    color: red;
 `
 
 const SoundButton = styled.img`

@@ -2,39 +2,39 @@ import React from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import theme, { breakpoints } from "../../utils/theme";
-import mvmfLogo from "../images/logo-metaverse.png";
 import dclLogo from "../images/logo-dcl.svg";
-import star from "../images/star.svg";
-import whiteRabbit from "../images/rabbit.svg";
+import starBust from "../images/Starbust1.png";
 import polygon from "../images/STD-polygon.svg";
-import Countdown from './Countdown';
+import stage1 from "../images/stage1.png"
+import stage2 from "../images/stage2.png" 
+import stage3 from "../images/stage3.png" 
+import stage4 from "../images/stage4.png" 
+import stage5 from "../images/stage5.png" 
 import { Container } from "./Container";
-import ReactPlayer from "react-player";
 
 const Hero = () => {
   return (
     <StyledHero sx={{ height: "100vh", display: "flex", alignItems: "center" }}>
       <Container>
         <LogoContainer>
-          <ReactPlayer
-            muted
-            autoPlay
-            loop
-            playing={true}
-            url={'logo-animated.mp4'}
-            poster={"logo-poster.png"}
-            width={'100%'}
-            playsinline
-          />
+          <div style={{'justify-content': 'center', 'display': 'flex'}}>
+            <img src={stage1} width="15%" />
+            <img src={stage2} width="15%"/>
+            <img src={stage3} width="15%"/>
+            <img src={stage4} width="15%"/>
+            <img src={stage5} width="15%"/>
+          </div>
+          <img src="dmf-logo-white.png" width="100%" />
+
         </LogoContainer>
         <EventDetails>
           <EventData>
             <EventDataItem>
               <DateComponent className="event-data">
                 <p>
-                  NOV. 10-13 • <DateHighlight>-12PM UTC</DateHighlight> •
+                  NOV. 16-18 • <DateHighlight>-12PM UTC</DateHighlight> •
                 </p>
-                <DateLocation>FESTIVAL LAND, [-62,70]</DateLocation>
+                <DateLocation>FESTIVAL LAND, [-62,58]</DateLocation>
               </DateComponent>
             </EventDataItem>
           </EventData>
@@ -46,26 +46,24 @@ const Hero = () => {
             </EventDataItem>
             <EventDataItem>
               <SaveTheDate
-                href="https://play.decentraland.org/?position=-62%2C63&realm=marvel&island=Ic5t9"
+                href="https://play.decentraland.org/?position=-62%2C58"
                 target="_blank"
               >
-                <WhiteRabbit src={whiteRabbit} /> ENTER HERE{" "}
+                <p style={{ fontSize: "20px" }}>RSVP</p>{" "}
                 <Polygon src={polygon} />
               </SaveTheDate>
             </EventDataItem>
           </EventDataBottom>
           <Decorator
-            src={star}
+            src={starBust}
             top="50%"
-            left="-60px"
-            width="22px"
+            left="-64px"
             height="62px"
           />
           <Decorator
-            src={star}
+            src={starBust}
             top="50%"
-            right="-60px"
-            width="22px"
+            right="-64px"
             height="62px"
           />
         </EventDetails>
@@ -144,7 +142,7 @@ const DateComponent = styled.section`
   font-weight: 500;
   line-height: 16px;
   margin-top: 24px;
-  font-family: "Yapari Expanded";
+  font-family: "Gothic";
   padding-left: 0;
   width: 100%;
   text-align: justify;
@@ -167,7 +165,7 @@ const DateHighlight = styled.span`
 `;
 
 const DateLocation = styled.span`
-  font-family: "Yapari";
+  font-family: "Gothic";
   font-size: 13px;
   line-height: 32px;
   font-weight: 600;
@@ -198,7 +196,6 @@ const StyledLogo = styled.img`
 
 const SaveTheDate = styled(Button)`
   width: 100%;
-  background-image: url(../images/boton.png);
 `;
 
 const Decorator = styled.img`

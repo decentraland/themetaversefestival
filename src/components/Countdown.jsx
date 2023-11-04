@@ -73,7 +73,7 @@ const Countdown = () => {
 const StyledCountdown = styled.div`
   display: flex;
   justify-content: space-between;
-  font-family: "Yapari";
+  font-family: "Gothic";
   width: 100%;
   max-width: 100%;
   padding-right: 16px;

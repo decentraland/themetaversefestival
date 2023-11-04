@@ -6,7 +6,7 @@ export const StyledStageSchedule = styled.div`
 `;
 
 export const StageTitle = styled.h3`
-  font-family: "Yapari";
+  font-family: "Gothic";
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
@@ -47,7 +47,7 @@ export const StyledActInfo = styled.div`
 `;
 
 export const StyledActInfoTitle = styled.div`
-  font-family: "Yapari";
+  font-family: "Gothic";
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
@@ -63,7 +63,7 @@ export const StyledActInfoTitle = styled.div`
 `;
 
 export const StyledActInfoTime = styled.div`
-  font-family: "Yapari";
+  font-family: "Gothic";
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;

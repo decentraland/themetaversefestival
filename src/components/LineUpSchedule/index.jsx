@@ -14,6 +14,7 @@ import {
 import EyeVector from "../../images/Eye-Vector.svg";
 import LineUpTitle from "../../images/lineUpTitle-png.png";
 import DaySchedule from "../DaySchedule/index.jsx";
+import styled from "styled-components";
 
 // markup
 const LineUpSchedule = (props) => {
@@ -179,7 +180,9 @@ const LineUpSchedule = (props) => {
   return (
     <StyledLineUpSchedule id="lineup">
       <Container>
-        <Title src={LineUpTitle} />
+        <Title>
+          LINE <span style={{'font-family': 'SaintRegular'}}>U</span>P
+        </Title>
         <StyledLineUpHeader>
           <StyledLineUpBtnSection>
             <StyledLineUpBtn
@@ -205,21 +208,23 @@ const LineUpSchedule = (props) => {
         <StyledLineUpBody>
           {
             currentSection === 'lineup' &&
-              <StyledFullLineUpList className="raw-lineup">
-                {lineupRaw.map((artist, key) => (
-                  <>
-                    <span key={key}>{artist.toUpperCase()}</span>
-                    <StyledEyeIcon src={EyeVector} />
-                  </>
-                ))}
-              </StyledFullLineUpList>
+              // <StyledFullLineUpList className="raw-lineup">
+              //   {lineupRaw.map((artist, key) => (
+              //     <>
+              //       <span key={key}>{artist.toUpperCase()}</span>
+              //       <StyledEyeIcon src={EyeVector} />
+              //     </>
+              //   ))}
+              // </StyledFullLineUpList>
+              <ComingSoon>Coming soon...</ComingSoon>
           }
           {currentSection === "schedule" && (
             <>
-              <DaySchedule
+              {/* <DaySchedule
                 dayNumber={currentDay}
                 dayInfo={days[currentDay - 1]}
-              />
+              /> */}
+              <ComingSoon>Coming soon...</ComingSoon>
             </>
           )}
         </StyledLineUpBody>
@@ -227,5 +232,11 @@ const LineUpSchedule = (props) => {
     </StyledLineUpSchedule>
   );
 };
+
+const ComingSoon = styled.p`
+  font-family: Gothic;
+  font-size: 40px;
+  font-weight: 700
+`;
 
 export default LineUpSchedule;

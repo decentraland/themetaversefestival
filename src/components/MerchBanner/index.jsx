@@ -8,14 +8,14 @@ export const MerchBanner = ({ src, href }) => (
 )
 
 const Link = styled.a`
- cursor: crosshair;
+ cursor: pointer;
 `
 
 const Banner = styled.img`
     width: 100%;
     height: auto;
     object-fit: cover;
-    font-family: "Yapari";
+    font-family: "Gothic";
 `
 
 

@@ -1,55 +1,54 @@
 import React from "react";
 import styled from "styled-components";
 import theme, { breakpoints } from "../../../utils/theme";
-import AboutThinIcon from "../../images/about-thin-icon.png";
 import Logo from "../../images/logo-navbar.svg";
-import AboutMobileThinIcon from "../../images/about-mobile-thin-icon.png";
 import EyeTriengleIcon from "../../images/eye-triangle-icon.svg";
-import AboutTitleImg from "../../images/about-title.png";
-import Rabbit from "../../images/rabbit.gif";
+import sideIcon from "../../images/stage3.png";
+import starBust5 from "../../images/Starbust5.png";
+import starBust6 from "../../images/Starbust6.png";
+import starBust7 from "../../images/Starbust7.png";
 import { Container } from "../Container";
+import { StaticImage } from 'gatsby-plugin-image'; 
 
 const About = (props) => {
   return (
     <Section id="about">
-      <Container>
-        <StyledAbout>
+      <Container>        
+        <StyledAbout>          
           <AboutHeader>
-            {" "}
-            <AboutTitle src={AboutTitleImg} />
-            <RabbitAnimation src={Rabbit} alt="Follow the white rabbit" width={200} />
+            <AboutTitle>DECENTRALAND M<MVFont>U</MVFont>SIC F<MVFont>E</MVFont>STIVAL</AboutTitle>            
           </AboutHeader>
           <Aboutbody>
-            <AboutBodyImgContainer>
-              <AboutBodyImg>
-                <AboutBodyCodebar src={AboutThinIcon} />
-                <AboutMobileBodyCodebar src={AboutMobileThinIcon} />
-                <AboutBodyIlluminati src={EyeTriengleIcon} width="76px" height="76px" />
-              </AboutBodyImg>
+            <AboutBodyImgContainer>             
+                <StarBustSideIcon src={starBust5} width="80px" height="80px" />
+                <StarBustSideIcon src={starBust6} width="80px" height="80px" />
+                <StarBustSideIcon src={starBust7} width="80px" height="80px" />             
             </AboutBodyImgContainer>
             <AboutBodyText>
               <AboutBodyParagraph>
-                #DCLMVMF22 is a four-day celebration of <TextHighlight>music</TextHighlight>, <TextHighlight>innovation</TextHighlight>, <TextHighlight>culture</TextHighlight> and <TextHighlight>creativity</TextHighlight>, held online in the virtual social world of Decentraland. The festival is open for any and all to attend, no ticket or VR headset required.
+                Prepare to discover an alternative reality inspired by the themes of <TextHighlight>radical self-expression, communal growth, and artistic renewal</TextHighlight> in the 3rd, most innovative edition of Decentraland Music Festival yet!
                 <br />
                 <br />
-                Prepare yourself for a musical experience unlike any you’ve attended before:
+                With stages and experiences built by <TextHighlight>16 award-winning teams</TextHighlight> of virtual creators and game designers, #DCLMF23 will showcase the latest in immersive music experience, defining what music can be in the virtual world.
+                <br />
+                <br />
+                Stepping boldly towards the future, <TextHighlight>#DCLMF23</TextHighlight> leaves behind the banner of Metaverse Music Festival and traditional mainstream artists to offer only the most pioneering, digital-native performances with the spotlight fully on Decentraland’s community.
+                <br />
+                <br />
+                Free for all to attend with no VR headset required, #DCLMF23 will feature:
                 <ul>
-                  <li><TextHighlight>Explore the futuristic</TextHighlight>, <TextHighlight>cyberpunk festival grounds </TextHighlight>and become familiar with 15 different stages of the like you’d never see IRL</li>
-                  <li> Check the schedule of <TextHighlight>150+ global artists</TextHighlight> from across genres featuring names such as <TextHighlight>Ozzy Ozbourne</TextHighlight>, <TextHighlight>Soulja Boy</TextHighlight>, <TextHighlight>Dillon Fancis</TextHighlight>, and main headliner <TextHighlight>Björk</TextHighlight> who’s closing act you will NOT want to miss</li>
-                  <li>Dive into numerous Decentraland <TextHighlight><a href="#experiences">experiences</a></TextHighlight> as you peek into portaloos, take on the quest for a backstage pass, chase a white rabbit, and feel connected at the Tower of Babel</li>
+                  <li><TextHighlight>80+ interactive performances</TextHighlight> over 3 days from the world’s most innovative artists & independent labels</li>
+                  <li><TextHighlight>5 main stages & 10 new games and immersive experiences</TextHighlight> designed by award-winning virtual creators</li>
+                  <li>Headline sets by OG digital pioneers like Cora Novoa, Trick Daddy, GuccieToe, Bufalo, Glitch Rave, Steve Sai, and others</li>
                   <li>And much more!</li>
                 </ul>
                 <br />
-                <br />
-                So get yourself some kaleidoscopic Wearables and killer dance Emotes in the Marketplace Festival Tab and jump into Decentraland on November 10.
-
               </AboutBodyParagraph>
             </AboutBodyText>
           </Aboutbody>
-          <AboutButtonContainer href="https://play.decentraland.org/?position=-62%2C63&realm=marvel&island=Ic5t9" target="_blank">
+          <AboutButtonContainer href="https://decentraland.beehiiv.com/subscribe?utm_source=musicfestival.decentraland.org&utm_medium=organic&utm_campaign=DCLMF23" target="_blank">
             <AboutButtonLink>
-              ENTER THE FESTIVAL
-              <ButtonDecorator src={Logo} />
+              Sign up for the Decentraland Newsletter
             </AboutButtonLink>
           </AboutButtonContainer>
         </StyledAbout>
@@ -57,6 +56,28 @@ const About = (props) => {
     </Section>
   );
 };
+
+const MVFont = styled.span `
+  font-family: 'SaintRegular';
+}`
+
+const AboutTitle = styled.h2`
+  font-family: Gothic;
+  font-size: 40px;
+  text-align: center;
+  @media screen and (min-width: ${breakpoints.md}) {
+    font-size: 60px;
+  }
+  @media screen and (min-width: ${breakpoints.l}) {
+    font-size: 60px;
+  }
+  @media screen and (min-width: ${breakpoints.xl}) {
+    font-size: 60px;
+  }
+  @media screen and (min-width: ${breakpoints.xxl}) {
+    font-size: 60px;
+  }
+`
 
 const Section = styled.section`
 position: relative;
@@ -70,28 +91,12 @@ const StyledAbout = styled.div`
 const AboutHeader = styled.section`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 56px;
 `;
 
-const AboutTitle = styled.img`
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  @media screen and (min-width: ${breakpoints.md}) {
-    width: 90%;
-  }
-  @media screen and (min-width: ${breakpoints.l}) {
-    width: 80%;
-  }
-  @media screen and (min-width: ${breakpoints.xl}) {
-    width: 80%;
-  }
-  @media screen and (min-width: ${breakpoints.xxl}) {
-    width: 70%;
-  }
-`;
-
-const RabbitAnimation = styled.img`
+const SideIcon = styled.img`
+  width: 150px;
   display: none;
 
   @media screen and (min-width: ${breakpoints.md}) {
@@ -103,25 +108,7 @@ const Aboutbody = styled.section`
   display: flex;
 `;
 
-const AboutBodyCodebar = styled.img`
-  display: none;
-  height: 100%;
-  padding-bottom: 38px;
-  @media screen and (min-width: ${breakpoints.md}) {
-    display: block;
-  }
-`;
-
-const AboutMobileBodyCodebar = styled.img`
-  height: 62vh;
-  display: block;
-
-  @media screen and (min-width: ${breakpoints.md}) {
-    display: none;
-  }
-`;
-
-const AboutBodyIlluminati = styled.img`
+const StarBustSideIcon = styled.img`
   display: none;
   @media screen and (min-width: ${breakpoints.md}) {
     display: block;
@@ -144,7 +131,7 @@ margin-left: 8px;
 `;
 
 const AboutBodyParagraph = styled.p`
-  font-family: "Gotham", sans-serif;
+  font-family: "Gothic", sans-serif;
   font-size: 16px;
   line-height: 21px;
 
@@ -153,7 +140,7 @@ const AboutBodyParagraph = styled.p`
     padding: 16px;
 
     li {
-      font-family: Gotham;
+      font-family: Gothic;
       padding: 16px 0;
 
       &:last-child {
@@ -165,8 +152,10 @@ const AboutBodyParagraph = styled.p`
 
 const AboutBodyImgContainer = styled.div`
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column; 
+  justify-content: space-between;
+  align-items: center;  
+  margin: 45px 0;
 `;
 
 const AboutBodyImg = styled.div`
@@ -186,12 +175,12 @@ const AboutBodyImg = styled.div`
 `;
 
 const TextHighlight = styled.span`
-  font-family: "Gotham", sans-serif;
+  font-family: "Gothic", sans-serif;
   color: ${theme.accent};
   font-weight: 700;
 
   a {
-    font-family: "Gotham", sans-serif;
+    font-family: "Gothic", sans-serif;
     color: ${theme.accent};
     font-weight: 700;
     text-decoration: underline;
@@ -214,14 +203,14 @@ const AboutButtonLink = styled.button`
   background: transparent;
   font-size: 12px;
   letter-spacing: 120%;
-  font-family: "Yapari Expanded";
+  font-family: "Gothic";
   padding: 16px 32px;
   border: 4px solid ${theme.white};
   border-radius: 120px;
   font-weight: 700;
   transition: all 0.4s ease;
   backdrop-filter: blur(2px);
-  cursor: crosshair;
+  cursor: pointer;
   margin-top: 48px;
 
   img {
@@ -234,7 +223,7 @@ const AboutButtonLink = styled.button`
 
   &:hover {
     color: black;
-    background: url('/texture.png');
+    background-color: #f37877;
     box-shadow:
           0 0 20px #fff,
           0 0 10px violet,

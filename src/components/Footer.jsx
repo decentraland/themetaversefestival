@@ -121,14 +121,14 @@ const StyledLinksList = styled.ul`
 `;
 
 const PageLink = styled.li`
-  font-family: "Yapari";
+  font-family: "Gothic";
   text-align: center;
   line-height: 22px;
   margin: 16px 0;
 
   a {
     transition: all 0.4s ease;
-    cursor: crosshair;
+    cursor: pointer;
   }
   a:hover {
     color: ${theme.accent};
@@ -170,7 +170,7 @@ svg:hover {
   }
 }
 a {
-  cursor: crosshair;
+  cursor: pointer;
 }
 
 @media screen and (min-width: ${breakpoints.md}) {
