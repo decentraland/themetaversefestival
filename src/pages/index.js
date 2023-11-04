@@ -46,9 +46,9 @@ const IndexPage = () => {
   const [muted, setMuted] = useState(true);
 
   useEffect(() => {
-    if (!localStorage.getItem("hasWatchedVideo")) {
-      setShowVideo(true);
-    }
+    // if (!localStorage.getItem("hasWatchedVideo")) {
+    //    setShowVideo(true);
+    // }
   }, []);
 
   return (
