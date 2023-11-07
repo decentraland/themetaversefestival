@@ -19,6 +19,15 @@ import MerchBanner from "../components/MerchBanner";
 import merchBanner from "../images/merch-banner.png";
 import LineUpSchedule from "../components/LineUpSchedule";
 import { Subscribe } from "../components/Subscribe";
+import ReactPixel from "react-facebook-pixel";
+
+const advancedMatching = {};
+const options = {
+  autoConfig: true,
+  debug: false,
+};
+ReactPixel.init("291661748141710", advancedMatching, options);
+ReactPixel.pageView();
 
 const seo = {
   title: "Decentraland Music Festival | Decentraland",
