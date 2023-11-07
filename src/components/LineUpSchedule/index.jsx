@@ -5,13 +5,14 @@ import {
   StyledLineUpSchedule,
   StyledLineUpBody,
   StyledFullLineUpList,
-  StyledEyeIcon,
+  StyledSeparator,
   StyledLineUpHeader,
   StyledLineUpBtnSection,
   StyledLineUpBtn,
   Title,
 } from "./styles";
-import EyeVector from "../../images/Eye-Vector.svg";
+import EyeVector from "../../images/Starbust3.png";
+
 import LineUpTitle from "../../images/lineUpTitle-png.png";
 import DaySchedule from "../DaySchedule/index.jsx";
 import styled from "styled-components";
@@ -144,37 +145,98 @@ const LineUpSchedule = (props) => {
   ];
 
   const lineupRaw = [
-    "BJÖRK",
-    "OZZY OSBOURNE",
-    "DILLON FRANCIS",
-    "SOULJA BOY",
-    "MOTORHEAD",
-    "DJ REGARD",
-    "MEGADETH",
-    "AKIRA THE DON",
-    "VLADIMIR CAUCHEMAR",
-    "MAIA WRIGHT",
-    "IZZY BIZU",
-    "BRELAND",
-    "KYARY PAMYU PAMYU",
-    "HARRISON FIRST",
-    "MORGAN",
-    "MIYA MIYA",
-    "THE STICKMEN PROJECT",
-    "ELLYSE MASON",
-    "ELIJAH BLAKE",
-    "IZZY BIZU",
-    "ATARASHII GAKKO",
-    "MANON",
-    "A$AP TYY",
-    "FRUITS ZIPPER",
-    "SNH48",
-    "NICOLA FASANO",
-    "GRAMATIK + LUXAS",
-    "YOTAM AVNI",
-    "APE RAVE CLUB",
-    "JAMIS",
-    "AND MANY MORE",
+    //Thursday 16th
+    "ODEUM MUSIC", 
+    "DEAD-TONES", 
+    "KUTURAR", 
+    "PANS", 
+    "DADAYUTE", 
+    "STONEYEYE", 
+    "GLITCH RAVE",
+    "MA GAK PA", 
+    "NESSYTHERILLA", 
+    "LADYA", 
+    "SOUND DESERT SHOWCASE", 
+    "RADYICA", 
+    "DANIEL MONACO", 
+    "COCONUT SUNDAY", 
+    "RYOTA", 
+    "ZOORAB", 
+    "VANRAVEN", 
+    "SKOGUR", 
+    "MAKULATURA", 
+    "0XPETER", 
+    "BASHIR KHATSUK", 
+    "PHUTURE MUSIC LIVE", 
+    "MERIO BRAS", 
+    "DEEPME", 
+    "BARRET WAV", 
+    "ARGENT", 
+    "SOUNDSCAPE JAM", 
+    //Friday 17th
+    "ORA NOVOA", 
+    "SEBASTIAN MIKAEL", 
+    "TEENEAR", 
+    "GUCCITOE (LUCID DREAMS)", 
+    "MR SWE", 
+    "DJTRAX", 
+    "FSODINERO", 
+    "APROPOS", 
+    "DEEPFAKE", 
+    "BABIIJ", 
+    "AMPM", 
+    "ARMINA", 
+    "DVANOV", 
+    "TEYA FLOW", 
+    "COSY", 
+    "MELADEE", 
+    "KEY KEEPERS", 
+    "BORG MUSIC", 
+    "KOSMODROM", 
+    "DJ FOUR", 
+    "YALA", 
+    "DJ SA", 
+    "UVIFREE", 
+    "THREE OSCILLATORS", 
+    "MEDTRONICA", 
+    "ROMAN FLAUNS", 
+    "NICO EARNSHAW", 
+    "LESLY AND KAN DINA", 
+    "LOSI", 
+    "AWAKE FOR LIFE", 
+    "PLACEBOYS",
+    //Saturday 18th
+    "TRICK DADDY", 
+    "CANDY TUNE", 
+    "D-NOISE", 
+    "THE HOLLOW LEGS", 
+    "DJ DOODLE", 
+    "BUFALO", 
+    "GUCCITOE", 
+    "METADJ LIVE", 
+    "STEVE SAI", 
+    "TRINA", 
+    "DJTRAX", 
+    "TYTE", 
+    "MIKE SMIFF", 
+    "VOROTH", 
+    "BALA", 
+    "NATSUKI KWANISHI", 
+    "ME.N.U.", 
+    "UNISOL", 
+    "RED ALBERT", 
+    "AIWASKA", 
+    "KVMBL", 
+    "FURIA", 
+    "RK", 
+    "OGIWORLDS", 
+    "KIRAMOMO", 
+    "LMN3", 
+    "DJ DEX", 
+    "UNTZ KING", 
+    "BESKONECHNAYA ZIMA", 
+    "RED ALBERT", 
+    "PECHATNAYA MASHINA"
   ];
 
   return (
@@ -205,29 +267,27 @@ const LineUpSchedule = (props) => {
             ))}
           </StyledLineUpBtnSection>
         </StyledLineUpHeader>
+        
         <StyledLineUpBody>
-          {
-            currentSection === 'lineup' &&
-              // <StyledFullLineUpList className="raw-lineup">
-              //   {lineupRaw.map((artist, key) => (
-              //     <>
-              //       <span key={key}>{artist.toUpperCase()}</span>
-              //       <StyledEyeIcon src={EyeVector} />
-              //     </>
-              //   ))}
-              // </StyledFullLineUpList>
-              <ComingSoon>Coming soon...</ComingSoon>
-          }
+          {currentSection === 'lineup' && (
+            <>
+              <StyledFullLineUpList className="raw-lineup">
+                {lineupRaw.map((artist, key) => (
+                  <>
+                     <span key={key}>{artist.toUpperCase()}</span>
+                     {key !== lineupRaw.length - 1 && <StyledSeparator src={EyeVector} />}
+                  </>
+                ))}
+              </StyledFullLineUpList>              
+            </>
+          )}
           {currentSection === "schedule" && (
             <>
-              {/* <DaySchedule
-                dayNumber={currentDay}
-                dayInfo={days[currentDay - 1]}
-              /> */}
-              <ComingSoon>Coming soon...</ComingSoon>
+              <DaySchedule dayNumber={currentDay} dayInfo={days[currentDay - 1]} />              
             </>
           )}
         </StyledLineUpBody>
+        
       </Container>
     </StyledLineUpSchedule>
   );
