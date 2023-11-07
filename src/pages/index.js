@@ -27,7 +27,9 @@ const options = {
   debug: false,
 };
 ReactPixel.init("291661748141710", advancedMatching, options);
-ReactPixel.pageView();
+if (typeof window !== `undefined`) {
+  ReactPixel.pageView();
+}
 
 const seo = {
   title: "Decentraland Music Festival | Decentraland",
