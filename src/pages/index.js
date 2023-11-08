@@ -60,7 +60,7 @@ const IndexPage = () => {
     }
   }, []);
 
-  ReactPixel.pageView();
+  if (typeof window !== "undefined") ReactPixel.pageView();
 
   return (
     <StyledIndexPage>
