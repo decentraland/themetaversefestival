@@ -20,6 +20,12 @@ import merchBanner from "../images/merch-banner.png";
 import LineUpSchedule from "../components/LineUpSchedule";
 import { Subscribe } from "../components/Subscribe";
 
+const advancedMatching = {};
+const options = {
+  autoConfig: true,
+  debug: false,
+};
+
 const seo = {
   title: "Decentraland Music Festival | Decentraland",
   description:
@@ -47,8 +53,17 @@ const IndexPage = () => {
 
   useEffect(() => {
     // if (!localStorage.getItem("hasWatchedVideo")) {
-    //    setShowVideo(true);
+    //   setShowVideo(true);
     // }
+    import("react-facebook-pixel")
+      .then((module) => module.default)
+      .then((ReactPixel) => {
+        if (typeof window !== "undefined") {
+          ReactPixel.init("291661748141710", advancedMatching, options);
+          ReactPixel.pageView();
+        }
+      });
+
   }, []);
 
   return (
