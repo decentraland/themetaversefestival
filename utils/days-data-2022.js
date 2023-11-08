@@ -4,336 +4,84 @@ export const days = [
   {
     linkLabel: (
       <>
-        <span className="day-tag">Thursday 10th</span>
+        <span className="day-tag">Thursday 16th</span>
       </>
     ),
     date: "Thursday 16th",
     stages: [
       {
-        name: "MAIN STAGE",
+        name: "TRU Band Room (-60, 60)",
         acts: [
           {
-            name: "THE STICKMEN PROJECT",
-            time: "23:00 UTC",
+            name: "Coconut Sunday",
+            time: "14:00 UTC",
           },
           {
-            name: "VLADIMIR CAUCHEMAR",
-            time: "22:00 UTC",
-          },
-          {
-            name: "ERIKA KRALL",
+            name: "PANS",
             time: "21:00 UTC",
           },
           {
-            name: "HANDSHAKING",
-            time: "19:00 UTC",
+            name: "DadaYute",
+            time: "23:00 UTC",
+          },
+          {
+            name: "StoneyEye",
+            time: "24:00 UTC",
           },
         ],
       },
       {
-        name: "SOUNDR",
+        name: "Techno (-69, 69)",
         acts: [
           {
-            name: "IZZY BIZU",
-            time: "20:51 UTC",
+            name: "Phuture Music Live",
+            time: "18:00 UTC",
           },
           {
-            name: "LIL YAMAHA",
-            time: "20:36 UTC",
+            name: "DeepMe",
+            time: "19:00 UTC",
           },
           {
-            name: "BENJI PATTERSON",
-            time: "20:25 UTC",
+            name: "Odeum Music",
+            time: "20:00 UTC",
+          },
+        ],
+      },
+      {
+        name: "Raverse (-69, 54)",
+        acts: [
+          {
+            name: "Merio Bras",
+            time: "19:00 UTC",
           },
           {
-            name: "SHELF LIVES",
-            time: "20:03 UTC",
-          },
-          {
-            name: "ADS",
+            name: "Dead-Tones",
             time: "20:00 UTC",
           },
           {
-            name: "IZZY BIZU",
-            time: "12:51 UTC",
+            name: "Barrett",
+            time: "21:00 UTC",
           },
+        ],
+      },
+      {
+        name: "Slip N Slide (-56, 56)",
+        acts: [],
+      },
+      {
+        name: "MetaTokyio (-54, 69)",
+        acts: [
           {
-            name: "LIL YAMAHA",
-            time: "12:36 UTC",
-          },
-          {
-            name: "BENJI PATTERSON",
-            time: "12:25 UTC",
-          },
-          {
-            name: "SHELF LIVES",
-            time: "12:03 UTC",
-          },
-          {
-            name: "ADS",
+            name: "GLITCH RAVE",
             time: "12:00 UTC",
           },
-        ],
-      },
-      {
-        name: "Meta Tokyo",
-        acts: [
           {
-            name: "MISOSHITA",
+            name: "Sound Desert Showcase",
+            time: "13:00 UTC",
+          },
+          {
+            name: "Ryota",
             time: "14:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "Limewire",
-        acts: [
-          {
-            name: "QUINCY",
-            time: "23:47 UTC",
-          },
-          {
-            name: "MAIA WRIGHT",
-            time: "23:27 UTC",
-          },
-          {
-            name: "DRU OLIVER",
-            time: "23:03 UTC",
-          },
-          {
-            name: "CHARLES JR.",
-            time: "23:00 UTC",
-          },
-          {
-            name: "QUINCY",
-            time: "18:47 UTC",
-          },
-          {
-            name: "MAIA WRIGHT",
-            time: "18:27 UTC",
-          },
-          {
-            name: "DRU OLIVER",
-            time: "18:03 UTC",
-          },
-          {
-            name: "CHARLES JR.",
-            time: "18:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "OZZFEST",
-        acts: [
-          {
-            name: "OZZY OSBOURNE",
-            time: "00:00 UTC",
-          },
-          {
-            name: "MEGADETH",
-            time: "23:00 UTC",
-          },
-          {
-            name: "SKID ROW",
-            time: "22:00 UTC",
-          },
-          {
-            name: "BLACK LABEL SOCIETY",
-            time: "21:00 UTC",
-          },
-          {
-            name: "RAVEN AGE",
-            time: "20:00 UTC",
-          },
-          {
-            name: "BRITOF",
-            time: "19:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "OVER",
-        acts: [
-          {
-            name: "AZEL",
-            time: "17:00 UTC",
-          },
-          {
-            name: "DAN: ROS",
-            time: "14:00 UTC",
-          },
-        ],
-      },
-
-      {
-        name: "RANDOM RAVERS",
-        acts: [
-          {
-            name: "MAI LAWSON",
-            time: "00:00 UTC",
-          },
-          {
-            name: "GLÜCK",
-            time: "22:30 UTC ",
-          },
-          {
-            name: "LOLU MENAYED",
-            time: "21:00 UTC",
-          },
-          {
-            name: "SOUND PROCESS",
-            time: "19:30 UTC",
-          },
-          {
-            name: "NACHO VARELA & CRUZ VITTOR",
-            time: "18:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "Party Degenerates",
-        acts: [
-          {
-            name: "GRAMATIK + LUXAS",
-            time: "23:00 UTC",
-          },
-          {
-            name: "NOTED",
-            time: "20:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "JERRY GARCIA",
-        acts: [
-          {
-            name: "MICHELE STODDART",
-            time: "21:00 UTC",
-          },
-          {
-            name: "LOUIE BRENNAN",
-            time: "20:00 UTC",
-          },
-          {
-            name: "COUNTERS CREEK",
-            time: "19:00 UTC",
-          },
-          {
-            name: "KITCHMAN SCHMIDT",
-            time: "18:00 UTC",
-          },
-          {
-            name: "STOMPING DAVE",
-            time: "17:00 UTC",
-          },
-          {
-            name: "MA POLAINE",
-            time: "16:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "JAZZ CLUB",
-        acts: [
-          {
-            name: "ALFIE JAZZ VIDEOS",
-            time: "01:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "OG COMMUNITY STAGE",
-        acts: [
-          {
-            name: "HARRISON FIRST",
-            time: "00:00 UTC",
-          },
-          {
-            name: "TRU CLUB",
-            time: "23:00 UTC",
-          },
-          {
-            name: "GLITCH CANDIES",
-            time: "22:30 UTC",
-          },
-          {
-            name: "CROMULON",
-            time: "22:00 UTC",
-          },
-          {
-            name: "SHARK",
-            time: "21:30 UTC",
-          },
-          {
-            name: "MARCOS NAIDE",
-            time: "21:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "DILLON FRANCIS",
-        acts: [
-          {
-            name: "DILLON FRANCIS",
-            time: "ALL DAY",
-          },
-        ],
-      },
-      {
-        name: "CASA AZUL STAGE",
-        acts: [
-          {
-            name: "THE GLOBO COLLECTIVE",
-            time: "ALL DAY",
-          },
-          {
-            name: "JOW",
-            time: "ALL DAY",
-          },
-          {
-            name: "THAMES HOUSE ORCESTRA",
-            time: "ALL DAY",
-          },
-        ],
-      },
-      {
-        name: "Techno Stage",
-        acts: [
-          {
-            name: "YOTAM AVNI",
-            time: "02:00 UTC",
-          },
-          {
-            name: "ZEIA",
-            time: "01:00 UTC",
-          },
-          {
-            name: "ENDORPHIN",
-            time: "00:00 UTC",
-          },
-          {
-            name: "VINCENZO",
-            time: "23:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "TRU BAND",
-        acts: [
-          {
-            name: "SHONTELLE",
-            time: "23:00 UTC",
-          },
-          {
-            name: "PAT DIMITRI",
-            time: "22:00 UTC ",
-          },
-          {
-            name: "BUFALO",
-            time: "20:00 UTC",
-          },
-          {
-            name: "ASH ORPHAN",
-            time: "18:00 UTC",
           },
         ],
       },
@@ -342,365 +90,105 @@ export const days = [
   {
     linkLabel: (
       <>
-        <span className="day-tag">Friday 11th</span>
+        <span className="day-tag">Friday 17th</span>
       </>
     ),
     date: "Friday 17th",
     stages: [
       {
-        name: "MAIN STAGE",
+        name: "TRU Band Room (-60, 60)",
         acts: [
           {
-            name: "BRELAND",
-            time: "23:00 UTC",
+            name: "Nico Earnshaw",
+            time: "18:00 UTC",
           },
           {
-            name: "SPOTTIE WIFI",
+            name: "Losi",
+            time: "19:00 UTC",
+          },
+          {
+            name: "Mr.Swe",
             time: "22:00 UTC",
           },
           {
-            name: "AMADIS AND THE AMBASSADORS",
-            time: "21:00 UTC",
-          },
-          {
-            name: "MAIJA KAUHANEN",
-            time: "19:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "SOUNDR",
-        acts: [
-          {
-            name: "IZZY BIZU",
-            time: "02:51 UTC",
-          },
-          {
-            name: "LIL YAMAHA",
-            time: "02:36 UTC",
-          },
-          {
-            name: "BENJI PATERSON",
-            time: "02:25 UTC",
-          },
-          {
-            name: "SHELF LIVES",
-            time: "02:03 UTC",
-          },
-          {
-            name: "ADS",
-            time: "02:00 UTC",
-          },
-
-          {
-            name: "JUNIOR ANDRE",
-            time: "20:52 UTC",
-          },
-          {
-            name: "LOEK",
-            time: "20:19 UTC",
-          },
-          {
-            name: "SKULLZ",
-            time: "20:19 UTC",
-          },
-          {
-            name: "THE TYNE",
-            time: "20:03 UTC",
-          },
-          {
-            name: "ADS",
-            time: "20:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "Meta Tokyo",
-        acts: [
-          {
-            name: "ASA WU",
-            time: "14:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "Limewire",
-        acts: [
-          {
-            name: "QUINCY",
-            time: "02:47 UTC",
-          },
-          {
-            name: "MAIA WRIGHT",
-            time: "02:27 UTC",
-          },
-          {
-            name: "DRU OLIVER",
-            time: "02:03 UTC",
-          },
-          {
-            name: "CHARLES JR.",
-            time: "02:00 UTC",
-          },
-          {
-            name: "QUINCY",
-            time: "18:47 UTC",
-          },
-          {
-            name: "MAIA WRIGHT",
-            time: "18:27 UTC",
-          },
-          {
-            name: "DRU OLIVER",
-            time: "18:03 UTC",
-          },
-          {
-            name: "CHARLES JR.",
-            time: "18:00 UTC",
-          },
-          {
-            name: "BILLYRACXX",
-            time: "23:37 UTC",
-          },
-          {
-            name: "LIL BITCOIN",
-            time: "23:19 UTC",
-          },
-          {
-            name: "HIGH TIDES",
+            name: "Cosy",
             time: "23:00 UTC",
           },
-          {
-            name: "SOULJA BOY",
-            time: "19:00 UTC",
-          },
-          {
-            name: "BILLYRACXX",
-            time: "18:37 UTC",
-          },
-          {
-            name: "LIL BITCOIN",
-            time: "18:19 UTC",
-          },
-          {
-            name: "HIGH TIDES",
-            time: "18:00 UTC",
-          },
         ],
       },
       {
-        name: "OZZFEST",
+        name: "Techno (-69, 69)",
         acts: [
           {
-            name: "MOTORHEAD",
-            time: "00:00 UTC",
-          },
-          {
-            name: "RAVEN AGE",
-            time: "23:00 UTC",
-          },
-          {
-            name: "SKID ROW",
-            time: "22:00 UTC",
-          },
-          {
-            name: "BRITOF",
-            time: "18:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "OVER",
-        acts: [
-          {
-            name: "JAMIS",
-            time: "17:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "RANDOM RAVERS",
-        acts: [
-          {
-            name: "UNTZ KING",
-            time: "20:30 UTC",
-          },
-          {
-            name: "MERIO BRAS",
-            time: "19:45 UTC ",
-          },
-          {
-            name: "0XPET3R",
-            time: "19:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "Party Degenerates",
-        acts: [
-          {
-            name: "DISCO BISCUITS",
-            time: "01:30 UTC",
-          },
-          {
-            name: "KINGSTARLIGHT",
-            time: "00:20 UTC",
-          },
-          {
-            name: "SALEM ILESE",
-            time: "00:00 UTC",
-          },
-          {
-            name: "BONNIE & CLYDE",
-            time: "21:30 UTC",
-          },
-          {
-            name: "LUM feat. MADS PAIGE",
-            time: "20:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "KRAKEN AFTER PARTY",
-        acts: [
-          {
-            name: "HARRISON FIRST",
-            time: "23:40 UTC",
-          },
-        ],
-      },
-      {
-        name: "JERRY GARCIA",
-        acts: [
-          {
-            name: "OUR MAN IN THE FIELD",
-            time: "21:00 UTC",
-          },
-          {
-            name: "JACK HARRIS",
-            time: "20:00 UTC",
-          },
-          {
-            name: "ROB CORCORAN",
-            time: "19:00 UTC",
-          },
-          {
-            name: "JAMES RILEY",
-            time: "18:00 UTC",
-          },
-          {
-            name: "DRAIN AND FARRIS",
-            time: "17:00 UTC",
-          },
-          {
-            name: "BUFFOS WAKE",
+            name: "Three Oscillators",
             time: "16:00 UTC",
           },
-        ],
-      },
-      {
-        name: "JAZZ CLUB",
-        acts: [
           {
-            name: "ANETA WARDELL",
-            time: "01:00 UTC",
+            name: "DJTrax",
+            time: "24:00 UTC",
           },
         ],
       },
       {
-        name: "OG COMMUNITY STAGE",
+        name: "Raverse (-69, 54)",
         acts: [
           {
-            name: "ECLECTIC METHOD",
-            time: "23:00 UTC",
+            name: "Cora Novoa",
+            time: "17:00 UTC",
           },
           {
-            name: "ALP",
-            time: "22:30 UTC",
-          },
-          {
-            name: "BUFALO",
-            time: "22:00 UTC",
-          },
-          {
-            name: "STONEY EYE",
-            time: "21:30 UTC",
-          },
-          {
-            name: "GUCCI TOE",
-            time: "21:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "DILLON FRANCIS",
-        acts: [
-          {
-            name: "DILLON FRANCIS",
-            time: "ALL DAY",
-          },
-        ],
-      },
-      {
-        name: "CASA AZUL STAGE",
-        acts: [
-          {
-            name: "DESTA FRENCH",
-            time: "ALL DAY",
-          },
-          {
-            name: "GABRIEL MORENO",
-            time: "ALL DAY",
-          },
-          {
-            name: "DGSOLARIS JEREMY TUPLIN",
-            time: "ALL DAY",
-          },
-        ],
-      },
-      {
-        name: "Techno Stage",
-        acts: [
-          {
-            name: "OMER BAR",
-            time: "02:00 UTC",
-          },
-          {
-            name: "KADOSH",
-            time: "01:00 UTC",
-          },
-          {
-            name: "ALIENTRAK",
-            time: "00:00 UTC",
-          },
-          {
-            name: "AIWASKA",
-            time: "23:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "TRU BAND",
-        acts: [
-          {
-            name: "DOMINO",
-            time: "02:00 UTC",
-          },
-          {
-            name: "CROMULON",
-            time: "00:00 UTC ",
-          },
-          {
-            name: "AMBIENFT",
-            time: "19:00 UTC",
-          },
-          {
-            name: "NIFTY SAX",
+            name: "Yala",
             time: "18:00 UTC",
           },
           {
-            name: "PHUTURE",
-            time: "17:00 UTC",
+            name: "DJ SA",
+            time: "19:00 UTC",
+          },
+          {
+            name: "Medtronica",
+            time: "20:00 UTC",
+          },
+        ],
+      },
+      {
+        name: "Slip N Slide (-56, 56)",
+        acts: [
+          {
+            name: "Sebastian Mikael",
+            time: "02:00 UTC",
+          },
+          {
+            name: "FSODinero",
+            time: "03:00 UTC",
+          },
+          {
+            name: "babiiJ",
+            time: "04:00 UTC",
+          },
+          {
+            name: "Meladee",
+            time: "23:00 UTC",
+          },
+          {
+            name: "Teenear",
+            time: "24:00 UTC",
+          },
+        ],
+      },
+      {
+        name: "MetaTokyo (-54, 69)",
+        acts: [
+          {
+            name: "AmPm",
+            time: "12:00 UTC",
+          },
+          {
+            name: "BORG MUSIC",
+            time: "13:00 UTC",
+          },
+          {
+            name: "DJ FOUR",
+            time: "14:00 UTC",
           },
         ],
       },
@@ -709,445 +197,105 @@ export const days = [
   {
     linkLabel: (
       <>
-        <span className="day-tag">Saturday 12th</span>
+        <span className="day-tag">Saturday 18th</span>
       </>
     ),
     date: "Saturday 18th",
     stages: [
       {
-        name: "MAIN STAGE",
+        name: "TRU Band Room (-60, 60)",
         acts: [
           {
-            name: "AKIRA THE DON",
+            name: "GucciToe",
+            time: "02:00 UTC",
+          },
+          {
+            name: "Bufalo",
+            time: "20:00 UTC",
+          },
+          {
+            name: "The Hollow Legs",
+            time: "22:00 UTC",
+          },
+        ],
+      },
+      {
+        name: "Techno (-69, 69)",
+        acts: [
+          {
+            name: "MetaDJ Live",
+            time: "01:00 UTC",
+          },
+          {
+            name: "Aiwaska",
+            time: "14:00 UTC",
+          },
+          {
+            name: "Armina",
+            time: "15:00 UTC",
+          },
+          {
+            name: "Furia Live",
             time: "23:00 UTC",
           },
           {
-            name: "SOZI",
-            time: "22:00 UTC",
-          },
-          {
-            name: "2AM + PIP",
-            time: "21:00 UTC",
-          },
-          {
-            name: "ATARASHII GAKKO ",
-            time: "12:00 UTC",
+            name: "Steve Sal",
+            time: "24:00 UTC",
           },
         ],
       },
       {
-        name: "SOUNDR",
+        name: "Raverse (-69, 54)",
         acts: [
           {
-            name: "JUNIOR ANDRE",
-            time: "02:52 UTC",
+            name: "Kiramomo",
+            time: "17:00 UTC"
           },
           {
-            name: "LOEK",
-            time: "02:28 UTC",
+            name: "DJ Dex",
+            time: "18:00 UTC"
           },
           {
-            name: "SKULLZ",
-            time: "02:19 UTC",
-          },
-          {
-            name: "THE TYNE",
-            time: "02:03 UTC",
-          },
-          {
-            name: "ADS",
-            time: "02:00 UTC",
-          },
-
-          {
-            name: "ELLYSE MASON",
-            time: "21:04 UTC",
-          },
-          {
-            name: "MIYA MIYA",
-            time: "20:49 UTC",
-          },
-          {
-            name: "AMITEK",
-            time: "20:20 UTC",
-          },
-          {
-            name: "HOURGLVSS",
-            time: "20:03 UTC",
-          },
-          {
-            name: "ADS",
-            time: "20:00 UTC",
-          },
-
-          {
-            name: "ELLYSE MASON",
-            time: "13:04 UTC",
-          },
-          {
-            name: "MIYA MIYA",
-            time: "12:49 UTC",
-          },
-          {
-            name: "AMITEK",
-            time: "12:20 UTC",
-          },
-          {
-            name: "HOURGLVSS",
-            time: "12:03 UTC",
-          },
-          {
-            name: "ADS",
-            time: "12:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "META TOKYO",
-        acts: [
-          {
-            name: "KYARY PAMYU PAMYU",
-            time: "14:00 UTC"
+            name: "UNTZ King",
+            time: "19:00 UTC"
           }
         ],
       },
       {
-        name: "Limewire",
+        name: "Slip N Slide (-56, 56)",
         acts: [
           {
-            name: "SOULJA BOY",
-            time: "03:00 UTC",
+            name: "TYTE",
+            time: "01:00 UTC"
           },
           {
-            name: "BILLYRACXX",
-            time: "02:37 UTC",
+            name: "Mike Smiff",
+            time: "22:00 UTC"
           },
           {
-            name: "LIL BITCOIN",
-            time: "02:19 UTC",
+            name: "Trina",
+            time: "23:00 UTC"
           },
           {
-            name: "HIGH TIDES",
-            time: "02:00 UTC",
-          },
-          {
-            name: "SOULJA BOY",
-            time: "00:00 UTC",
-          },
-          {
-            name: "ELIJAH BLAKE",
-            time: "23:54 UTC",
-          },
-          {
-            name: "ESCAPE PLAN",
-            time: "23:23 UTC",
-          },
-          {
-            name: "ORRIN",
-            time: "23:02 UTC",
-          },
-          {
-            name: "KOSHA DILLZ",
-            time: "23:00 UTC",
-          },
-          {
-            name: "ELIJAH BLAKE",
-            time: "18:54 UTC",
-          },
-          {
-            name: "ORRIN",
-            time: "18:02 UTC",
-          },
-          {
-            name: "KOSHA DILLZ",
-            time: "18:00 UTC",
-          },
+            name: "Trick Daddy",
+            time: "24:00 UTC"
+          }
         ],
       },
       {
-        name: "OZZFEST",
+        name: "MetaTokyo (-54, 69)",
         acts: [
           {
-            name: "OZZY OSBOURNE",
-            time: "00:00 UTC",
+            name: "CANDY TUNE",
+            time: "11:00 UTC"
           },
           {
-            name: "MOTORHEAD",
-            time: "23:00 UTC",
+            name: "bala",
+            time: "12:00 UTC"
           },
           {
-            name: "MEGADETH",
-            time: "22 UTC",
-          },
-          {
-            name: "BLACK LABEL SOCIETY",
-            time: "21 UTC",
-          },
-          {
-            name: "BRITOF",
-            time: "20:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "OVER",
-        acts: [
-          {
-            name: "NICOLA FASANO",
-            time: "17:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "RANDOM RAVERS",
-        acts: [
-          {
-            name: "DEAD TONES",
-            time: "23:30 UTC",
-          },
-          {
-            name: "KANA HISHIYA",
-            time: "22 UTC ",
-          },
-          {
-            name: "RAMY MISHRIKY",
-            time: "20:30 UTC",
-          },
-          {
-            name: "ARIVI",
-            time: "19:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "PARTY DEGENERATES",
-        acts: [
-          {
-            name: "UNDERHER",
-            time: "07:00 UTC",
-          },
-          {
-            name: "SANTIAGO GARCIA",
-            time: "06:00 UTC",
-          },
-          {
-            name: "PAOLO ROCCO",
-            time: "05:00 UTC",
-          },
-          {
-            name: "WAHM",
-            time: "04:00 UTC",
-          },
-          {
-            name: "DOMINO",
-            time: "03:30 UTC",
-          },
-          {
-            name: "DJ BROWNIE",
-            time: "02:00 UTC",
-          },
-          {
-            name: "JASMIN SOLANO",
-            time: "01:00 UTC",
-          },
-          {
-            name: "ARAPU",
-            time: "00:00 UTC",
-          },
-          {
-            name: "X&ND (SPECIAL LIVESET PERFORMANCE)",
-            time: "23:15 UTC",
-          },
-          {
-            name: "ANTARES b2b AURIC b2b BALZAR",
-            time: "22:00 UTC",
-          },
-          {
-            name: "HAVOQ",
-            time: "21:30 UTC",
-          },
-          {
-            name: "JEFFREY SUTORIUS",
-            time: "21:00 UTC",
-          },
-          {
-            name: "DASTIC",
-            time: "20:30 UTC",
-          },
-          {
-            name: "VINNE",
-            time: "20:00 UTC",
-          },
-          {
-            name: "PLASTIK FUNK",
-            time: "19:00 UTC",
-          },
-          {
-            name: "DEFEX",
-            time: "18:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "JERRY GARCIA",
-        acts: [
-          {
-            name: "LIVE RAINBOW FULL OF SOUND",
-            time: "00:00 UTC",
-          },
-          {
-            name: "FIONA BEVAN",
-            time: "21:00 UTC",
-          },
-          {
-            name: "SMITH AND BREWER",
-            time: "20:00 UTC",
-          },
-          {
-            name: "SOPHIE CRAWFORD",
-            time: "19:00 UTC",
-          },
-          {
-            name: "MAZ O'CONNOR",
-            time: "18:00 UTC",
-          },
-          {
-            name: "TRUCKSTOP HONEYMOON",
-            time: "17:00 UTC",
-          },
-          {
-            name: "HANNAH NICHOLSON",
-            time: "16:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "JAZZ CLUB",
-        acts: [
-          {
-            name: "ELIANE CORREA",
-            time: "01:00 UTC",
-          },
-        ],
-      },
-      {
-        name: "OG COMMUNITY STAGE",
-        acts: [
-          {
-            name: "SERENA ELIS",
-            time: "00:00 UTC",
-          },
-          {
-            name: "AMBIE NFT",
-            time: "23:00 UTC",
-          },
-          {
-            name: "BOBBY YAPS",
-            time: "22:30 UTC",
-          },
-          {
-            name: "ELYSE",
-            time: "22:00 UTC",
-          },
-          {
-            name: "MARTY GERBS",
-            time: "21:30 UTC",
-          },
-          {
-            name: "LEO PASTEL",
-            time: "21:00  UTC",
-          },
-        ],
-      },
-      {
-        name: "DILLON FRANCIS",
-        acts: [
-          {
-            name: "DILLON FRANCIS",
-            time: "ALL DAY",
-          },
-        ],
-      },
-      {
-        name: "CASA AZUL STAGE",
-        acts: [
-          {
-            name: "BALKAN HOT CLUB",
-            time: "ALL DAY",
-          },
-          {
-            name: "STEPHANIE SANTIAGO",
-            time: "ALL DAY",
-          },
-          {
-            name: "CHRISTALIS VELASCO",
-            time: "ALL DAY",
-          },
-        ],
-      },
-      {
-        name: "Techno Stage",
-        acts: [
-          {
-            name: "ODEUM MUSIC - KIEV",
-            time: "02:00",
-          },
-          {
-            name: "ALEV TAV - KIEV",
-            time: "01:00",
-          },
-          {
-            name: "DEEPME",
-            time: "00:00",
-          },
-          {
-            name: "ARMINA",
-            time: "23:00",
-          },
-        ],
-      },
-      {
-        name: "TRU BAND",
-        acts: [
-          {
-            name: "THE MUSICAL DOC",
-            time: "03:00 UTC",
-          },
-          {
-            name: "STONEY + KROOKED TREEZ",
-            time: "02:00 UTC ",
-          },
-          {
-            name: "THE PERRIS",
-            time: "00:00 UTC",
-          },
-          {
-            name: "JOHNY TIGER",
-            time: "22:00 UTC",
-          },
-          {
-            name: "TOM TARNO",
-            time: "21:00 UTC",
-          },
-          {
-            name: "MR. SWE",
-            time: "20:00 UTC",
-          },
-          {
-            name: "MARCOS NAIDE",
-            time: "19:00 UTC",
-          },
-          {
-            name: "JENNIFER RABHA",
-            time: "15:00 UTC",
-          },
-          {
-            name: "KR",
-            time: "14:30 UTC",
-          },
-          {
-            name: "GEMMI",
-            time: "14:00 UTC",
+            name: "Natsuki Kwanishi",
+            time: "13:00 UTC"
           },
         ],
       },
