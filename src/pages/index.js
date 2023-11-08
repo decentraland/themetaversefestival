@@ -58,9 +58,8 @@ const IndexPage = () => {
     if (!localStorage.getItem("hasWatchedVideo")) {
       setShowVideo(true);
     }
+    if (typeof window !== "undefined") ReactPixel.pageView();
   }, []);
-
-  if (typeof window !== "undefined") ReactPixel.pageView();
 
   return (
     <StyledIndexPage>
