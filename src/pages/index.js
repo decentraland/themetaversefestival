@@ -26,8 +26,8 @@ const options = {
   autoConfig: true,
   debug: false,
 };
-ReactPixel.init("291661748141710", advancedMatching, options);
 if (typeof window !== `undefined`) {
+  ReactPixel.init("291661748141710", advancedMatching, options);
   ReactPixel.pageView();
 }
 
