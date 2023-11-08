@@ -27,7 +27,6 @@ const options = {
   debug: false,
 };
 
-ReactPixel.init("291661748141710", advancedMatching, options);
 const isBrowser = typeof window !== "undefined";
 
 const seo = {
@@ -60,9 +59,10 @@ const IndexPage = () => {
   }
 
   useEffect(() => {
-    if (!localStorage.getItem("hasWatchedVideo")) {
-      setShowVideo(true);
-    }
+    // if (!localStorage.getItem("hasWatchedVideo")) {
+    //   setShowVideo(true);
+    // }
+    ReactPixel.init("291661748141710", advancedMatching, options);
   }, []);
 
   return (
