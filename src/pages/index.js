@@ -19,7 +19,6 @@ import MerchBanner from "../components/MerchBanner";
 import merchBanner from "../images/merch-banner.png";
 import LineUpSchedule from "../components/LineUpSchedule";
 import { Subscribe } from "../components/Subscribe";
-import ReactPixel from "react-facebook-pixel";
 
 const advancedMatching = {};
 const options = {
@@ -56,8 +55,12 @@ const IndexPage = () => {
     // if (!localStorage.getItem("hasWatchedVideo")) {
     //   setShowVideo(true);
     // }
-    ReactPixel.init("291661748141710", advancedMatching, options);
-    ReactPixel.pageView();
+    import("react-facebook-pixel")
+      .then((module) => module.default)
+      .then((ReactPixel) => {
+        ReactPixel.init("291661748141710", advancedMatching, options);
+        ReactPixel.pageView();
+      });
   }, []);
 
   return (
