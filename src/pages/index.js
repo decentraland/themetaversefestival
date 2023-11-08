@@ -58,8 +58,10 @@ const IndexPage = () => {
     import("react-facebook-pixel")
       .then((module) => module.default)
       .then((ReactPixel) => {
-        ReactPixel.init("291661748141710", advancedMatching, options);
-        ReactPixel.pageView();
+        if (typeof window !== "undefined") {
+          ReactPixel.init("291661748141710", advancedMatching, options);
+          ReactPixel.pageView();
+        }
       });
   }, []);
 
