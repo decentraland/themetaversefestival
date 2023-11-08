@@ -26,10 +26,8 @@ const options = {
   autoConfig: true,
   debug: false,
 };
-if (typeof window !== `undefined`) {
-  ReactPixel.init("291661748141710", advancedMatching, options);
-  ReactPixel.pageView();
-}
+
+ReactPixel.init("291661748141710", advancedMatching, options);
 
 const seo = {
   title: "Decentraland Music Festival | Decentraland",
@@ -61,6 +59,8 @@ const IndexPage = () => {
       setShowVideo(true);
     }
   }, []);
+
+  ReactPixel.pageView();
 
   return (
     <StyledIndexPage>
