@@ -57,9 +57,7 @@ const IndexPage = () => {
     //   setShowVideo(true);
     // }
     ReactPixel.init("291661748141710", advancedMatching, options);
-    if (typeof window !== "undefined") {
-      ReactPixel.pageView();
-    }
+    ReactPixel.pageView();
   }, []);
 
   return (
