@@ -10,7 +10,7 @@ export const days = [
     date: "Thursday 16th",
     stages: [
       {
-        name: "TRU Band Room (-60, 60)",
+        name: "TRU Band Room Stage (-60, 60)",
         acts: [
           {
             name: "Coconut Sunday",
@@ -31,7 +31,7 @@ export const days = [
         ],
       },
       {
-        name: "Techno (-69, 69)",
+        name: "Techno Stage (-69, 69)",
         acts: [
           {
             name: "Phuture Music Live",
@@ -48,7 +48,7 @@ export const days = [
         ],
       },
       {
-        name: "Raverse (-69, 54)",
+        name: "Raverse Stage (-69, 54)",
         acts: [
           {
             name: "Merio Bras",
@@ -65,11 +65,11 @@ export const days = [
         ],
       },
       {
-        name: "Slip N Slide (-56, 56)",
+        name: "Slip N Slide Stage (-56, 56)",
         acts: [],
       },
       {
-        name: "MetaTokyio (-54, 69)",
+        name: "MetaTokyo Stage (-54, 69)",
         acts: [
           {
             name: "GLITCH RAVE",
@@ -96,7 +96,7 @@ export const days = [
     date: "Friday 17th",
     stages: [
       {
-        name: "TRU Band Room (-60, 60)",
+        name: "TRU Band Room Stage (-60, 60)",
         acts: [
           {
             name: "Nico Earnshaw",
@@ -117,7 +117,7 @@ export const days = [
         ],
       },
       {
-        name: "Techno (-69, 69)",
+        name: "Techno Stage (-69, 69)",
         acts: [
           {
             name: "Three Oscillators",
@@ -130,7 +130,7 @@ export const days = [
         ],
       },
       {
-        name: "Raverse (-69, 54)",
+        name: "Raverse Stage (-69, 54)",
         acts: [
           {
             name: "Cora Novoa",
@@ -151,7 +151,7 @@ export const days = [
         ],
       },
       {
-        name: "Slip N Slide (-56, 56)",
+        name: "Slip N Slide Stage (-56, 56)",
         acts: [
           {
             name: "Sebastian Mikael",
@@ -176,7 +176,7 @@ export const days = [
         ],
       },
       {
-        name: "MetaTokyo (-54, 69)",
+        name: "MetaTokyo Stage (-54, 69)",
         acts: [
           {
             name: "AmPm",
@@ -203,7 +203,7 @@ export const days = [
     date: "Saturday 18th",
     stages: [
       {
-        name: "TRU Band Room (-60, 60)",
+        name: "TRU Band Room Stage (-60, 60)",
         acts: [
           {
             name: "GucciToe",
@@ -220,7 +220,7 @@ export const days = [
         ],
       },
       {
-        name: "Techno (-69, 69)",
+        name: "Techno Stage (-69, 69)",
         acts: [
           {
             name: "MetaDJ Live",
@@ -245,7 +245,7 @@ export const days = [
         ],
       },
       {
-        name: "Raverse (-69, 54)",
+        name: "Raverse Stage (-69, 54)",
         acts: [
           {
             name: "Kiramomo",
@@ -262,7 +262,7 @@ export const days = [
         ],
       },
       {
-        name: "Slip N Slide (-56, 56)",
+        name: "Slip N Slide Stage (-56, 56)",
         acts: [
           {
             name: "TYTE",
@@ -283,7 +283,7 @@ export const days = [
         ],
       },
       {
-        name: "MetaTokyo (-54, 69)",
+        name: "MetaTokyo Stage (-54, 69)",
         acts: [
           {
             name: "CANDY TUNE",
