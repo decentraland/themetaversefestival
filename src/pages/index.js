@@ -28,6 +28,7 @@ const options = {
 };
 
 ReactPixel.init("291661748141710", advancedMatching, options);
+const isBrowser = typeof window !== "undefined";
 
 const seo = {
   title: "Decentraland Music Festival | Decentraland",
@@ -54,11 +55,14 @@ const IndexPage = () => {
   const [showVideo, setShowVideo] = useState(false);
   const [muted, setMuted] = useState(true);
 
+  if (isBrowser) {
+    ReactPixel.pageView();
+  }
+
   useEffect(() => {
     if (!localStorage.getItem("hasWatchedVideo")) {
       setShowVideo(true);
     }
-    if (typeof window !== "undefined") ReactPixel.pageView();
   }, []);
 
   return (
