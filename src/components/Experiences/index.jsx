@@ -11,6 +11,10 @@ import ss from '../../images/experiences23/ss.png';
 import tc from '../../images/experiences23/tc.png';
 import zg from '../../images/experiences23/zg.jpg';
 import tpoko from '../../images/experiences23/tpoko.jpg';
+import metadyne from '../../images/experiences23/metadyne.jpg';
+import smiley from '../../images/experiences23/smileyworld.jpg';
+import mf from '../../images/experiences23/mf.jpg';
+import gn from '../../images/experiences23/GAIAN.jpg';
 
 
 const Experiences = () => (
@@ -82,6 +86,22 @@ const Experiences = () => (
                     </StageName>
                     <StageLocation>
                         [-61,68]
+                    </StageLocation>
+                </Stage>
+                <Stage href="https://play.decentraland.org/?position=%2C" target="_blank">
+                    <StageCard>
+                        <StageImage src={metadyne} />
+                        <StageHover>
+                            <StageButton>
+                                Jump in
+                            </StageButton>
+                        </StageHover>
+                    </StageCard>
+                    <StageName>
+                        Metadyne Labs: Rat Scape
+                    </StageName>
+                    <StageLocation>
+                        [x,x]
                     </StageLocation>
                 </Stage>
                 <Stage href="https://play.decentraland.org/?position=-70%2C64" target="_blank">
@@ -178,6 +198,54 @@ const Experiences = () => (
                     </StageName>
                     <StageLocation>
                         [-70,58]
+                    </StageLocation>
+                </Stage>
+                <Stage href="https://play.decentraland.org/?position=%2C" target="_blank">
+                    <StageCard>
+                        <StageImage src={smiley} />
+                        <StageHover>
+                            <StageButton>
+                                Jump in
+                            </StageButton>
+                        </StageHover>
+                    </StageCard>
+                    <StageName>
+                        SmileyWorld
+                    </StageName>
+                    <StageLocation>
+                        [x,x]
+                    </StageLocation>
+                </Stage>
+                <Stage href="https://play.decentraland.org/?position=%2C" target="_blank">
+                    <StageCard>
+                        <StageImage src={mf} />
+                        <StageHover>
+                            <StageButton>
+                                Jump in
+                            </StageButton>
+                        </StageHover>
+                    </StageCard>
+                    <StageName>
+                        Metaverse Music Festival Revival
+                    </StageName>
+                    <StageLocation>
+                        [x,x]
+                    </StageLocation>
+                </Stage>
+                <Stage href="https://play.decentraland.org/?position=-70%2C61" target="_blank">
+                    <StageCard>
+                        <StageImage src={gn} />
+                        <StageHover>
+                            <StageButton>
+                                Jump in
+                            </StageButton>
+                        </StageHover>
+                    </StageCard>
+                    <StageName>
+                        MAKE MUSIC by GAIAN
+                    </StageName>
+                    <StageLocation>
+                        [-70,61]
                     </StageLocation>
                 </Stage>
             </StagesContainer>

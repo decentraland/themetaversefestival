@@ -19,8 +19,8 @@ import LineUpSchedule from "../components/LineUpSchedule";
 const seo = {
   title: "Decentraland Music Festival | Decentraland",
   description:
-    "A four-day celebration of music, culture and creativity in the virtual social world of Decentraland, the Metaverse Festival is a grand collision of light, sound and portable toilets.",
-  image: "https://themetaversefestival.io/social.png",
+    "A three-day celebration of music, culture and creativity in the virtual social world of Decentraland, the Music Festival is a grand collision of light, sound and portable toilets.",
+  image: "https://musicfestival.decentraland.org/dmf-logo-white.png",
 };
 
 const meta = {

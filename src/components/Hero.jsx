@@ -25,7 +25,6 @@ const Hero = () => {
             <img src={stage5} width="15%"/>
           </div>
           <img src="dmf-logo-white.png" width="100%" />
-
         </LogoContainer>
         <EventDetails>
           <EventData>
