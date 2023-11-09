@@ -12,7 +12,7 @@ import tc from '../../images/experiences23/tc.png';
 import zg from '../../images/experiences23/zg.jpg';
 import tpoko from '../../images/experiences23/tpoko.jpg';
 import metadyne from '../../images/experiences23/metadyne.jpg';
-import smiley from '../../images/experiences23/smileyworld.jpg';
+import smiley from '../../images/experiences23/smiley.jpg';
 import mf from '../../images/experiences23/mf.jpg';
 import gn from '../../images/experiences23/GAIAN.jpg';
 
