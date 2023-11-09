@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Discord } from "./icons/Vector-Discord.js";
 import { Twitter } from "./icons/Vector-Twitter.js";
-import { OpenSea } from "./icons/Vector-openSea";
 import theme, { breakpoints } from "../../utils/theme";
 import dclLogo from "../images/logo-dcl.svg";
 import { Instagram } from "./icons/Vector-Instagram.js";

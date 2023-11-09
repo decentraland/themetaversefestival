@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import theme, { breakpoints } from "../../utils/theme";
-import { StaticImage } from "gatsby-plugin-image";
 import { Twitter } from "../components/icons/Vector-Twitter.js";
 import { Discord } from "../components/icons/Vector-Discord.js";
-import { OpenSea } from "../components/icons/Vector-openSea.js";
 import { Instagram } from "../components/icons/Vector-Instagram.js";
 import border from "../images/navbar-border.png";
 

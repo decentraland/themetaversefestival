@@ -1,6 +1,5 @@
-import { StaticImage } from "gatsby-plugin-image";
 import styled from "styled-components";
-import theme, { breakpoints } from '../../../utils/theme';
+import { breakpoints } from '../../../utils/theme';
 
 export const Section = styled.section`
     padding-top: 150px;
@@ -25,13 +24,6 @@ export const Title = styled.h2`
   @media screen and (min-width: ${breakpoints.xxl}) {
     font-size: 150px;
   }
-`;
-
-export const ComingSoon = styled.p`
-  font-family: Gothic;
-  font-size: 40px;
-  font-weight: 700;
-  margin-top: 40px
 `;
 
 export const Map = styled.div`

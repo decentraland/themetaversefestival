@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Marquee from "react-fast-marquee";
 import styled from "styled-components";
 import theme from "../../utils/theme";
@@ -13,8 +13,8 @@ const BannerMarquee = (props) => {
         gradient={false}
       >
         • [-62,58] ©️Decentraland Music Festival NOV. 16-18 •
-        <DateHighlight> -12PM UTC </DateHighlight> • [-62,58] ©️Decentraland Music Festival
-        NOV. 16-18 •<DateHighlight> -12PM UTC </DateHighlight>
+        <DateHighlight> 12PM UTC </DateHighlight> • [-62,58] ©️Decentraland Music Festival
+        NOV. 16-18 •<DateHighlight>12PM UTC</DateHighlight>
       </Marquee>
     </StyledBannerMarquee>
   );

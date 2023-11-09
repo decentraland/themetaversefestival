@@ -32,7 +32,7 @@ const Hero = () => {
             <EventDataItem>
               <DateComponent className="event-data">
                 <p>
-                  NOV. 16-18 • <DateHighlight>-12PM UTC</DateHighlight> •
+                  NOV. 16-18 • <DateHighlight>12PM UTC</DateHighlight> •
                 </p>
                 <DateLocation>FESTIVAL LAND, [-62,58]</DateLocation>
               </DateComponent>
@@ -46,7 +46,7 @@ const Hero = () => {
             </EventDataItem>
             <EventDataItem>
               <SaveTheDate
-                href="https://play.decentraland.org/?position=-62%2C58"
+                href="https://events.decentraland.org/event/?id=97aff492-b4b9-4ba1-bd08-bfa7e32be036"
                 target="_blank"
               >
                 <p style={{ fontSize: "20px" }}>RSVP</p>{" "}

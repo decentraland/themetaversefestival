@@ -1,14 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import theme, { breakpoints } from "../../../utils/theme";
-import Logo from "../../images/logo-navbar.svg";
-import EyeTriengleIcon from "../../images/eye-triangle-icon.svg";
-import sideIcon from "../../images/stage3.png";
 import starBust5 from "../../images/Starbust5.png";
 import starBust6 from "../../images/Starbust6.png";
 import starBust7 from "../../images/Starbust7.png";
 import { Container } from "../Container";
-import { StaticImage } from 'gatsby-plugin-image'; 
 
 const About = (props) => {
   return (

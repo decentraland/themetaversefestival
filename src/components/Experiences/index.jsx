@@ -1,12 +1,17 @@
 import React from 'react';
 import { Container } from '../Container';
-import { Section, Stage, StagesContainer, Title, ComingSoon, TextTitle, StageCard, StageImage, StageName, StageLocation, StageHover, StageButton } from './styles';
-import title from '../../images/experiences-title.png';
-import decentRally from '../../images/experiences/decent-rally.png';
-import theVoice from '../../images/experiences/the-voice.png';
-import backstageQuest from '../../images/experiences/backstage-quest.png';
-import towerOfBabel from '../../images/experiences/tower-of-babel.png';
-import whiteRabbit from '../../images/experiences/follow-rabbit.png';
+import { Section, Stage, StagesContainer, Title, StageCard, StageImage, StageName, StageLocation, StageHover, StageButton } from './styles';
+import ang from '../../images/experiences23/ang.jpg';
+import cc from '../../images/experiences23/cc.jpg';
+import koa from '../../images/experiences23/KOA.jpg';
+import morph from '../../images/experiences23/morph.jpg';
+import ms from '../../images/experiences23/ms.jpg';
+import sc from '../../images/experiences23/sc.jpg';
+import ss from '../../images/experiences23/ss.png';
+import tc from '../../images/experiences23/tc.png';
+import zg from '../../images/experiences23/zg.jpg';
+import tpoko from '../../images/experiences23/tpoko.jpg';
+
 
 const Experiences = () => (
     <Section id="experiences">
@@ -14,13 +19,10 @@ const Experiences = () => (
             <Title>
                 E<span style={{'font-family': 'SaintRegular'}}>X</span>PERIENCES
             </Title>
-            <ComingSoon>
-                Coming soon...
-            </ComingSoon>
-            {/* <StagesContainer>
-                <Stage href="https://play.decentraland.org/?position=-57%2C58&realm=marvel&island=Ic5t9" target="_blank">
+            <StagesContainer>
+                <Stage href="https://play.decentraland.org/?position=-63%2C54" target="_blank">
                     <StageCard>
-                        <StageImage src={whiteRabbit} />
+                        <StageImage src={ss} />
                         <StageHover>
                             <StageButton>
                                 Jump In
@@ -28,31 +30,15 @@ const Experiences = () => (
                         </StageHover>
                     </StageCard>
                     <StageName>
-                        Follow the white rabbit
-                    </StageName>
-                    <StageLocation>
-                        [-57,58]
-                    </StageLocation>
-                </Stage>
-                <Stage href="https://play.decentraland.org/?position=-63%2C54&realm=marvel&island=Ic5t9" target="_blank">
-                    <StageCard>
-                        <StageImage src={backstageQuest} />
-                        <StageHover>
-                            <StageButton>
-                                Jump in
-                            </StageButton>
-                        </StageHover>
-                    </StageCard>
-                    <StageName>
-                        Backstage Pass Quest
+                        Soundscape
                     </StageName>
                     <StageLocation>
                         [-63,54]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=-63%2C71&realm=marvel&island=Ic5t9" target="_blank">
+                <Stage href="https://play.decentraland.org/?position=-57%2C59" target="_blank">
                     <StageCard>
-                        <StageImage src={towerOfBabel} />
+                        <StageImage src={koa} />
                         <StageHover>
                             <StageButton>
                                 Jump in
@@ -60,15 +46,15 @@ const Experiences = () => (
                         </StageHover>
                     </StageCard>
                     <StageName>
-                        Tower of Babel
+                        The Knights of Antrom Music Quest 
                     </StageName>
                     <StageLocation>
-                        [-63,71]
+                        [-57,59]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=-54%2C66&realm=marvel&island=Ic9b0" target="_blank">
+                <Stage href="https://play.decentraland.org/?position=-67%2C59" target="_blank">
                     <StageCard>
-                        <StageImage src={decentRally} />
+                        <StageImage src={tpoko} />
                         <StageHover>
                             <StageButton>
                                 Jump in
@@ -76,15 +62,15 @@ const Experiences = () => (
                         </StageHover>
                     </StageCard>
                     <StageName>
-                        Decent Rally
+                        Metamorphic by House of Tang
                     </StageName>
                     <StageLocation>
-                        [-54,66]
+                        [-67,59]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=-67%2C86&realm=marvel&island=Ic5t9" target="_blank">
+                <Stage href="https://play.decentraland.org/?position=-61%2C68" target="_blank">
                     <StageCard>
-                        <StageImage src={theVoice} />
+                        <StageImage src={tc} />
                         <StageHover>
                             <StageButton>
                                 Jump in
@@ -92,13 +78,109 @@ const Experiences = () => (
                         </StageHover>
                     </StageCard>
                     <StageName>
-                        The Voice
+                        TowerCraft
                     </StageName>
                     <StageLocation>
-                        [-67,86]
+                        [-61,68]
                     </StageLocation>
                 </Stage>
-            </StagesContainer> */}
+                <Stage href="https://play.decentraland.org/?position=-70%2C64" target="_blank">
+                    <StageCard>
+                        <StageImage src={morph} />
+                        <StageHover>
+                            <StageButton>
+                                Jump in
+                            </StageButton>
+                        </StageHover>
+                    </StageCard>
+                    <StageName>
+                        Met-Art-Morphosis by Low Poly Models
+                    </StageName>
+                    <StageLocation>
+                        [-61,68]
+                    </StageLocation>
+                </Stage>
+                <Stage href="https://play.decentraland.org/?position=-67%2C63" target="_blank">
+                    <StageCard>
+                        <StageImage src={ang} />
+                        <StageHover>
+                            <StageButton>
+                                Jump in
+                            </StageButton>
+                        </StageHover>
+                    </StageCard>
+                    <StageName>
+                        Anogenesis by OgiWorlds
+                    </StageName>
+                    <StageLocation>
+                        [-67,63]
+                    </StageLocation>
+                </Stage>
+                <Stage href="https://play.decentraland.org/?position=-54%2C58" target="_blank">
+                    <StageCard>
+                        <StageImage src={zg} />
+                        <StageHover>
+                            <StageButton>
+                                Jump in
+                            </StageButton>
+                        </StageHover>
+                    </StageCard>
+                    <StageName>
+                        Zheinn Garden by InnKeeper
+                    </StageName>
+                    <StageLocation>
+                        [-54,58]
+                    </StageLocation>
+                </Stage>
+                <Stage href="https://play.decentraland.org/?position=-57%2C63" target="_blank">
+                    <StageCard>
+                        <StageImage src={cc} />
+                        <StageHover>
+                            <StageButton>
+                                Jump in
+                            </StageButton>
+                        </StageHover>
+                    </StageCard>
+                    <StageName>
+                        Crystal Cortex by Micah Alhadeff
+                    </StageName>
+                    <StageLocation>
+                        [-57,63]
+                    </StageLocation>
+                </Stage>
+                <Stage href="https://play.decentraland.org/?position=-54%2C64" target="_blank">
+                    <StageCard>
+                        <StageImage src={sc} />
+                        <StageHover>
+                            <StageButton>
+                                Jump in
+                            </StageButton>
+                        </StageHover>
+                    </StageCard>
+                    <StageName>
+                        SONIC PLANET by Argent
+                    </StageName>
+                    <StageLocation>
+                        [-54,64]
+                    </StageLocation>
+                </Stage>
+                <Stage href="https://play.decentraland.org/?position=-70%2C58" target="_blank">
+                    <StageCard>
+                        <StageImage src={ms} />
+                        <StageHover>
+                            <StageButton>
+                                Jump in
+                            </StageButton>
+                        </StageHover>
+                    </StageCard>
+                    <StageName>
+                        First Time by Martinez Siesta 
+                    </StageName>
+                    <StageLocation>
+                        [-70,58]
+                    </StageLocation>
+                </Stage>
+            </StagesContainer>
         </Container>
     </Section>
 )

@@ -13,12 +13,8 @@ import About from "../components/About";
 import Faq from "../components/Faq";
 import Sitemap from "../components/Sitemap";
 import Stages from "../components/Stages";
-import Partners from "../components/Partners";
 import Experiences from "../components/Experiences";
-import MerchBanner from "../components/MerchBanner";
-import merchBanner from "../images/merch-banner.png";
 import LineUpSchedule from "../components/LineUpSchedule";
-import { Subscribe } from "../components/Subscribe";
 
 const seo = {
   title: "Decentraland Music Festival | Decentraland",

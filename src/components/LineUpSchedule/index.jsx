@@ -13,7 +13,6 @@ import {
 } from "./styles";
 import EyeVector from "../../images/Starbust3.png";
 
-import LineUpTitle from "../../images/lineUpTitle-png.png";
 import DaySchedule from "../DaySchedule/index.jsx";
 import styled from "styled-components";
 
@@ -292,11 +291,5 @@ const LineUpSchedule = (props) => {
     </StyledLineUpSchedule>
   );
 };
-
-const ComingSoon = styled.p`
-  font-family: Gothic;
-  font-size: 40px;
-  font-weight: 700
-`;
 
 export default LineUpSchedule;
