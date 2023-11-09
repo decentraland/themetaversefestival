@@ -88,7 +88,7 @@ const Experiences = () => (
                         [-61,68]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=%2C" target="_blank">
+                <Stage href="https://play.decentraland.org/?position=-58%2C53" target="_blank">
                     <StageCard>
                         <StageImage src={metadyne} />
                         <StageHover>
@@ -101,7 +101,7 @@ const Experiences = () => (
                         Metadyne Labs: Rat Scape
                     </StageName>
                     <StageLocation>
-                        [x,x]
+                        [-58,53]
                     </StageLocation>
                 </Stage>
                 <Stage href="https://play.decentraland.org/?position=-70%2C64" target="_blank">
@@ -200,7 +200,7 @@ const Experiences = () => (
                         [-70,58]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=%2C" target="_blank">
+                <Stage href="https://play.decentraland.org/?position=-54%2C61" target="_blank">
                     <StageCard>
                         <StageImage src={smiley} />
                         <StageHover>
@@ -213,10 +213,10 @@ const Experiences = () => (
                         SmileyWorld
                     </StageName>
                     <StageLocation>
-                        [x,x]
+                        [-54,61]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=%2C" target="_blank">
+                <Stage href="https://play.decentraland.org/?position=-65%2C53" target="_blank">
                     <StageCard>
                         <StageImage src={mf} />
                         <StageHover>
@@ -229,7 +229,7 @@ const Experiences = () => (
                         Metaverse Music Festival Revival
                     </StageName>
                     <StageLocation>
-                        [x,x]
+                        [-65,53]
                     </StageLocation>
                 </Stage>
                 <Stage href="https://play.decentraland.org/?position=-70%2C61" target="_blank">
