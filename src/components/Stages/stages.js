@@ -1,6 +1,6 @@
 import tru from "../../images/stages23/TRU.jpg";
 import raverse from "../../images/stages23/Raverse.jpg";
-import tech from "../../images/stages23/Techno.jpg";
+import tech from "../../images/stages23/Techno.png";
 import sns from "../../images/stages23/SNS.jpg";
 import tokyo from "../../images/stages23/metatokyo.jpg";
 
