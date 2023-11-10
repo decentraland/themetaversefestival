@@ -35,17 +35,27 @@ export const ComingSoon = styled.p`
 `;
 
 export const StagesContainer = styled.div`
-    margin: 32px;
+    margin: 32px 0;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 16px;
     justify-content: center;
-    flex-wrap: no-wrap;
     justify-items: center;
-`;
 
+    @media screen and (min-width: ${breakpoints.md}) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (min-width: ${breakpoints.l}) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media screen and (min-width: ${breakpoints.xl}) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+`;
 export const Stage = styled.div`
     margin-bottom: 32px;
     margin-left: 8px;
