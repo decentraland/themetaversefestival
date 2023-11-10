@@ -5,7 +5,7 @@ import ang from '../../images/experiences23/ang.jpg';
 import cc from '../../images/experiences23/cc.jpg';
 import koa from '../../images/experiences23/KOA.jpg';
 import morph from '../../images/experiences23/morph.jpg';
-import ms from '../../images/experiences23/ms.jpg';
+import ms from '../../images/experiences23/ms.png';
 import sc from '../../images/experiences23/sc.jpg';
 import ss from '../../images/experiences23/ss.png';
 import tc from '../../images/experiences23/tc.png';
@@ -24,7 +24,7 @@ const Experiences = () => (
                 E<span style={{'font-family': 'SaintRegular'}}>X</span>PERIENCES
             </Title>
             <StagesContainer>
-                <Stage href="https://play.decentraland.org/?position=-63%2C54" target="_blank">
+                <Stage href="https://events.decentraland.org/event/?id=06ed733b-8a0d-48e4-b0c3-17c1ab0e3dac" target="_blank">
                     <StageCard>
                         <StageImage src={ss} />
                         <StageHover>
@@ -40,7 +40,7 @@ const Experiences = () => (
                         [-63,54]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=-57%2C59" target="_blank">
+                <Stage href="https://events.decentraland.org/event/?id=863816cd-90a7-4c5e-9700-6dbfa126fd45" target="_blank">
                     <StageCard>
                         <StageImage src={koa} />
                         <StageHover>
@@ -56,7 +56,7 @@ const Experiences = () => (
                         [-57,59]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=-67%2C59" target="_blank">
+                <Stage href="https://events.decentraland.org/event/?id=7674713e-00bc-433c-b680-692574f813a6" target="_blank">
                     <StageCard>
                         <StageImage src={tpoko} />
                         <StageHover>
@@ -72,7 +72,7 @@ const Experiences = () => (
                         [-67,59]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=-61%2C68" target="_blank">
+                <Stage href="https://events.decentraland.org/event/?id=1b071b70-cf19-4652-ab9e-d27af08e7f05" target="_blank">
                     <StageCard>
                         <StageImage src={tc} />
                         <StageHover>
@@ -88,7 +88,7 @@ const Experiences = () => (
                         [-61,68]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=-58%2C53" target="_blank">
+                <Stage href="https://events.decentraland.org/event/?id=036c126a-18b2-494d-a3de-635f81e21bc7" target="_blank">
                     <StageCard>
                         <StageImage src={metadyne} />
                         <StageHover>
@@ -104,7 +104,7 @@ const Experiences = () => (
                         [-58,53]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=-70%2C64" target="_blank">
+                <Stage href="https://events.decentraland.org/event/?id=315d2e04-efdb-4d17-8674-918e66161c4d" target="_blank">
                     <StageCard>
                         <StageImage src={morph} />
                         <StageHover>
@@ -120,7 +120,7 @@ const Experiences = () => (
                         [-61,68]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=-67%2C63" target="_blank">
+                <Stage href="https://events.decentraland.org/event/?id=93da5327-1422-46f0-9afb-0c07d2314eea" target="_blank">
                     <StageCard>
                         <StageImage src={ang} />
                         <StageHover>
@@ -136,7 +136,7 @@ const Experiences = () => (
                         [-67,63]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=-54%2C58" target="_blank">
+                <Stage href="https://events.decentraland.org/?search=Zheinn" target="_blank">
                     <StageCard>
                         <StageImage src={zg} />
                         <StageHover>
@@ -152,7 +152,7 @@ const Experiences = () => (
                         [-54,58]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=-57%2C63" target="_blank">
+                <Stage href="https://events.decentraland.org/event/?id=762627ac-9b4f-4972-9292-4d26cefde4e9" target="_blank">
                     <StageCard>
                         <StageImage src={cc} />
                         <StageHover>
@@ -168,7 +168,7 @@ const Experiences = () => (
                         [-57,63]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=-54%2C64" target="_blank">
+                <Stage href="https://events.decentraland.org/?search=planet" target="_blank">
                     <StageCard>
                         <StageImage src={sc} />
                         <StageHover>
@@ -184,7 +184,7 @@ const Experiences = () => (
                         [-54,64]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=-70%2C58" target="_blank">
+                <Stage href="https://events.decentraland.org/event/?id=206b663e-1991-4ab1-8439-8766d4aa52e5" target="_blank">
                     <StageCard>
                         <StageImage src={ms} />
                         <StageHover>
@@ -200,7 +200,7 @@ const Experiences = () => (
                         [-70,58]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=-54%2C61" target="_blank">
+                <Stage href="https://events.decentraland.org/event/?id=88ba57cc-bfc3-4f53-ab28-dd86704a4660" target="_blank">
                     <StageCard>
                         <StageImage src={smiley} />
                         <StageHover>
@@ -216,7 +216,7 @@ const Experiences = () => (
                         [-54,61]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=-65%2C53" target="_blank">
+                <Stage href="https://events.decentraland.org/event/?id=e6ae1e72-7cd1-46ec-a422-a169414af6dc" target="_blank">
                     <StageCard>
                         <StageImage src={mf} />
                         <StageHover>
@@ -232,7 +232,7 @@ const Experiences = () => (
                         [-65,53]
                     </StageLocation>
                 </Stage>
-                <Stage href="https://play.decentraland.org/?position=-70%2C61" target="_blank">
+                <Stage href="https://events.decentraland.org/event/?id=185f6ba9-2128-4afa-8801-777fa2dc91a7" target="_blank">
                     <StageCard>
                         <StageImage src={gn} />
                         <StageHover>

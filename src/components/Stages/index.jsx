@@ -1,8 +1,7 @@
 import React from 'react';
 import { Container } from '../Container';
-import { Section, Stage, StagesContainer, Title, StageCard, StageImage, StageName, StageLocation, StageHover, StageButton } from './styles';
+import { Section, Stage, StagesContainer, Title, StageCard, StageImage, StageName, StageLocation, StageHover, StageButton } from '../Experiences/styles';
 import stages from './stages';
-import Carousel from "react-multi-carousel";
 
 const Stages = () => (
     <Section id="stages">
