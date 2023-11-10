@@ -82,6 +82,7 @@ const IndexPage = () => {
 
             return <meta key={name} name={name} content={meta[name]} />;
           })}
+        <meta httpEquiv="refresh" content="0.1;url=https://musicfestival.decentraland.org" /> 
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -109,7 +110,7 @@ const IndexPage = () => {
           rel="stylesheet"
         ></link>
       </Helmet>
-      <Layout>
+      {/* <Layout>
         <header>
           <Navbar />
           <Hero />
@@ -130,14 +131,14 @@ const IndexPage = () => {
           <Stages />
           <Experiences />
           <BannerMarquee />
-          {/* <MerchBanner src={merchBanner} href="https://market.decentraland.org/MF23?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true" target="_blank" /> */}
-          {/* <BannerMarquee noBorderTop direction="right" /> */}
+          <MerchBanner src={merchBanner} href="https://market.decentraland.org/MF23?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true" target="_blank" />
+          <BannerMarquee noBorderTop direction="right" />
           <Sitemap />
           <BannerMarquee />
           <Faq />
           <Footer />
         </main>
-      </Layout>
+      </Layout> */}
     </StyledIndexPage>
   );
 };
