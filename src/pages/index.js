@@ -78,7 +78,7 @@ const IndexPage = () => {
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon-23.png"
+          href="/favicon-23-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="msapplication-TileColor" content="#da532c" />
