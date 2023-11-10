@@ -11,7 +11,7 @@ export const questions = [
     },
     {
         question: 'Where can I find the full festival schedule?',
-        answer: () => <p>The full schedule will be posted to this website and on our social media channels very soon!</p>
+        answer: () => <p>The full schedule is above, but you can visit the <a href="https://events.decentraland.org/" target="_blank">Events Page DCLMF23</a> tab to get links to each individual event and jump right in.</p>
     },
     {
         question: 'Do I need a crypto wallet to attend the festival?',
