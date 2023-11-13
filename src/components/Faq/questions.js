@@ -11,11 +11,11 @@ export const questions = [
     },
     {
         question: 'Where can I find the full festival schedule?',
-        answer: () => <p>The full schedule will be posted to this website and on our social media channels very soon!</p>
+        answer: () => <p>The full schedule is above, but you can visit the <a href="https://events.decentraland.org/" target="_blank">Events Page DCLMF23</a> tab to get links to each individual event and jump right in.</p>
     },
     {
         question: 'Do I need a crypto wallet to attend the festival?',
-        answer: () => <p>You don’t need a crypto wallet to attend the festival, or to enter Decentraland for that matter. You can enter as a guest without creating an account. However, if you would like to collect free Wearables as well as further customize your avatar’s look and moves with community-made Wearables and Emotes from the <a href="https://market.decentraland.org/MF23?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true" target="_blank">Marketplace</a> (and in general save your avatar for return visits to Decentraland) you should sign up for a crypto wallet. Getting a crypto wallet is a simple process and you don’t need to enter any payment details if you just want to save your avatar and claim freebies. Learn more about getting a crypto wallet <a href="https://docs.decentraland.org/player/blockchain-integration/get-a-wallet/" target="_blank">here</a>.</p>
+        answer: () => <p>You don’t need a crypto wallet to attend the festival, or to enter Decentraland for that matter. You can enter as a guest without creating an account. However, if you would like to collect free Wearables as well as further customize your avatar’s look and moves with community-made Wearables and Emotes from the <a href="https://market.decentraland.org/DCLMF23?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true" target="_blank">Marketplace</a> (and in general save your avatar for return visits to Decentraland) you should sign up for a crypto wallet. Getting a crypto wallet is a simple process and you don’t need to enter any payment details if you just want to save your avatar and claim freebies. Learn more about getting a crypto wallet <a href="https://docs.decentraland.org/player/blockchain-integration/get-a-wallet/" target="_blank">here</a>.</p>
     },
     {
         question: 'How do I get my avatar festival ready with special Wearables and Emotes?',

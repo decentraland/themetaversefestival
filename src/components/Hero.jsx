@@ -25,14 +25,13 @@ const Hero = () => {
             <img src={stage5} width="15%"/>
           </div>
           <img src="dmf-logo-white.png" width="100%" />
-
         </LogoContainer>
         <EventDetails>
           <EventData>
             <EventDataItem>
               <DateComponent className="event-data">
                 <p>
-                  NOV. 16-18 • <DateHighlight>-12PM UTC</DateHighlight> •
+                  NOV. 16-18 • <DateHighlight>12PM UTC</DateHighlight> •
                 </p>
                 <DateLocation>FESTIVAL LAND, [-62,58]</DateLocation>
               </DateComponent>
@@ -46,10 +45,10 @@ const Hero = () => {
             </EventDataItem>
             <EventDataItem>
               <SaveTheDate
-                href="https://play.decentraland.org/?position=-62%2C58"
+                href="https://decentraland.org/blog/announcements/the-ultimate-guide-to-decentraland-music-festival-23"
                 target="_blank"
               >
-                <p style={{ fontSize: "20px" }}>RSVP</p>{" "}
+                <p style={{ fontSize: "20px" }}>Ultimate Guide</p>{" "}
                 <Polygon src={polygon} />
               </SaveTheDate>
             </EventDataItem>

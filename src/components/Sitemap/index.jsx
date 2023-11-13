@@ -1,5 +1,5 @@
 import React from "react";
-import { Section, Title, ComingSoon ,Map } from "./styles";
+import { Section, Title, Map } from "./styles";
 import { Container } from "../Container";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -9,14 +9,11 @@ const Sitemap = () => (
             <Title>
                 SITE<span style={{'font-family': 'SaintRegular'}}>M</span>AP
             </Title>
-            <ComingSoon>
-                Coming soon...
-            </ComingSoon>
-            {/* <Map>
+            <Map>
                 <StaticImage
-                    src={'./../../images/sitemap.svg'}
+                    src={'./../../images/map_export.png'}
                 />
-            </Map> */}
+            </Map>
         </Container>
     </Section>
 )

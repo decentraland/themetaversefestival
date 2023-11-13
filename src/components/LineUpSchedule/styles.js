@@ -80,7 +80,7 @@ export const StyledLineUpBtn = styled.button`
   height: 70px;
   background: #000000;
   border: 3px solid #ffffff;
-  
+
   border-radius: 58px;
 
   /* Inside auto layout */
@@ -90,11 +90,12 @@ export const StyledLineUpBtn = styled.button`
   color: #ffffff;
   transition: all 0.5s ease;
   &.selected {
-    background:#f37877;
+    background: #f37877;
     color: black;
     box-shadow: 0px 0px 20px rgba(211, 207, 255, 0.7);
   }
-  &:hover, .selected {
+  &:hover,
+  .selected {
     /* background: #ffffff; */
     background: #f37877;
     color: black;
@@ -126,18 +127,16 @@ export const StyledFullLineUpList = styled.p`
 
   span {
     transition: text-shadow 0.2s ease;
-    
   }
-    span:hover {
-      text-shadow: 0 0 6px #fff;
-    }
+  span:hover {
+    text-shadow: 0 0 6px #fff;
+  }
 `;
 
 export const StyledHighLight = styled.span`
   font-family: "Gothic";
   font-weight: 800;
   &:hover {
-
   }
   text-shadow: 0 0 6px #fff;
 `;
@@ -179,8 +178,8 @@ export const StyledLineUpLogo = styled.img`
   margin-bottom: 29px;
 `;
 
-export const StyledEyeIcon = styled.img`
-  width: 44px;
+export const StyledSeparator = styled.img`
+  width: 25px;
   height: 25px;
   margin-left: 16px;
   margin-right: 16px;

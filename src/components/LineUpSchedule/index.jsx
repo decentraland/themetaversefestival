@@ -5,14 +5,14 @@ import {
   StyledLineUpSchedule,
   StyledLineUpBody,
   StyledFullLineUpList,
-  StyledEyeIcon,
+  StyledSeparator,
   StyledLineUpHeader,
   StyledLineUpBtnSection,
   StyledLineUpBtn,
   Title,
 } from "./styles";
-import EyeVector from "../../images/Eye-Vector.svg";
-import LineUpTitle from "../../images/lineUpTitle-png.png";
+import EyeVector from "../../images/Starbust3.png";
+
 import DaySchedule from "../DaySchedule/index.jsx";
 import styled from "styled-components";
 
@@ -143,39 +143,7 @@ const LineUpSchedule = (props) => {
     },
   ];
 
-  const lineupRaw = [
-    "BJÖRK",
-    "OZZY OSBOURNE",
-    "DILLON FRANCIS",
-    "SOULJA BOY",
-    "MOTORHEAD",
-    "DJ REGARD",
-    "MEGADETH",
-    "AKIRA THE DON",
-    "VLADIMIR CAUCHEMAR",
-    "MAIA WRIGHT",
-    "IZZY BIZU",
-    "BRELAND",
-    "KYARY PAMYU PAMYU",
-    "HARRISON FIRST",
-    "MORGAN",
-    "MIYA MIYA",
-    "THE STICKMEN PROJECT",
-    "ELLYSE MASON",
-    "ELIJAH BLAKE",
-    "IZZY BIZU",
-    "ATARASHII GAKKO",
-    "MANON",
-    "A$AP TYY",
-    "FRUITS ZIPPER",
-    "SNH48",
-    "NICOLA FASANO",
-    "GRAMATIK + LUXAS",
-    "YOTAM AVNI",
-    "APE RAVE CLUB",
-    "JAMIS",
-    "AND MANY MORE",
-  ];
+  const lineupRaw = ["Odeum Music", "Dead-Tones", "Cora Novoa", "Sebastian Mikael", "Teenear", "GucciToe", "Mr Swe", "DJTRAX", "FSODinero", "APROPOS", "DeepFake", "Trick Daddy", "CANDY TUNE", "D-Noise", "The Hollow Legs", "DJ Doodle", "Bufalo", "MetaDJ Live", "Steve Sai", "Trina", "KUTURAR", "PANS", "DadaYute", "StoneyEye", "GLITCH RAVE", "MA GAK PA", "NessyTheRilla", "Ladya", "Sound Desert Showcase", "Radyica", "Daniel Monaco", "Coconut Sunday", "Ryota", "ZOORAB", "VanRaven", "Skogur", "Makulatura", "0xPeter", "Bashir Khatsuk", "Phuture Music Live", "Merio Bras", "DeepMe", "Barret Wav", "Argent", "Soundscape Jam", "babiiJ", "AmPm", "Armina", "DVANOV", "Teya Flow", "Cosy", "Meladee", "Key Keepers", "BORG MUSIC", "Kosmodrom", "DJ FOUR", "Yala", "DJ SA", "UVIFREE", "Three Oscillators", "Medtronica", "Roman Flauns", "Nico Earnshaw", "Lesly and Kan Dina", "Losi", "Awake For Life", "Placeboys", "TYTE", "Mike Smiff", "Voroth", "bala", "Natsuki Kwanishi", "ME.N.U.", "UNISOL", "Red Albert", "Aiwaska", "KVMBL", "Furia", "RK", "OgiWorlds", "Kiramomo", "lmn3", "DJ Dex", "UNTZ King", "Beskonechnaya Zima", "Red Albert", "Pechatnaya Mashina"]
 
   return (
     <StyledLineUpSchedule id="lineup">
@@ -205,38 +173,30 @@ const LineUpSchedule = (props) => {
             ))}
           </StyledLineUpBtnSection>
         </StyledLineUpHeader>
+        
         <StyledLineUpBody>
-          {
-            currentSection === 'lineup' &&
-              // <StyledFullLineUpList className="raw-lineup">
-              //   {lineupRaw.map((artist, key) => (
-              //     <>
-              //       <span key={key}>{artist.toUpperCase()}</span>
-              //       <StyledEyeIcon src={EyeVector} />
-              //     </>
-              //   ))}
-              // </StyledFullLineUpList>
-              <ComingSoon>Coming soon...</ComingSoon>
-          }
+          {currentSection === 'lineup' && (
+            <>
+              <StyledFullLineUpList className="raw-lineup">
+                {lineupRaw.map((artist, key) => (
+                  <>
+                     <span key={key}>{artist.toUpperCase()}</span>
+                     {key !== lineupRaw.length - 1 && <StyledSeparator src={EyeVector} />}
+                  </>
+                ))}
+              </StyledFullLineUpList>              
+            </>
+          )}
           {currentSection === "schedule" && (
             <>
-              {/* <DaySchedule
-                dayNumber={currentDay}
-                dayInfo={days[currentDay - 1]}
-              /> */}
-              <ComingSoon>Coming soon...</ComingSoon>
+              <DaySchedule dayNumber={currentDay} dayInfo={days[currentDay - 1]} />              
             </>
           )}
         </StyledLineUpBody>
+        
       </Container>
     </StyledLineUpSchedule>
   );
 };
-
-const ComingSoon = styled.p`
-  font-family: Gothic;
-  font-size: 40px;
-  font-weight: 700
-`;
 
 export default LineUpSchedule;

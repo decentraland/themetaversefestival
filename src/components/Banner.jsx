@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactPlayer from "react-player";
 import styled from "styled-components";
 import volumeMuted from '../images/volume-muted.svg'
 import volume from '../images/volume.svg'
-import { breakpoints } from "../../utils/theme";
 
 const Banner = ({ setShowVideo, muted, setMuted }) => {
     return (

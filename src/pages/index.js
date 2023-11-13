@@ -13,12 +13,10 @@ import About from "../components/About";
 import Faq from "../components/Faq";
 import Sitemap from "../components/Sitemap";
 import Stages from "../components/Stages";
-import Partners from "../components/Partners";
 import Experiences from "../components/Experiences";
-import MerchBanner from "../components/MerchBanner";
-import merchBanner from "../images/merch-banner.png";
 import LineUpSchedule from "../components/LineUpSchedule";
-import { Subscribe } from "../components/Subscribe";
+import MerchBanner from "../components/MerchBanner"
+import merchBanner from "../images/merchbanner-23.png"
 
 const advancedMatching = {};
 const options = {
@@ -29,8 +27,8 @@ const options = {
 const seo = {
   title: "Decentraland Music Festival | Decentraland",
   description:
-    "A four-day celebration of music, culture and creativity in the virtual social world of Decentraland, the Metaverse Festival is a grand collision of light, sound and portable toilets.",
-  image: "https://themetaversefestival.io/social.png",
+    "A three-day celebration of music, culture and creativity in the virtual social world of Decentraland, the Music Festival is a grand collision of light, sound and portable toilets.",
+  image: "https://musicfestival.decentraland.org/dmf-logo-white.png",
 };
 
 const meta = {
@@ -86,22 +84,22 @@ const IndexPage = () => {
 
             return <meta key={name} name={name} content={meta[name]} />;
           })}
-        <link
+        {/* <link
           rel="apple-touch-icon"
           sizes="180x180"
           href="/apple-touch-icon.png"
-        />
+        /> */}
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href="/favicon-23.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon-16x16.png"
+          href="/favicon-23-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="msapplication-TileColor" content="#da532c" />
@@ -134,8 +132,8 @@ const IndexPage = () => {
           <Stages />
           <Experiences />
           <BannerMarquee />
-          {/* <MerchBanner src={merchBanner} href="https://market.decentraland.org/MF23?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true" target="_blank" /> */}
-          {/* <BannerMarquee noBorderTop direction="right" /> */}
+          <MerchBanner src={merchBanner} href="https://market.decentraland.org/DCLMF23?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true" target="_blank" />
+          <BannerMarquee noBorderTop direction="right" />
           <Sitemap />
           <BannerMarquee />
           <Faq />

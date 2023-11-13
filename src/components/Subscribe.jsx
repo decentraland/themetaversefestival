@@ -27,7 +27,6 @@ export const Subscribe = () => {
         data-test-id="beehiiv-embed" 
         height="52" 
         frameborder="0" 
-        scrolling="no" 
         style={{margin: 0, borderRadius: "0px !important", backgroundColor:"transparent", fontFamily: "Gothic"}}
       />
     </SubscribeBox>

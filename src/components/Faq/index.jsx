@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Section, Title, FaqList, FaqItem, Question, Answer, Toggle } from "./styles";
-import title from '../../images/faq-title.png';
 import { Container } from '../Container';
 import { questions } from "./questions";
 import toggle from '../../images/faq-toggle.svg';
