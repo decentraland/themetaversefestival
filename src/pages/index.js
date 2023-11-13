@@ -15,6 +15,8 @@ import Sitemap from "../components/Sitemap";
 import Stages from "../components/Stages";
 import Experiences from "../components/Experiences";
 import LineUpSchedule from "../components/LineUpSchedule";
+import MerchBanner from "../components/MerchBanner"
+import merchBanner from "../images/merchbanner-23.png"
 
 const seo = {
   title: "Decentraland Music Festival | Decentraland",
@@ -111,8 +113,8 @@ const IndexPage = () => {
           <Stages />
           <Experiences />
           <BannerMarquee />
-          {/* <MerchBanner src={merchBanner} href="https://market.decentraland.org/MF23?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true" target="_blank" /> */}
-          {/* <BannerMarquee noBorderTop direction="right" /> */}
+          <MerchBanner src={merchBanner} href="https://market.decentraland.org/DCLMF23?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true" target="_blank" />
+          <BannerMarquee noBorderTop direction="right" />
           <Sitemap />
           <BannerMarquee />
           <Faq />
