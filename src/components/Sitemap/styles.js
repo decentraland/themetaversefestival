@@ -27,6 +27,7 @@ export const Title = styled.h2`
 `;
 
 export const Map = styled.div`
+    margin-bottom: 20px;
     padding: 0 24px;
     @media screen and (min-width: ${breakpoints.md}) {
         padding: 0 24px;
