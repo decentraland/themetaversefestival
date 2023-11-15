@@ -3,8 +3,8 @@ import { Container } from '../Container';
 import { Section, Stage, StagesContainer, Title, StageCard, StageImage, StageName, StageLocation, StageHover, StageButton } from './styles';
 import ang from '../../images/experiences23/ang.jpg';
 import cc from '../../images/experiences23/cc.jpg';
-import koa from '../../images/experiences23/KOA.jpg';
-import morph from '../../images/experiences23/morph.jpg';
+import koa from '../../images/experiences23/KOA.png';
+import morph from '../../images/experiences23/morph.png';
 import ms from '../../images/experiences23/ms.png';
 import sc from '../../images/experiences23/sc.jpg';
 import ss from '../../images/experiences23/ss.png';
@@ -15,6 +15,7 @@ import metadyne from '../../images/experiences23/metadyne.jpg';
 import smiley from '../../images/experiences23/smiley.jpg';
 import mf from '../../images/experiences23/mf.jpg';
 import gn from '../../images/experiences23/GAIAN.jpg';
+import dwow from '../../images/experiences23/dwow.png';
 
 
 const Experiences = () => (
@@ -246,6 +247,22 @@ const Experiences = () => (
                     </StageName>
                     <StageLocation>
                         [-70,61]
+                    </StageLocation>
+                </Stage>
+                <Stage href="https://events.decentraland.org/event/?id=df1c97f4-91c2-43b1-b4e9-e2a40eefaf5d" target="_blank">
+                    <StageCard>
+                        <StageImage src={dwow} />
+                        <StageHover>
+                            <StageButton>
+                                Jump in
+                            </StageButton>
+                        </StageHover>
+                    </StageCard>
+                    <StageName>
+                        doWow and Music District Genre Fusion: From Jazz to Hip-Hop Non-Stop
+                    </StageName>
+                    <StageLocation>
+                        [-65,70]
                     </StageLocation>
                 </Stage>
             </StagesContainer>
