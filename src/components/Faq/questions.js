@@ -7,7 +7,8 @@ export const questions = [
     },
     {
         question: 'How do I enter Decentraland?',
-        answer: () => <p>Eager to jump into Decentraland but you’re not familiar with the platform? Don’t worry! <a href="https://twitter.com/decentraland/status/1585005786467483648?s=20&t=eBEuHxLSsPn6134dovmh-A" target="_blank">Here</a> are the basics for entering and navigating the virtual world so you can start exploring in no time. Go to <a href="https://play.decentraland.org/" target="_blank">https://play.decentraland.org/</a> or enter directly in your area of interest via the <a href="https://events.decentraland.org/schedule/?id=297fb4fa-fe11-4746-8abd-ce6c77bad3e2" target="_blank">festival event page</a> </p>
+        answer: () => <p>Eager to jump into Decentraland but you’re not familiar with the platform? Don’t worry! <a href="https://twitter.com/decentraland/status/1585005786467483648?s=20&t=eBEuHxLSsPn6134dovmh-A" target="_blank">Here</a> are the basics for entering and navigating the virtual world so you can start exploring in no time. Go to <a href="https://play.decentraland.org/" target="_blank">https://play.decentraland.org/</a> or enter directly in your area of interest via the 
+        <a href="https://events.decentraland.org/schedule/?id=88d3c09d-1518-4b27-8cca-29099443b2b3&utm_source=landingpage&utm_medium=organic&utm_campaign=DCLMF23" target="_blank">festival event page</a> </p>
     },
     {
         question: 'Where can I find the full festival schedule?',

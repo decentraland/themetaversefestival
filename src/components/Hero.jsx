@@ -45,10 +45,10 @@ const Hero = () => {
             </EventDataItem>
             <EventDataItem>
               <SaveTheDate
-                href="https://decentraland.org/blog/announcements/the-ultimate-guide-to-decentraland-music-festival-23"
+                href="https://events.decentraland.org/event/?id=97aff492-b4b9-4ba1-bd08-bfa7e32be036&utm_source=landingpage&utm_medium=organic&utm_campaign=DCLMF23"
                 target="_blank"
               >
-                <p style={{ fontSize: "20px" }}>Ultimate Guide</p>{" "}
+                <p style={{ fontSize: "20px" }}>JUMP IN</p>{" "}
                 <Polygon src={polygon} />
               </SaveTheDate>
             </EventDataItem>
