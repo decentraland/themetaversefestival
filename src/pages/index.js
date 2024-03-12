@@ -15,8 +15,8 @@ import Sitemap from "../components/Sitemap";
 import Stages from "../components/Stages";
 import Experiences from "../components/Experiences";
 import LineUpSchedule from "../components/LineUpSchedule";
-import MerchBanner from "../components/MerchBanner"
-import merchBanner from "../images/merchbanner-23.png"
+import MerchBanner from "../components/MerchBanner";
+import merchBanner from "../images/merchbanner-23.png";
 
 const advancedMatching = {};
 const options = {
@@ -54,9 +54,9 @@ const IndexPage = () => {
     //   setShowVideo(true);
     // }
     if (typeof window !== "undefined") {
-      initTwitter()
+      initTwitter();
     }
-    
+
     import("react-facebook-pixel")
       .then((module) => module.default)
       .then((ReactPixel) => {
@@ -65,7 +65,6 @@ const IndexPage = () => {
           ReactPixel.pageView();
         }
       });
-
   }, []);
 
   return (
@@ -112,11 +111,9 @@ const IndexPage = () => {
         ></link>
       </Helmet>
       <Layout>
-        <header>
-          <Navbar />
-          <Hero />
-        </header>
+        <Navbar />
         <main>
+        <Hero />
           {showVideo && (
             <Banner
               muted={muted}
@@ -128,11 +125,15 @@ const IndexPage = () => {
           <About />
           <BannerMarquee />
           <LineUpSchedule />
-          <WatchTheTeaser setShowVideo={setShowVideo} setMuted={setMuted} />
+          {/* <WatchTheTeaser setShowVideo={setShowVideo} setMuted={setMuted} /> */}
           <Stages />
           <Experiences />
           <BannerMarquee />
-          <MerchBanner src={merchBanner} href="https://market.decentraland.org/DCLMF23?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true" target="_blank" />
+          <MerchBanner
+            src={merchBanner}
+            href="https://market.decentraland.org/DCLMF23?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true"
+            target="_blank"
+          />
           <BannerMarquee noBorderTop direction="right" />
           <Sitemap />
           <BannerMarquee />
@@ -149,11 +150,11 @@ const StyledIndexPage = styled.div`
 `;
 
 export const initTwitter = () => {
-  const head = document.querySelector('head');
+  const head = document.querySelector("head");
   const addTwitterScript = () => {
-    const twitterScript = document.createElement('script');
-    twitterScript.type = 'text/javascript';
-    twitterScript.src = 'https://static.ads-twitter.com/uwt.js';
+    const twitterScript = document.createElement("script");
+    twitterScript.type = "text/javascript";
+    twitterScript.src = "https://static.ads-twitter.com/uwt.js";
     head.appendChild(twitterScript);
   };
 
@@ -164,18 +165,18 @@ export const initTwitter = () => {
           ? twitterEventTracker.exe.apply(twitterEventTracker, args)
           : twitterEventTracker.queue.push(args);
       });
-      twitterEventTracker.version = '1.1';
+      twitterEventTracker.version = "1.1";
       twitterEventTracker.queue = [];
       const twitterScriptElement = documentObj.createElement(elementType);
       twitterScriptElement.async = true;
-      twitterScriptElement.src = 'https://static.ads-twitter.com/uwt.js';
+      twitterScriptElement.src = "https://static.ads-twitter.com/uwt.js";
       const a = documentObj.getElementsByTagName(elementType)[0];
       a.parentNode.insertBefore(twitterScriptElement, a);
     }
   };
   addTwitterScript();
-  initializeTwq(window, document, 'script');
-  window.twq('config', "oa4sn");
-}
+  initializeTwq(window, document, "script");
+  window.twq("config", "oa4sn");
+};
 
 export default IndexPage;

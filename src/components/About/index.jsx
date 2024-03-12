@@ -4,24 +4,75 @@ import theme, { breakpoints } from "../../../utils/theme";
 import starBust5 from "../../images/Starbust5.png";
 import starBust6 from "../../images/Starbust6.png";
 import starBust7 from "../../images/Starbust7.png";
+import aboutIcon from "../../images/about/abouticon.svg";
 import { Container } from "../Container";
 
 const About = (props) => {
   return (
     <Section id="about">
-      <Container>        
-        <StyledAbout>          
+      <Container>
+        <StyledAbout>
           <AboutHeader>
-            <AboutTitle>DECENTRALAND M<MVFont>U</MVFont>SIC F<MVFont>E</MVFont>STIVAL</AboutTitle>            
+            <AboutTitle>DECENTRALAND ART WEEK</AboutTitle>
           </AboutHeader>
           <Aboutbody>
-            <AboutBodyImgContainer>             
-                <StarBustSideIcon src={starBust5} width="80px" height="80px" />
-                <StarBustSideIcon src={starBust6} width="80px" height="80px" />
-                <StarBustSideIcon src={starBust7} width="80px" height="80px" />             
-            </AboutBodyImgContainer>
+            {/* <AboutBodyImgContainer>
+              <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
+              <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
+              <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
+              <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
+              <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
+            </AboutBodyImgContainer> */}
             <AboutBodyText>
-              <AboutBodyParagraph>
+              <AboutParagraphItem>
+                <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
+                <p>
+                  Join us for the <ParagraphSpan>5th edition of Decentraland Art Week</ParagraphSpan> to
+                  explore art beyond reality.
+                </p>
+              </AboutParagraphItem>
+              <AboutParagraphItem>
+                <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
+                <p>
+                  From <ParagraphSpan>March 26-29</ParagraphSpan>, 2024, you'll discover the infinite potential
+                  of art and creativity in new realities. As this year’s
+                  festival takes on the theme of "exploration", expect to enter
+                  a realm where virtual environments become journeys of
+                  discovery... with new Wearables and Emotes to collect on the
+                  way!
+                </p>
+              </AboutParagraphItem>
+              <AboutParagraphItem>
+                <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
+                <p>
+                  A highlight of Decentraland Art Week is <ParagraphSpan>MESHfair</ParagraphSpan>, the renowned
+                  virtual art fair for 3D, metaverse, and VR creators. Curated
+                  by leading galleries including Unit London and OFFICE IMPART,
+                  MESHfair showcases thirty new immersive works by international
+                  artists. On Thursday, March 28, join us for a sparkling Awards
+                  Gala to see which MESHfair artist will be awarded the
+                  Decentraland Prize.
+                </p>
+              </AboutParagraphItem>
+              <AboutParagraphItem>
+                <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
+                <p>
+                  What's more, at Decentraland Art Week you'll experience the
+                  unveiling of four new, large-scale galleries. Developed by
+                  award-winning teams in response to the theme of exploration,
+                  the galleries will host a diverse array of virtual art,
+                  interactive installations, and live performances. The full
+                  schedule will be announced soon, so stay tuned.
+                </p>
+              </AboutParagraphItem>
+              <AboutParagraphItem>
+                <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
+                <p>
+                  Join us to explore art beyond the constraints of reality. See
+                  you there!
+                </p>
+              </AboutParagraphItem>
+              {/* <AboutBodyParagraph>
                 Prepare to discover an alternative reality inspired by the themes of <TextHighlight>radical self-expression, communal growth, and artistic renewal</TextHighlight> in the 3rd, most innovative edition of Decentraland Music Festival yet!
                 <br />
                 <br />
@@ -39,10 +90,13 @@ const About = (props) => {
                   <li>And much more!</li>
                 </ul>
                 <br />
-              </AboutBodyParagraph>
+              </AboutBodyParagraph> */}
             </AboutBodyText>
           </Aboutbody>
-          <AboutButtonContainer href="https://decentraland.beehiiv.com/subscribe?utm_source=musicfestival.decentraland.org&utm_medium=organic&utm_campaign=DCLMF23" target="_blank">
+          <AboutButtonContainer
+            href="https://decentraland.beehiiv.com/subscribe?utm_source=musicfestival.decentraland.org&utm_medium=organic&utm_campaign=DCLMF23"
+            target="_blank"
+          >
             <AboutButtonLink>
               Sign up for the Decentraland Newsletter
             </AboutButtonLink>
@@ -53,30 +107,33 @@ const About = (props) => {
   );
 };
 
-const MVFont = styled.span `
+const AboutParagraphItem = styled.div`
+  font-family: "Helvetica";
+  display: flex;
+  gap: 32px;
+
+  @media screen and (min-width: ${breakpoints.md}) {
+    gap: 112px;
+  }
+`;
+
+const ParagraphSpan = styled.span`
+  color: ${theme.accent};
+`;
+
+const MVFont = styled.span`
   font-family: 'SaintRegular';
-}`
+}`;
 
 const AboutTitle = styled.h2`
-  font-family: Gothic;
-  font-size: 40px;
+  font-family: HackerNoon;
+  text-shadow: 0px 0px 31px #393939;
+  font-size: 32px;
   text-align: center;
-  @media screen and (min-width: ${breakpoints.md}) {
-    font-size: 60px;
-  }
-  @media screen and (min-width: ${breakpoints.l}) {
-    font-size: 60px;
-  }
-  @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 60px;
-  }
-  @media screen and (min-width: ${breakpoints.xxl}) {
-    font-size: 60px;
-  }
-`
+`;
 
 const Section = styled.section`
-position: relative;
+  position: relative;
 `;
 
 const StyledAbout = styled.div`
@@ -86,7 +143,7 @@ const StyledAbout = styled.div`
 
 const AboutHeader = styled.section`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 56px;
 `;
@@ -98,7 +155,7 @@ const SideIcon = styled.img`
   @media screen and (min-width: ${breakpoints.md}) {
     display: block;
   }
-`
+`;
 
 const Aboutbody = styled.section`
   display: flex;
@@ -108,22 +165,21 @@ const StarBustSideIcon = styled.img`
   display: none;
   @media screen and (min-width: ${breakpoints.md}) {
     display: block;
-    padding
   }
 `;
 
 const AboutBodyText = styled.div`
-letter-spacing: 0.1em;
-font-weight: 300;
-margin-left: 8px;
-@media screen and (min-width: ${breakpoints.md}) {
-  margin-left: 120px;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 400;
-  padding-right: 64px;
-  max-width: 700px;
-}
+  letter-spacing: 0.1em;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+  font-weight: 300;
+  @media screen and (min-width: ${breakpoints.md}) {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    max-width: 850px;
+  }
 `;
 
 const AboutBodyParagraph = styled.p`
@@ -148,14 +204,14 @@ const AboutBodyParagraph = styled.p`
 
 const AboutBodyImgContainer = styled.div`
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
   margin: 45px 0;
 `;
 
 const AboutBodyImg = styled.div`
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -184,10 +240,10 @@ const TextHighlight = styled.span`
 `;
 
 const AboutButtonContainer = styled.a`
-  margin-top: 32px;
+  margin-top: 46px;
   width: 100%;
   @media screen and (min-width: ${breakpoints.md}) {
-    margin-top: 165px;
+    margin-top: 10px;
   }
 `;
 
@@ -207,7 +263,7 @@ const AboutButtonLink = styled.button`
   transition: all 0.4s ease;
   backdrop-filter: blur(2px);
   cursor: pointer;
-  margin-top: 48px;
+  margin-top: 64px;
 
   img {
     -webkit-animation: rotating 10s linear infinite;
@@ -219,11 +275,8 @@ const AboutButtonLink = styled.button`
 
   &:hover {
     color: black;
-    background-color: #f37877;
-    box-shadow:
-          0 0 20px #fff,
-          0 0 10px violet,
-          0 0 5px blue;
+    background-color: ${theme.accent};
+    box-shadow: 0 0 20px #fff, 0 0 10px violet, 0 0 5px blue;
 
     img {
       -webkit-animation: rotating 10s linear infinite;
@@ -231,7 +284,7 @@ const AboutButtonLink = styled.button`
       -ms-animation: rotating 10s linear infinite;
       -o-animation: rotating 10s linear infinite;
       animation: rotating 10s linear infinite;
-    
+
       @keyframes rotating {
         from {
           transform: rotate(0deg);
@@ -245,8 +298,8 @@ const AboutButtonLink = styled.button`
 
   @media screen and (min-width: ${breakpoints.md}) {
     font-size: 22px;
-    padding: 48px 72px;
-    
+    padding: 29px 72px;
+
     img {
       -webkit-animation: unset;
       -moz-animation: unset;
@@ -268,7 +321,7 @@ const ButtonDecorator = styled.img`
     height: 52px;
     top: 0;
     right: -5px;
-}
-`
+  }
+`;
 
 export default About;

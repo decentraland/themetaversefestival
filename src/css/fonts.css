@@ -46,3 +46,10 @@
   font-weight: 400;
   src: url(../fonts/Numerino-PixelItalic.otf);
 }
+
+@font-face {
+  font-family: "HackerNoon";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/HackerNoonV2.ttf);
+}

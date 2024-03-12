@@ -12,9 +12,15 @@ const BannerMarquee = (props) => {
         delay={props.delay && props.delay}
         gradient={false}
       >
-        • [-62,58] ©️Decentraland Music Festival NOV. 16-18 •
-        <DateHighlight> 12PM UTC </DateHighlight> • [-62,58] ©️Decentraland Music Festival
-        NOV. 16-18 •<DateHighlight>12PM UTC</DateHighlight>
+        • Decentraland Art Week 2024
+        •<DateHighlight> MARCH 26 - 29 </DateHighlight> • Decentraland Art Week 2024
+        •<DateHighlight> MARCH 26 - 29</DateHighlight> • Decentraland Art Week 2024
+        •<DateHighlight> MARCH 26 - 29</DateHighlight> • Decentraland Art Week 2024
+        •<DateHighlight> MARCH 26 - 29</DateHighlight>
+        • Decentraland Art Week 2024
+        •<DateHighlight> MARCH 26 - 29</DateHighlight>
+        • Decentraland Art Week 2024
+        •<DateHighlight> MARCH 26 - 29</DateHighlight>
       </Marquee>
     </StyledBannerMarquee>
   );
@@ -22,7 +28,10 @@ const BannerMarquee = (props) => {
 
 const StyledBannerMarquee = styled.div`
   background: black;
-  font-size: 12px;
+  font-size: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
   position: relative;
   border-top: ${(props) =>
     !props.noBorderTop ? `solid 2px ${theme.accent}` : "none"};

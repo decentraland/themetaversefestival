@@ -9,23 +9,34 @@ import {
   StyledDayHeader,
   StyledDayTitle,
   StyledDayinfo,
+  StyledDataItem,
+  StyledDataItemText,
 } from "./styles.js";
 import {
   StyledBodyBtnSection,
   StyledArrowBtn,
 } from "../LineUpSchedule/styles.js";
+import scheduleSeparator from "../../images/schedule/scheduleseparator.png";
 
 const DaySchedule = (props) => {
-  const { dayInfo, dayNumber } = props;
+  const { dayInfo } = props;
 
   return (
     <StyledDaySchedule>
-      <StyledDayHeader>
-        <StyledDayTitle>{`${dayInfo.date}`}</StyledDayTitle>
-      </StyledDayHeader>
+      {/* <StyledDayHeader>
+        <StyledDayTitle>{dayInfo.date}</StyledDayTitle>
+      </StyledDayHeader> */}
       <StyledDayBody>
-        {dayInfo.stages.map((stageInfo, i) => (
-          <StageSchedule key={i} stageInfo={stageInfo} />
+        {dayInfo.artists.map((artist, index) => (
+          <StyledDataItem key={index}>
+            <StyledDataItemText>{artist}</StyledDataItemText>
+            <img
+              src={scheduleSeparator}
+              width="32px"
+              height="32px"
+              alt="schedule"
+            />
+          </StyledDataItem>
         ))}
       </StyledDayBody>
     </StyledDaySchedule>
