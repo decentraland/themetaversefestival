@@ -25,8 +25,8 @@ const Button = ({
 
 const StyledButton = styled.a`
   font-family: Gothic;
-  border: 2px solid #f37877;
-  border-radius: 5px;
+  border: 2px solid #FFA450;
+  border-radius: 32px;
   height: 60px;
   padding: 0 32px;
   display: flex;

@@ -23,22 +23,22 @@ export const StyledHeaderImg = styled.img`
 `;
 
 export const Title = styled.h2`
-  font-size: 80px;
-  font-family: Gothic;
+  font-size: 64px;
+  font-family: "HackerNoon";
   text-align: center;
   letter-spacing: 10px;
 
   @media screen and (min-width: ${breakpoints.md}) {
-    font-size: 80px;
+    font-size: 64px;
   }
   @media screen and (min-width: ${breakpoints.l}) {
-    font-size: 150px;
+    font-size: 100px;
   }
   @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 150px;
+    font-size: 100px;
   }
   @media screen and (min-width: ${breakpoints.xxl}) {
-    font-size: 150px;
+    font-size: 100px;
   }
 `;
 
@@ -56,8 +56,10 @@ export const StyledHeaderVector = styled.img`
 export const StyledLineUpBtnSection = styled.div`
   display: flex;
   width: 100%;
-  justify-content: space-between;
   margin-top: 72px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 52px;
   overflow-x: auto;
   align-items: center;
 `;
@@ -75,7 +77,7 @@ export const StyledLineUpBtn = styled.button`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 29px 8px;
+  padding: 32px 36px;
   gap: 10px;
   height: 70px;
   background: #000000;
@@ -90,14 +92,14 @@ export const StyledLineUpBtn = styled.button`
   color: #ffffff;
   transition: all 0.5s ease;
   &.selected {
-    background: #f37877;
+    background: #FFA450;
     color: black;
     box-shadow: 0px 0px 20px rgba(211, 207, 255, 0.7);
   }
   &:hover,
   .selected {
     /* background: #ffffff; */
-    background: #f37877;
+    background: #FFA450;
     color: black;
     box-shadow: 0px 0px 20px rgba(211, 207, 255, 0.7);
   }
