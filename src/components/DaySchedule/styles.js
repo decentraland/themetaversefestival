@@ -9,7 +9,8 @@ export const StyledDaySchedule = styled.div`
 
 export const StyledDayBody = styled.section`
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 32px;
   width: 100%;
 `;
 
@@ -35,3 +36,15 @@ export const StyledDayTitle = styled.h2`
     letter-spacing: 0.22em;
   }
 `;
+
+export const StyledDataItem = styled.div`
+  display: flex;
+  gap: 32px;
+  font-size: 32px;
+  align-items: center;
+`;
+
+export const StyledDataItemText = styled.span`
+  font-family: "Helvetica";
+  text-transform: uppercase;
+`

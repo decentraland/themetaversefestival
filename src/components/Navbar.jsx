@@ -19,15 +19,15 @@ const Navbar = (props) => {
       targetId: "lineup",
     },
     {
-      label: "STAGES",
-      targetId: "stages",
+      label: "GALLERIES",
+      targetId: "lineup",
     },
     {
       label: "EXPERIENCES",
       targetId: "experiences",
     },
     {
-      label: "SITEMAP",
+      label: "MAP",
       targetId: "sitemap",
     },
     {
@@ -100,7 +100,7 @@ const Navbar = (props) => {
 };
 
 const Header = styled.header`
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   left: 0;

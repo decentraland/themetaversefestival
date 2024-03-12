@@ -3,31 +3,43 @@ import styled from "styled-components";
 import Button from "./Button";
 import theme, { breakpoints } from "../../utils/theme";
 import dclLogo from "../images/logo-dcl.svg";
-import starBust from "../images/Starbust1.png";
-import polygon from "../images/STD-polygon.svg";
-import stage1 from "../images/stage1.png"
-import stage2 from "../images/stage2.png" 
-import stage3 from "../images/stage3.png" 
-import stage4 from "../images/stage4.png" 
-import stage5 from "../images/stage5.png" 
+import heroPolygon from "../images/hero/polygon2.svg";
+import hero1 from "../images/hero/hero1.svg" 
+import hero2 from "../images/hero/hero2.svg" 
+import hero3 from "../images/hero/hero3.svg" 
+import hero4 from "../images/hero/hero4.svg" 
+import hero5 from "../images/hero/hero5.svg" 
+import herobg from "../images/hero/herobg.png"
+import herotitle from "../images/hero/logohero.png"
 import { Container } from "./Container";
 
 const Hero = () => {
   return (
-    <StyledHero sx={{ height: "100vh", display: "flex", alignItems: "center" }}>
+    <StyledHero sx={{ height: "100vh", display: "flex", alignItems: "center", }}>
       <Container>
         <LogoContainer>
-          <div style={{'justify-content': 'center', 'display': 'flex'}}>
-            <img src={stage1} width="15%" />
-            <img src={stage2} width="15%"/>
-            <img src={stage3} width="15%"/>
-            <img src={stage4} width="15%"/>
-            <img src={stage5} width="15%"/>
+          <div style={{'justify-content': 'center', 'display': 'flex', gap: "24px"}}>
+            <img src={hero1} width="72px" height="72px" />
+            <img src={hero2} width="72px" height="72px" />
+            <img src={hero3} width="72px" height="72px" />
+            <img src={hero4} width="72px" height="72px" />
+            <img src={hero5} width="72px" height="72px" />
           </div>
-          <img src="dmf-logo-white.png" width="100%" />
+          {/* <img src="dmf-logo-white.png" width="100%" /> */}
+          <img src={herotitle} width="100%" />
         </LogoContainer>
         <EventDetails>
-          <EventData>
+        <EventData>
+            <EventDataItem>
+              <DateComponent className="event-data">
+                <DateHighlight>
+                  MAR. 26-29 • 
+                </DateHighlight>
+                <DateLocation> ART LAND, [-67,70]</DateLocation>
+              </DateComponent>
+            </EventDataItem>
+          </EventData>
+          {/* <EventData>
             <EventDataItem>
               <DateComponent className="event-data">
                 <p>
@@ -36,7 +48,7 @@ const Hero = () => {
                 <DateLocation>FESTIVAL LAND, [-62,58]</DateLocation>
               </DateComponent>
             </EventDataItem>
-          </EventData>
+          </EventData> */}
           <EventDataBottom>
             <EventDataItem>
               <a href="https://play.decentraland.org/" target="_blank">
@@ -49,22 +61,10 @@ const Hero = () => {
                 target="_blank"
               >
                 <p style={{ fontSize: "20px" }}>JUMP IN</p>{" "}
-                <Polygon src={polygon} />
+                <Polygon src={heroPolygon} />
               </SaveTheDate>
             </EventDataItem>
           </EventDataBottom>
-          <Decorator
-            src={starBust}
-            top="50%"
-            left="-64px"
-            height="62px"
-          />
-          <Decorator
-            src={starBust}
-            top="50%"
-            right="-64px"
-            height="62px"
-          />
         </EventDetails>
       </Container>
     </StyledHero>
@@ -78,12 +78,17 @@ const StyledHero = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  background-image: url(${herobg});
+  background-size: cover;
+  background-position: center;
 `;
 
 export const LogoContainer = styled.div`
-margin-bottom: 24px;
+display: flex;
+flex-direction: column;
+gap: 72px;
 @media screen and (min-width: ${breakpoints.md}) {
-  padding: 0 33px;
+  
 }
 `;
 
@@ -94,12 +99,11 @@ const StyledVideo = styled.video`
 
 const EventDetails = styled.div`
   position: relative;
-  padding: 0 24px;
-  border-left: 3px solid white;
-  border-right: 3px solid white;
+  // border-left: 3px solid white;
+  // border-right: 3px solid white;
 
   @media screen and (min-width: ${breakpoints.md}) {
-    padding: 0 121px;
+    
   }
 `;
 
@@ -160,12 +164,10 @@ const DateComponent = styled.section`
 `;
 
 const DateHighlight = styled.span`
-  color: ${theme.accent};
-`;
-
-const DateLocation = styled.span`
-  font-family: "Gothic";
-  font-size: 13px;
+  // color: ${theme.accent};
+  color: #FFA450;
+  font-family: "HackerNoon";
+  font-size: 23px;
   line-height: 32px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -173,12 +175,33 @@ const DateLocation = styled.span`
   
   @media screen and (min-width: ${breakpoints.l}) {
     font-size: 26px;
-    line-height: 72px;
+    line-height: 64px;
     letter-spacing: 5px;
   }
 
   @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 32px;
+    font-size: 42px;
+    line-height: 72px;
+    letter-spacing: 11px;
+  }
+`;
+
+const DateLocation = styled.span`
+  font-family: "Gothic";
+  font-size: 23px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: justify;
+  
+  @media screen and (min-width: ${breakpoints.l}) {
+    font-size: 26px;
+    line-height: 64px;
+    letter-spacing: 5px;
+  }
+
+  @media screen and (min-width: ${breakpoints.xl}) {
+    font-size: 42px;
     line-height: 72px;
     letter-spacing: 11px;
   }
@@ -194,6 +217,7 @@ const StyledLogo = styled.img`
 `;
 
 const SaveTheDate = styled(Button)`
+padding: 16px 24px;
   width: 100%;
 `;
 
