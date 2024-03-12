@@ -1,3 +1,3 @@
-# DCLMF 2023 - Decentraland Music Festival
+# ART WEEK 2024 - Decentraland
 
 ![festival](./static/logo-metaverse.png)
