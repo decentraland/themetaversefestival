@@ -23,7 +23,7 @@ export const StyledHeaderImg = styled.img`
 `;
 
 export const Title = styled.h2`
-  font-size: 64px;
+  font-size: 32px;
   font-family: "HackerNoon";
   text-align: center;
   letter-spacing: 10px;

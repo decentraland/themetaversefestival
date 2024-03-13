@@ -94,7 +94,7 @@ const About = (props) => {
             </AboutBodyText>
           </Aboutbody>
           <AboutButtonContainer
-            href="https://decentraland.beehiiv.com/subscribe?utm_source=musicfestival.decentraland.org&utm_medium=organic&utm_campaign=DCLMF23"
+            href="https://decentraland.beehiiv.com/subscribe?utm_source=artweek.decentraland.org&utm_medium=organic&utm_campaign=DCLAW24"
             target="_blank"
           >
             <AboutButtonLink>

@@ -16,7 +16,8 @@ import Stages from "../components/Stages";
 import Experiences from "../components/Experiences";
 import LineUpSchedule from "../components/LineUpSchedule";
 import MerchBanner from "../components/MerchBanner";
-import merchBanner from "../images/merchbanner-23.png";
+// import merchBanner from "../images/merchbanner-23.png";
+import merchBanner from "../images/newbanner.png";
 
 const advancedMatching = {};
 const options = {
@@ -134,7 +135,7 @@ const IndexPage = () => {
             href="https://market.decentraland.org/DCLMF23?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true"
             target="_blank"
           />
-          <BannerMarquee noBorderTop direction="right" />
+          <BannerMarquee direction="right" />
           <Sitemap />
           <BannerMarquee />
           <Faq />

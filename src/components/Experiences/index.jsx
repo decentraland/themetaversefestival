@@ -22,7 +22,7 @@ const Experiences = () => (
     <Section id="experiences">
         <Container>
             <Title>
-                E<span style={{'font-family': 'SaintRegular'}}>X</span>PERIENCES
+                EXPERIENCES
             </Title>
             <StagesContainer>
                 <Stage href="https://events.decentraland.org/event/?id=06ed733b-8a0d-48e4-b0c3-17c1ab0e3dac" target="_blank">

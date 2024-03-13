@@ -66,7 +66,7 @@ const LineUpSchedule = (props) => {
           )}
         </StyledLineUpBody>
         <SaveTheDate
-          href="https://events.decentraland.org/event/?id=97aff492-b4b9-4ba1-bd08-bfa7e32be036&utm_source=landingpage&utm_medium=organic&utm_campaign=DCLMF23"
+          href="https://decentraland.org/events/event/?id=0f91b470-2d4a-4ecc-a619-8c682d872685"
           target="_blank"
         >
           <p style={{ fontSize: "20px", textAlign: "center", width: "100%" }}>

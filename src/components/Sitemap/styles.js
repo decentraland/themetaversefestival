@@ -7,8 +7,8 @@ export const Section = styled.section`
 `;
 
 export const Title = styled.h2`
-  font-size: 80px;
-  font-family: Gothic;
+  font-size: 32px;
+  font-family: HackerNoon;
   text-align: center;
   letter-spacing: 10px;
 
@@ -16,23 +16,15 @@ export const Title = styled.h2`
     font-size: 80px;
   }
   @media screen and (min-width: ${breakpoints.l}) {
-    font-size: 150px;
+    font-size: 100px;
   }
   @media screen and (min-width: ${breakpoints.xl}) {
-    font-size: 150px;
+    font-size: 100px;
   }
   @media screen and (min-width: ${breakpoints.xxl}) {
-    font-size: 150px;
+    font-size: 100px;
   }
 `;
 
 export const Map = styled.div`
-    margin-bottom: 20px;
-    padding: 0 24px;
-    @media screen and (min-width: ${breakpoints.md}) {
-        padding: 0 24px;
-    }
-    @media screen and (min-width: ${breakpoints.l}) {
-        padding: 0 120px;
-    }
 `

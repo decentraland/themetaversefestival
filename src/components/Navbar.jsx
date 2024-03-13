@@ -50,9 +50,9 @@ const Navbar = (props) => {
     <Header>
       <StyledNavbar className="navbar">
         <Nav>
-          <LogoContainer href="#">
+          {/* <LogoContainer href="#"> */}
             {/* <StaticImage src={"./../images/logo-navbar.svg"} height={140} /> */}
-          </LogoContainer>
+          {/* </LogoContainer> */}
 
           <div>
             <MenuList>
@@ -69,7 +69,7 @@ const Navbar = (props) => {
               ))}
             </MenuList>
           </div>
-          <div>
+          {/* <div>
             <SocialIcon
               href="https://twitter.com/decentraland"
               target="_blank"
@@ -91,7 +91,7 @@ const Navbar = (props) => {
             >
               <Discord />
             </SocialIcon>
-          </div>
+          </div> */}
         </Nav>
       </StyledNavbar>
       <StyledBorder src={border} />
@@ -137,11 +137,11 @@ const SocialIcon = styled.a`
 const Nav = styled.nav`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 24px 24px;
   @media screen and (min-width: ${breakpoints.md}) {
-    padding: 18px 62px;
+    padding: 28px 62px;
   }
 `;
 
