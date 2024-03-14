@@ -16,7 +16,7 @@ import {
 } from "./styles";
 import EyeVector from "../../images/Starbust3.png";
 import heroPolygon from "../../images/hero/polygon2.svg";
-
+import { motion } from "framer-motion";
 import DaySchedule from "../DaySchedule/index.jsx";
 import styled from "styled-components";
 import BannerMarquee from "../Marquee.jsx";
@@ -25,10 +25,12 @@ import BannerMarquee from "../Marquee.jsx";
 const LineUpSchedule = (props) => {
   const [currentSection, setCurrentSection] = useState("schedule");
   const [currentDay, setCurrentDay] = useState(1);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleDaySelection = (day) => {
     setCurrentSection("schedule");
     setCurrentDay(day);
+    setIsMenuOpen(false); // Cerrar el menú al seleccionar un día
   };
 
   return (
@@ -38,6 +40,7 @@ const LineUpSchedule = (props) => {
         <StyledLineUpBtnSection>
           {days.map((dayInfo, i) => (
             <StyledLineUpBtn
+              key={i}
               className={
                 currentDay === i + 1 && currentSection === "schedule"
                   ? "selected"
@@ -46,12 +49,31 @@ const LineUpSchedule = (props) => {
               onClick={() => {
                 handleDaySelection(i + 1);
               }}
-              label={`⟶ Day 0${i + 1}`}
             >
               {`${dayInfo.date}`}
             </StyledLineUpBtn>
           ))}
         </StyledLineUpBtnSection>
+
+        <MobileMenu>
+          <SelectedDay onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {days[currentDay - 1].date}
+          </SelectedDay>
+          {isMenuOpen && (
+            <DropdownMenu
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              {days.map((dayInfo, i) => (
+                <MenuItem key={i} onClick={() => handleDaySelection(i + 1)}>
+                  {dayInfo.date}
+                </MenuItem>
+              ))}
+            </DropdownMenu>
+          )}
+        </MobileMenu>
 
         <StyledLineUpBody>
           {currentSection === "schedule" && (
@@ -92,6 +114,53 @@ const Polygon = styled.img`
   margin-left: 8px;
   @media screen and (min-width: ${breakpoints.md}) {
     margin-left: 16px;
+  }
+`;
+
+const MobileMenu = styled.div`
+  display: none;
+  position: relative;
+  @media screen and (max-width: ${breakpoints.md}) {
+    display: block;
+    width: 100%;
+    margin-top: 90px;
+  }
+`;
+
+const SelectedDay = styled.div`
+  cursor: pointer;
+  padding-left: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: black;
+  border: 1px solid #ffa450;
+  border-radius: 32px;
+  font-size: 32px;
+  font-family: "Helvetica";
+`;
+
+const DropdownMenu = styled(motion.div)`
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  border: 1px solid #ffa450;
+  border-radius: 32px;
+`;
+
+const MenuItem = styled.div`
+  padding-left: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  cursor: pointer;
+  font-size: 32px;
+  border-radius: 32px;
+  font-family: "Helvetica";
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #ffa450;
   }
 `;
 
