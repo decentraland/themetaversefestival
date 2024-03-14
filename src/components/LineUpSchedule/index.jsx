@@ -30,7 +30,7 @@ const LineUpSchedule = (props) => {
   const handleDaySelection = (day) => {
     setCurrentSection("schedule");
     setCurrentDay(day);
-    setIsMenuOpen(false); // Cerrar el menú al seleccionar un día
+    setIsMenuOpen(false);
   };
 
   return (

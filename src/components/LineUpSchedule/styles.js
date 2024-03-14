@@ -56,17 +56,15 @@ export const StyledHeaderVector = styled.img`
 export const StyledLineUpBtnSection = styled.div`
   display: none;
   margin-top: 72px;
-  flex-direction: column;
-  justify-content: center;
   gap: 52px;
   overflow-x: auto;
-  align-items: center;
 
-  @media screen and (min-width: ${breakpoints.lg}) {
+  @media screen and (min-width: 769px) {
     flex-direction: row;
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
-
 `;
 
 export const StyledLineUpBtn = styled.button`
@@ -97,14 +95,14 @@ export const StyledLineUpBtn = styled.button`
   color: #ffffff;
   transition: all 0.5s ease;
   &.selected {
-    background: #FFA450;
+    background: #ffa450;
     color: black;
     box-shadow: 0px 0px 20px rgba(211, 207, 255, 0.7);
   }
   &:hover,
   .selected {
     /* background: #ffffff; */
-    background: #FFA450;
+    background: #ffa450;
     color: black;
     box-shadow: 0px 0px 20px rgba(211, 207, 255, 0.7);
   }
