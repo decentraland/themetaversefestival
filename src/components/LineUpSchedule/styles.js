@@ -55,13 +55,17 @@ export const StyledHeaderVector = styled.img`
 
 export const StyledLineUpBtnSection = styled.div`
   display: flex;
-  width: 100%;
   margin-top: 72px;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   gap: 52px;
   overflow-x: auto;
   align-items: center;
+
+  @media screen and (min-width: ${breakpoints.md}) {
+    flex-direction: row;
+  }
+
 `;
 
 export const StyledLineUpBtn = styled.button`
@@ -110,7 +114,6 @@ export const StyledLineUpBody = styled.section`
   height: auto;
   margin-bottom: 135px;
   margin-top: 90px;
-
   display: flex;
   flex-direction: row;
 `;

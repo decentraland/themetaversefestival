@@ -9,7 +9,7 @@ export const StyledDaySchedule = styled.div`
 
 export const StyledDayBody = styled.section`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 32px;
   width: 100%;
 `;
@@ -39,9 +39,9 @@ export const StyledDayTitle = styled.h2`
 
 export const StyledDataItem = styled.div`
   display: flex;
-  gap: 32px;
+  gap: 24px;
   font-size: 32px;
-  align-items: center;
+  align-items: start;
 `;
 
 export const StyledDataItemText = styled.span`

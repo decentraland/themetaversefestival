@@ -35,25 +35,23 @@ const LineUpSchedule = (props) => {
     <StyledLineUpSchedule id="lineup">
       <Container>
         <Title>SCHEDULE</Title>
-        <StyledLineUpHeader>
-          <StyledLineUpBtnSection>
-            {days.map((dayInfo, i) => (
-              <StyledLineUpBtn
-                className={
-                  currentDay === i + 1 && currentSection === "schedule"
-                    ? "selected"
-                    : ""
-                }
-                onClick={() => {
-                  handleDaySelection(i + 1);
-                }}
-                label={`⟶ Day 0${i + 1}`}
-              >
-                {`${dayInfo.date}`}
-              </StyledLineUpBtn>
-            ))}
-          </StyledLineUpBtnSection>
-        </StyledLineUpHeader>
+        <StyledLineUpBtnSection>
+          {days.map((dayInfo, i) => (
+            <StyledLineUpBtn
+              className={
+                currentDay === i + 1 && currentSection === "schedule"
+                  ? "selected"
+                  : ""
+              }
+              onClick={() => {
+                handleDaySelection(i + 1);
+              }}
+              label={`⟶ Day 0${i + 1}`}
+            >
+              {`${dayInfo.date}`}
+            </StyledLineUpBtn>
+          ))}
+        </StyledLineUpBtnSection>
 
         <StyledLineUpBody>
           {currentSection === "schedule" && (
