@@ -50,7 +50,7 @@ const StyledBannerMarquee = styled.div`
     }
     * {
       font-family: "Gothic";
-      font-size: 12px;
+      font-size: 16px;
       letter-spacing: 2px;
       font-weight: 700;
     }
