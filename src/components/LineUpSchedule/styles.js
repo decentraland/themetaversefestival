@@ -96,14 +96,14 @@ export const StyledLineUpBtn = styled.button`
   transition: all 0.5s ease;
   &.selected {
     background: #ffa450;
-    color: black;
+    color: white;
     box-shadow: 0px 0px 20px rgba(211, 207, 255, 0.7);
   }
   &:hover,
   .selected {
     /* background: #ffffff; */
     background: #ffa450;
-    color: black;
+    color: white;
     box-shadow: 0px 0px 20px rgba(211, 207, 255, 0.7);
   }
 `;
@@ -111,8 +111,8 @@ export const StyledLineUpBtn = styled.button`
 //---------------- BODY  -----------------------
 export const StyledLineUpBody = styled.section`
   height: auto;
-  margin-bottom: 135px;
-  margin-top: 90px;
+  margin-bottom: 64px;
+  margin-top: 64px;
   display: flex;
   flex-direction: row;
 `;
