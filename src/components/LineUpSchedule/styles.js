@@ -54,14 +54,17 @@ export const StyledHeaderVector = styled.img`
 `;
 
 export const StyledLineUpBtnSection = styled.div`
-  display: flex;
-  width: 100%;
+  display: none;
   margin-top: 72px;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 52px;
   overflow-x: auto;
-  align-items: center;
+
+  @media screen and (min-width: 769px) {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const StyledLineUpBtn = styled.button`
@@ -92,15 +95,15 @@ export const StyledLineUpBtn = styled.button`
   color: #ffffff;
   transition: all 0.5s ease;
   &.selected {
-    background: #FFA450;
-    color: black;
+    background: #ffa450;
+    color: white;
     box-shadow: 0px 0px 20px rgba(211, 207, 255, 0.7);
   }
   &:hover,
   .selected {
     /* background: #ffffff; */
-    background: #FFA450;
-    color: black;
+    background: #ffa450;
+    color: white;
     box-shadow: 0px 0px 20px rgba(211, 207, 255, 0.7);
   }
 `;
@@ -108,9 +111,8 @@ export const StyledLineUpBtn = styled.button`
 //---------------- BODY  -----------------------
 export const StyledLineUpBody = styled.section`
   height: auto;
-  margin-bottom: 135px;
-  margin-top: 90px;
-
+  margin-bottom: 64px;
+  margin-top: 64px;
   display: flex;
   flex-direction: row;
 `;

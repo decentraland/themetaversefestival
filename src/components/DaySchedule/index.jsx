@@ -27,15 +27,21 @@ const DaySchedule = (props) => {
         <StyledDayTitle>{dayInfo.date}</StyledDayTitle>
       </StyledDayHeader> */}
       <StyledDayBody>
-        {dayInfo.artists.map((artist, index) => (
+        {dayInfo.events.map((event, index) => (
           <StyledDataItem key={index}>
-            <StyledDataItemText>{artist}</StyledDataItemText>
             <img
               src={scheduleSeparator}
-              width="32px"
-              height="32px"
+              width="24px"
+              height="24px"
               alt="schedule"
+              style={{ marginTop: "2px"}}
             />
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              <StyledDataItemText>
+                {event.time} - {event.title}
+              </StyledDataItemText>
+              <StyledDataItemText>{event.coordinates}</StyledDataItemText>
+            </div>
           </StyledDataItem>
         ))}
       </StyledDayBody>

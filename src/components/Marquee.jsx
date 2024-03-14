@@ -29,6 +29,8 @@ const BannerMarquee = (props) => {
 const StyledBannerMarquee = styled.div`
   background: black;
   font-size: 16px;
+  font-family: "Helvetica";
+  font-weight: 700;
   padding-top: 12px;
   padding-bottom: 12px;
   display: flex;

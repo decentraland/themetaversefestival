@@ -8,6 +8,7 @@ export const Section = styled.section`
 
 export const Title = styled.h2`
   font-size: 32px;
+  margin-bottom: 32px;
   font-family: "HackerNoon";
   text-align: center;
   letter-spacing: 10px;

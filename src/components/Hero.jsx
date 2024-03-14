@@ -19,11 +19,11 @@ const Hero = () => {
       <Container>
         <LogoContainer>
           <div style={{'justify-content': 'center', 'display': 'flex', gap: "24px"}}>
-            <img src={hero1} width="72px" height="72px" />
-            <img src={hero2} width="72px" height="72px" />
-            <img src={hero3} width="72px" height="72px" />
-            <img src={hero4} width="72px" height="72px" />
-            <img src={hero5} width="72px" height="72px" />
+            <HeroIcon src={hero1} />
+            <HeroIcon src={hero2} />
+            <HeroIcon src={hero3} />
+            <HeroIcon src={hero4} />
+            <HeroIcon src={hero5} />
           </div>
           {/* <img src="dmf-logo-white.png" width="100%" /> */}
           <img src={herotitle} width="100%" />
@@ -70,6 +70,16 @@ const Hero = () => {
     </StyledHero>
   );
 };
+
+const HeroIcon = styled.img`
+  width: 72px;
+  height: 72px;
+
+  @media (max-width: 768px) {
+    width: 48px;
+    height: 48px;
+  }
+`;
 
 const StyledHero = styled.div`
   position: relative;

@@ -8,20 +8,27 @@ export const days = [
       </>
     ),
     date: "Tuesday 26th",
-    artists: [
-      "Lorem Ipsum",
-      "Dolor Sit",
-      "Amet Consectetur",
-      "Adipiscing Elit",
-      "Sed Do Eiusmod",
-      "Ut Labore Et",
-      "Dolore Magna",
-      "Aliqua Ut Enim",
-      "Ad Minim Veniam",
-      "Quis Nostrud",
-      "Aliqua Ut Enim",
-      "Ad Minim Veniam",
-      "Quis Nostrud",
+    events: [
+      {
+        time: "00:00",
+        title: "VR DJ set by Oblinof",
+        coordinates: "53, 61"
+      },
+      {
+        time: "17:00",
+        title: "Artist Talk & Tour #1 by MESHfair",
+        coordinates: "61, 61"
+      },
+      {
+        time: "18:00",
+        title: "Performance by Vignesh",
+        coordinates: "53, 67"
+      },
+      {
+        time: "22:00",
+        title: "Artist Talk & Tour #2 by MESHfair",
+        coordinates: "61, 61"
+      },
     ]
   },
   {
@@ -31,23 +38,27 @@ export const days = [
       </>
     ),
     date: "Wednesday 27th",
-    artists: [
-      "Lorem Ipsum",
-      "Dolor Sit",
-      "Amet Consectetur",
-      "Adipiscing Elit",
-      "Sed Do Eiusmod",
-      "Ut Labore Et",
-      "Dolore Magna",
-      "Aliqua Ut Enim",
-      "Aliqua Ut Enim",
-      "Ad Minim Veniam",
-      "Quis Nostrud",
-      "Aliqua Ut Enim",
-      "Ad Minim Veniam",
-      "Quis Nostrud",
-      "Ad Minim Veniam",
-      "Quis Nostrud",
+    events: [
+      {
+        time: "13:00",
+        title: "Performance by Harsh",
+        coordinates: "53, 67"
+      },
+      {
+        time: "14:00",
+        title: "Guided Tour by Archimicia",
+        coordinates: "67, 53"
+      },
+      {
+        time: "17:00",
+        title: "Artist Talk & Tour #3 by MESHfair",
+        coordinates: "61, 61"
+      },
+      {
+        time: "22:00",
+        title: "Artist Talk & Tour #4 by MESHfair",
+        coordinates: "61, 61"
+      },
     ]
   },
   {
@@ -57,17 +68,47 @@ export const days = [
       </>
     ),
     date: "Thursday 28th",
-    artists: [
-      "Lorem Ipsum",
-      "Dolor Sit",
-      "Amet Consectetur",
-      "Adipiscing Elit",
-      "Sed Do Eiusmod",
-      "Ut Labore Et",
-      "Dolore Magna",
-      "Aliqua Ut Enim",
-      "Ad Minim Veniam",
-      "Quis Nostrud",
+    events: [
+      {
+        time: "14:00",
+        title: "Guided Tour by Archimicia",
+        coordinates: "67, 53"
+      },
+      {
+        time: "15:00",
+        title: "Quest for the Labrynth of Egypt",
+        coordinates: "67, 67"
+      },
+      {
+        time: "17:00",
+        title: "Artist Talk & Tour #5 by MESHfair",
+        coordinates: "61, 61"
+      },
+      {
+        time: "19:00",
+        title: "Performance by Prerna",
+        coordinates: "53, 67"
+      },
+      {
+        time: "20:00",
+        title: "The WIP Meetup at MESHfair",
+        coordinates: "61, 61"
+      },
+      {
+        time: "21:00",
+        title: "Grand Reopening at Rapture",
+        coordinates: "-66, -89"
+      },
+      {
+        time: "22:00",
+        title: "Awards Gala by Decentraland",
+        coordinates: "61, 61"
+      },
+      {
+        time: "23:00",
+        title: "Afterparty by Lucid Dreams",
+        coordinates: "53, 53"
+      },
     ]
   },
   {
@@ -77,26 +118,12 @@ export const days = [
       </>
     ),
     date: "Friday 29th",
-    artists: [
-      "Lorem Ipsum",
-      "Aliqua Ut Enim",
-      "Ad Minim Veniam",
-      "Quis Nostrud",
-      "Aliqua Ut Enim",
-      "Ad Minim Veniam",
-      "Quis Nostrud",
-      "Aliqua Ut Enim",
-      "Ad Minim Veniam",
-      "Quis Nostrud",
-      "Dolor Sit",
-      "Amet Consectetur",
-      "Adipiscing Elit",
-      "Sed Do Eiusmod",
-      "Ut Labore Et",
-      "Dolore Magna",
-      "Aliqua Ut Enim",
-      "Ad Minim Veniam",
-      "Quis Nostrud",
+    events: [
+      {
+        time: "17:00",
+        title: "Playtime by MESHfair",
+        coordinates: "61, 61"
+      },
     ]
   },
   
