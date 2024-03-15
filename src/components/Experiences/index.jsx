@@ -12,14 +12,14 @@ import {
   StageHover,
   StageButton,
 } from "./styles";
-import experiences from "./experiences";
+import highlights from "./highlights";
 
-const Experiences = () => (
+const Highlights = () => (
   <Section id="experiences">
     <Container>
-      <Title>EXPERIENCES</Title>
+      <Title>HIGHLIGHTS</Title>
       <StagesContainer>
-        {experiences.map((experience, index) => (
+        {highlights.map((experience, index) => (
           <Stage key={index} href={experience.href} target="_blank">
             <StageCard>
               <StageImage src={experience.src} />
@@ -36,4 +36,4 @@ const Experiences = () => (
   </Section>
 );
 
-export default Experiences;
+export default Highlights;

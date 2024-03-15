@@ -89,33 +89,30 @@ export const StageCard = styled.div`
 
 export const StageImage = styled.img`
   max-width: 100%;
-  aspect-ratio: 1 / 1.5;
+  margin-bottom: -3px;
+  aspect-ratio: 1 / 1.4;
   object-fit: cover;
   width: 100%;
-
-  @media screen and (min-width: ${breakpoints.md}) {
-    aspect-ratio: ;
-  }
 
   @media screen and (min-width: ${breakpoints.l}) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 `;
 
-export const StageName = styled.p`
-  font-family: "Gothic";
-  font-size: 12px;
+export const StageName = styled.span`
+  font-family: "Helvetica";
+  font-size: 18px;
   line-height: 120%;
   font-weight: 600;
   text-transform: uppercase;
-  margin-top: 16px;
-  margin-bottom: 8px;
-  min-height: 42px;
 `;
-export const StageLocation = styled.caption`
-    font-family: 'Gothic';
-    font-size: 16px;
-    line-height: 16px
+
+export const StageLocation = styled.span`
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 18px;
+    line-height: 16px;
+    margin-top: 12px;
     font-weight: 600;
     text-transform: uppercase;
     color: ${theme.accent};
@@ -157,4 +154,10 @@ export const StageButton = styled.button`
   color: black;
   font-size: 10px;
   cursor: pointer;
+`;
+
+export const TitlesContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
 `;
