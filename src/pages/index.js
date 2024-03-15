@@ -16,7 +16,8 @@ import Stages from "../components/Stages";
 import LineUpSchedule from "../components/LineUpSchedule";
 import MerchBanner from "../components/MerchBanner";
 // import merchBanner from "../images/merchbanner-23.png";
-import merchBanner from "../images/newbanner.png";
+// import merchBanner from "../images/newbanner.png";
+import merchBanner from "../images/bannernew.png";
 import Highlights from "../components/Experiences";
 
 const advancedMatching = {};

@@ -11,6 +11,7 @@ import {
   StageLocation,
   StageHover,
   StageButton,
+  StageNameHighlight
 } from "./styles";
 import highlights from "./highlights";
 
@@ -27,7 +28,7 @@ const Highlights = () => (
                 <StageButton>Jump in</StageButton>
               </StageHover>
             </StageCard>
-            <StageName>{experience.name}</StageName>
+            <StageNameHighlight>{experience.name}</StageNameHighlight>
             <StageLocation>{experience.location}</StageLocation>
           </Stage>
         ))}

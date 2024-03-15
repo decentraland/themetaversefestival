@@ -7,6 +7,7 @@ import { Instagram } from "../components/icons/Vector-Instagram.js";
 import border from "../images/navbar-border.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
+import dclLogo from "../images/logo-dcl.svg";
 
 const Navbar = (props) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,12 +18,12 @@ const Navbar = (props) => {
       targetId: "about",
     },
     {
-      label: "LINE UP",
+      label: "SCHEDULE",
       targetId: "lineup",
     },
     {
       label: "GALLERIES",
-      targetId: "lineup",
+      targetId: "galleries",
     },
     {
       label: "EXPERIENCES",
@@ -70,6 +71,12 @@ const Navbar = (props) => {
           ))}
         </MenuList>
         <MenuMobile>
+          <img
+            alt={"Decentraland Logo"}
+            width="150px"
+            height="35px"
+            src={dclLogo}
+          />
           {isMobileMenuOpen ? (
             <CloseMenuIcon onClick={handleMobileMenu} size={32} />
           ) : (
@@ -135,8 +142,10 @@ const MenuItemMobile = styled.li`
 `;
 
 const MenuMobile = styled.div`
-  display: block;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   @media screen and (min-width: ${breakpoints.md}) {
     display: none;
   }

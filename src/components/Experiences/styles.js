@@ -107,15 +107,23 @@ export const StageName = styled.span`
   text-transform: uppercase;
 `;
 
+export const StageNameHighlight = styled.p`
+  font-family: "Helvetica";
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 600;
+  text-transform: uppercase;
+`;
+
 export const StageLocation = styled.span`
-    display: block;
-    font-family: 'Helvetica';
-    font-size: 18px;
-    line-height: 16px;
-    margin-top: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: ${theme.accent};
+  display: block;
+  font-family: "Helvetica";
+  font-size: 18px;
+  line-height: 16px;
+  margin-top: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: ${theme.accent};
 `;
 
 export const StageHover = styled.div`
