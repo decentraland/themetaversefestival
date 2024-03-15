@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Discord } from "./icons/Vector-Discord.js";
 import { Twitter } from "./icons/Vector-Twitter.js";
 import theme, { breakpoints } from "../../utils/theme";
-import dclLogo from "../images/logo-dcl.svg";
+import new_logo from "../images/logo_new.png"
 import { Instagram } from "./icons/Vector-Instagram.js";
 
 const Footer = (props) => {
@@ -40,7 +40,7 @@ const Footer = (props) => {
     <StyledFooter>
       <StyledLogoContainer>
         <a href="https://play.decentraland.org/" target="_blank">
-          <StyledLogo alt={"Decentraland Logo"} src={dclLogo} />
+          <StyledLogo alt={"Decentraland Logo"} src={new_logo} />
         </a>
       </StyledLogoContainer>
       <StyledLinks>
