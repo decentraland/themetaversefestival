@@ -35,7 +35,7 @@ const Hero = () => {
                 <DateHighlight>
                   MAR. 26-29 • 
                 </DateHighlight>
-                <DateLocation> ART LAND, [-67,70]</DateLocation>
+                <DateLocation> ART WEEK PLAZA, [61,61]</DateLocation>
               </DateComponent>
             </EventDataItem>
           </EventData>
