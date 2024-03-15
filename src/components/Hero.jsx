@@ -177,7 +177,7 @@ const DateHighlight = styled.span`
   // color: ${theme.accent};
   color: #FFA450;
   font-family: "HackerNoon";
-  font-size: 23px;
+  font-size: 24px;
   line-height: 32px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -185,20 +185,20 @@ const DateHighlight = styled.span`
   
   @media screen and (min-width: ${breakpoints.l}) {
     font-size: 26px;
-    line-height: 64px;
+    line-height: 32px;
     letter-spacing: 5px;
   }
 
   @media screen and (min-width: ${breakpoints.xl}) {
     font-size: 42px;
-    line-height: 72px;
-    letter-spacing: 11px;
+    line-height: 46px;
+    letter-spacing: 7px;
   }
 `;
 
 const DateLocation = styled.span`
   font-family: "Gothic";
-  font-size: 23px;
+  font-size: 24px;
   line-height: 32px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -206,14 +206,14 @@ const DateLocation = styled.span`
   
   @media screen and (min-width: ${breakpoints.l}) {
     font-size: 26px;
-    line-height: 64px;
+    line-height: 32px;
     letter-spacing: 5px;
   }
 
   @media screen and (min-width: ${breakpoints.xl}) {
     font-size: 42px;
-    line-height: 72px;
-    letter-spacing: 11px;
+    line-height: 46px;
+    letter-spacing: 7px;
   }
 `;
 
