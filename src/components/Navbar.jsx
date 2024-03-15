@@ -17,12 +17,12 @@ const Navbar = (props) => {
       targetId: "about",
     },
     {
-      label: "LINE UP",
+      label: "SCHEDULE",
       targetId: "lineup",
     },
     {
       label: "GALLERIES",
-      targetId: "lineup",
+      targetId: "galleries",
     },
     {
       label: "EXPERIENCES",

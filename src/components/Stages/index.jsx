@@ -16,7 +16,7 @@ import {
 import stages from "./stages";
 
 const Stages = () => (
-  <Section id="stages">
+  <Section id="galleries">
     <Container>
       <Title>GALLERIES</Title>
       <StagesContainer>
