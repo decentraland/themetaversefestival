@@ -22,7 +22,7 @@ export const questions = [
     answer: () => (
       <p>
         To see all Art Week and MESH events, consult the schedule above or see
-        the Decentraland Art Week event page.
+        the <a href="https://decentraland.org/events/schedule/?id=ebf4f1e1-8cc2-4b02-a77b-2ed6a25674e3" target="_blank">Decentraland Art Week event page</a>.
       </p>
     ),
   },
@@ -30,7 +30,7 @@ export const questions = [
     question: "How do I access Art Week?",
     answer: () => (
       <p>
-        Art Week will be taking place in Decentraland's Art Plaza at (x,x). If
+        Art Week will be taking place in Decentraland's Art Plaza at (61,61). If
         you're new to Decentraland, you can easily attend any Art Week event by
         clicking the 'Jump In' button at the bottom of each event listing. This
         will take you in-world where you can explore as your avatar.

@@ -57,7 +57,7 @@ const Hero = () => {
             </EventDataItem>
             <EventDataItem>
               <SaveTheDate
-                href="https://decentraland.org/events/event/?id=0f91b470-2d4a-4ecc-a619-8c682d872685"
+                href="https://play.decentraland.org/?position=61%2C60"
                 target="_blank"
               >
                 <p style={{ fontSize: "20px" }}>JUMP IN</p>{" "}

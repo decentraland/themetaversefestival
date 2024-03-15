@@ -27,10 +27,10 @@ const options = {
 };
 
 const seo = {
-  title: "Decentraland Music Festival | Decentraland",
+  title: "Decentraland Art Week",
   description:
-    "A three-day celebration of music, culture and creativity in the virtual social world of Decentraland, the Music Festival is a grand collision of light, sound and portable toilets.",
-  image: "https://musicfestival.decentraland.org/dmf-logo-white.png",
+    "From 26-29 March 2024, Decentraland Art Week will spotlight the infinite potential of art and creativity in new realities.",
+  image: "https://events-assets-099ac00.decentraland.org/poster/c08e664f65e0cdf1.jpg",
 };
 
 const meta = {
@@ -133,7 +133,7 @@ const IndexPage = () => {
           <BannerMarquee />
           <MerchBanner
             src={merchBanner}
-            href="https://market.decentraland.org/DCLMF23?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true"
+            href="https://decentraland.org/marketplace/"
             target="_blank"
           />
           <BannerMarquee direction="right" />
