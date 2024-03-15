@@ -11,15 +11,14 @@ import {
   StageLocation,
   StageHover,
   StageButton,
+  TitlesContainer,
 } from "../Experiences/styles";
 import stages from "./stages";
 
 const Stages = () => (
   <Section id="stages">
     <Container>
-      <Title>
-        GALLERIES
-      </Title>
+      <Title>GALLERIES</Title>
       <StagesContainer>
         {stages.map(({ name, href, src, coord }) => (
           <Stage>
@@ -31,8 +30,10 @@ const Stages = () => (
                 </a>
               </StageHover>
             </StageCard>
-            <StageName>{name}</StageName>
-            <StageLocation>[{coord}]</StageLocation>
+            <TitlesContainer>
+              <StageName>{name}</StageName>
+              <StageLocation>[{coord}]</StageLocation>
+            </TitlesContainer>
           </Stage>
         ))}
       </StagesContainer>

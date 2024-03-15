@@ -13,11 +13,11 @@ import About from "../components/About";
 import Faq from "../components/Faq";
 import Sitemap from "../components/Sitemap";
 import Stages from "../components/Stages";
-import Experiences from "../components/Experiences";
 import LineUpSchedule from "../components/LineUpSchedule";
 import MerchBanner from "../components/MerchBanner";
 // import merchBanner from "../images/merchbanner-23.png";
 import merchBanner from "../images/newbanner.png";
+import Highlights from "../components/Experiences";
 
 const advancedMatching = {};
 const options = {
@@ -128,7 +128,7 @@ const IndexPage = () => {
           <LineUpSchedule />
           {/* <WatchTheTeaser setShowVideo={setShowVideo} setMuted={setMuted} /> */}
           <Stages />
-          <Experiences />
+          <Highlights />
           <BannerMarquee />
           <MerchBanner
             src={merchBanner}

@@ -97,7 +97,7 @@ export const days = [
       {
         time: "21:00",
         title: "Grand Reopening at Rapture",
-        coordinates: "-66, -89"
+        coordinates: "-89, -66"
       },
       {
         time: "22:00",
