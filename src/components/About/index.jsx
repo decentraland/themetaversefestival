@@ -34,7 +34,7 @@ const About = (props) => {
               <AboutParagraphItem>
                 <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
                 <p>
-                  From <ParagraphSpan>March 26-29</ParagraphSpan>, 2024, you'll discover the infinite potential
+                  From <ParagraphSpan>March 26-29</ParagraphSpan> 2024, you'll discover the infinite potential
                   of art and creativity in new realities. As this year’s
                   festival takes on the theme of "exploration", expect to enter
                   a realm where virtual environments become journeys of
@@ -58,11 +58,10 @@ const About = (props) => {
                 <StarBustSideIcon src={aboutIcon} width="40px" height="40px" />
                 <p>
                   What's more, at Decentraland Art Week you'll experience the
-                  unveiling of four new, large-scale galleries. Developed by
+                  unveiling of eight new, large-scale galleries. Developed by
                   award-winning teams in response to the theme of exploration,
                   the galleries will host a diverse array of virtual art,
-                  interactive installations, and live performances. The full
-                  schedule will be announced soon, so stay tuned.
+                  interactive installations, and live performances.
                 </p>
               </AboutParagraphItem>
               <AboutParagraphItem>

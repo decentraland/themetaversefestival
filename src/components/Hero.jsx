@@ -11,6 +11,7 @@ import hero4 from "../images/hero/hero4.svg"
 import hero5 from "../images/hero/hero5.svg" 
 import herobg from "../images/hero/herobg.png"
 import herotitle from "../images/hero/logohero.png"
+import new_logo from "../images/logo_new.png"
 import { Container } from "./Container";
 
 const Hero = () => {
@@ -52,7 +53,7 @@ const Hero = () => {
           <EventDataBottom>
             <EventDataItem>
               <a href="https://play.decentraland.org/" target="_blank">
-                <StyledLogo alt={"Decentraland Logo"} src={dclLogo} />
+                <StyledLogo alt={"Decentraland Logo"} src={new_logo} />
               </a>
             </EventDataItem>
             <EventDataItem>

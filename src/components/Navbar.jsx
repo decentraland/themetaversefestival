@@ -7,7 +7,8 @@ import { Instagram } from "../components/icons/Vector-Instagram.js";
 import border from "../images/navbar-border.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
-import dclLogo from "../images/logo-dcl.svg";
+import new_logo from "../images/logo_new.png"
+
 
 const Navbar = (props) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -74,8 +75,8 @@ const Navbar = (props) => {
           <img
             alt={"Decentraland Logo"}
             width="150px"
-            height="35px"
-            src={dclLogo}
+            height="20px"
+            src={new_logo}
           />
           {isMobileMenuOpen ? (
             <CloseMenuIcon onClick={handleMobileMenu} size={32} />
