@@ -1,8 +1,13 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "metaverse-festival",
+    siteUrl: "https://decentraland.org/artweek",
+    title: "Decentraland Art Week",
   },
+  assetPrefix: process.env.ASSET_PREFIX,
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
@@ -26,18 +31,18 @@ module.exports = {
             GitHub: `https://github.com/francisco-zx`,
           },
           {
-            Designer: 'GM Studios',
-            LinkedIn: 'https://github.com/gmstudiosgg'
-          }
+            Designer: "GM Studios",
+            LinkedIn: "https://github.com/gmstudiosgg",
+          },
         ],
         site: {
-          'Last update': `2022/10/08`,
+          "Last update": `2022/10/08`,
           Standards: `JavaScript`,
           Components: `humans-generator`,
-          Softwares: `Visual Studio Code, Mac OSX, Adobe Illustrator`
+          Softwares: `Visual Studio Code, Mac OSX, Adobe Illustrator`,
         },
-        note: `Made in Buenos Aires, Argentina.`
-      }
-    }
+        note: `Made in Buenos Aires, Argentina.`,
+      },
+    },
   ],
 };

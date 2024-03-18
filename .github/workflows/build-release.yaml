@@ -1,0 +1,45 @@
+name: Build and release
+
+on:
+  push:
+    branches:
+      - master
+  release:
+    types:
+      - created
+
+jobs:
+  build-release:
+    permissions:
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v4.0.1
+        with:
+          node-version: 16.x
+          cache: "npm"
+      - name: Set package.json version
+        uses: menduz/oddish-action@master
+        with:
+          cwd: ./webapp
+          deterministic-snapshot: true
+          only-update-versions: true
+      - name: Install
+        run: npm install
+      - name: Build
+        env:
+          NODE_ENV: production
+        run: npm run build -- --prefix-paths
+      - name: Publish
+        uses: menduz/oddish-action@master
+        with:
+          cwd: ./public
+          deterministic-snapshot: true
+          registry-url: "https://registry.npmjs.org"
+          access: public
+          gitlab-token: ${{ secrets.GITLAB_CDN_DEPLOYER_TOKEN }}
+          gitlab-pipeline-url: ${{ secrets.GITLAB_CDN_DEPLOYER_URL }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
