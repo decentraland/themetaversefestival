@@ -1,7 +1,6 @@
 {
   "name": "@dcl/art-week-site",
   "version": "1.0.0",
-  "private": true,
   "description": "Art Week",
   "author": "Decentraland",
   "keywords": [
