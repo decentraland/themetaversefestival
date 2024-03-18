@@ -1,1 +1,1 @@
-# ART WEEK 2024 - Decentraland
+# DCL Art Week Site - Decentraland Art Week
