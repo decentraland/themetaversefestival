@@ -17,7 +17,7 @@ const Sitemap = () => (
             </Title>
             <Map>
                 <StaticImage
-                    src={'./../../images/map_new.png'}
+                    src={'../../images/new_map.png'}
                 />
             </Map>
             <SaveTheDate
