@@ -1,13 +1,15 @@
 {
-  "name": "metaverse-festival",
+  "name": "@dcl/art-week-site",
   "version": "1.0.0",
   "private": true,
-  "description": "metaverse-festival",
-  "author": "Guido La Rosa",
+  "description": "Art Week",
+  "author": "Decentraland",
   "keywords": [
     "gatsby"
   ],
   "scripts": {
+    "prebuild": "node scripts/prebuild.js",
+    "postbuild": "node scripts/postbuild.js",
     "develop": "gatsby develop --https",
     "start": "gatsby develop --https",
     "build": "gatsby build",
@@ -34,5 +36,13 @@
     "react-multi-carousel": "^2.8.2",
     "react-player": "^2.9.0",
     "styled-components": "^5.3.1"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "homepage": "https://decentraland.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/decentraland/artweek.git"
   }
 }
