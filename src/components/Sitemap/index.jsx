@@ -21,10 +21,10 @@ const Sitemap = () => (
                 />
             </Map>
             <SaveTheDate
-                href="https://play.decentraland.org/?position=61%2C60"
+                href="https://decentraland.org/blog/announcements/the-ultimate-guide-to-decentraland-art-week-24"
                 target="_blank"
             >
-                <p style={{ fontSize: "20px", textAlign: "center", width: "100%" }}>JUMP IN <span><Polygon src={heroPolygon} /></span></p>
+                <p style={{ fontSize: "20px", textAlign: "center", width: "100%" }}>CHECK GUIDE <span><Polygon src={heroPolygon} /></span></p>
             </SaveTheDate>
         </Container>
     </Section>
