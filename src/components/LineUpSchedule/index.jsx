@@ -1,20 +1,15 @@
 import React, { useState } from "react";
 import { Container } from "../Container";
 import Button from "../Button";
-import polygon from "../../images/STD-polygon.svg";
 import { breakpoints } from "../../../utils/theme";
 import { days } from "../../../utils/days-data-2022";
 import {
   StyledLineUpSchedule,
   StyledLineUpBody,
-  StyledFullLineUpList,
-  StyledSeparator,
-  StyledLineUpHeader,
   StyledLineUpBtnSection,
   StyledLineUpBtn,
   Title,
 } from "./styles";
-import EyeVector from "../../images/Starbust3.png";
 import heroPolygon from "../../images/hero/polygon2.svg";
 import { motion } from "framer-motion";
 import DaySchedule from "../DaySchedule/index.jsx";
@@ -86,7 +81,7 @@ const LineUpSchedule = (props) => {
           )}
         </StyledLineUpBody>
         <SaveTheDate
-          href="https://play.decentraland.org/?position=61%2C60"
+          href="https://decentraland.org/play/?position=61%2C60&utm_org=dcl&utm_source=landing&utm_campaign=dclaw24"
           target="_blank"
         >
           <p style={{ fontSize: "20px", textAlign: "center", width: "100%" }}>
