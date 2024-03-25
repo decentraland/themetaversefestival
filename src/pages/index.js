@@ -13,10 +13,12 @@ import About from "../components/About";
 import Faq from "../components/Faq";
 import Sitemap from "../components/Sitemap";
 import Stages from "../components/Stages";
-import Experiences from "../components/Experiences";
 import LineUpSchedule from "../components/LineUpSchedule";
-import MerchBanner from "../components/MerchBanner"
-import merchBanner from "../images/merchbanner-23.png"
+import MerchBanner from "../components/MerchBanner";
+// import merchBanner from "../images/merchbanner-23.png";
+// import merchBanner from "../images/newbanner.png";
+import merchBanner from "../images/bannernew.png";
+import Highlights from "../components/Experiences";
 
 const advancedMatching = {};
 const options = {
@@ -25,10 +27,10 @@ const options = {
 };
 
 const seo = {
-  title: "Decentraland Music Festival | Decentraland",
+  title: "Decentraland Art Week",
   description:
-    "A three-day celebration of music, culture and creativity in the virtual social world of Decentraland, the Music Festival is a grand collision of light, sound and portable toilets.",
-  image: "https://musicfestival.decentraland.org/dmf-logo-white.png",
+    "From 26-29 March 2024, Decentraland Art Week will spotlight the infinite potential of art and creativity in new realities.",
+  image: "https://events-assets-099ac00.decentraland.org/poster/c08e664f65e0cdf1.jpg",
 };
 
 const meta = {
@@ -54,9 +56,9 @@ const IndexPage = () => {
     //   setShowVideo(true);
     // }
     if (typeof window !== "undefined") {
-      initTwitter()
+      initTwitter();
     }
-    
+
     import("react-facebook-pixel")
       .then((module) => module.default)
       .then((ReactPixel) => {
@@ -65,7 +67,6 @@ const IndexPage = () => {
           ReactPixel.pageView();
         }
       });
-
   }, []);
 
   return (
@@ -112,11 +113,9 @@ const IndexPage = () => {
         ></link>
       </Helmet>
       <Layout>
-        <header>
-          <Navbar />
-          <Hero />
-        </header>
+        <Navbar />
         <main>
+        <Hero />
           {showVideo && (
             <Banner
               muted={muted}
@@ -128,12 +127,16 @@ const IndexPage = () => {
           <About />
           <BannerMarquee />
           <LineUpSchedule />
-          <WatchTheTeaser setShowVideo={setShowVideo} setMuted={setMuted} />
+          {/* <WatchTheTeaser setShowVideo={setShowVideo} setMuted={setMuted} /> */}
           <Stages />
-          <Experiences />
+          <Highlights />
           <BannerMarquee />
-          <MerchBanner src={merchBanner} href="https://market.decentraland.org/DCLMF23?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true" target="_blank" />
-          <BannerMarquee noBorderTop direction="right" />
+          <MerchBanner
+            src={merchBanner}
+            href="https://decentraland.org/marketplace/"
+            target="_blank"
+          />
+          <BannerMarquee direction="right" />
           <Sitemap />
           <BannerMarquee />
           <Faq />
@@ -149,11 +152,11 @@ const StyledIndexPage = styled.div`
 `;
 
 export const initTwitter = () => {
-  const head = document.querySelector('head');
+  const head = document.querySelector("head");
   const addTwitterScript = () => {
-    const twitterScript = document.createElement('script');
-    twitterScript.type = 'text/javascript';
-    twitterScript.src = 'https://static.ads-twitter.com/uwt.js';
+    const twitterScript = document.createElement("script");
+    twitterScript.type = "text/javascript";
+    twitterScript.src = "https://static.ads-twitter.com/uwt.js";
     head.appendChild(twitterScript);
   };
 
@@ -164,18 +167,18 @@ export const initTwitter = () => {
           ? twitterEventTracker.exe.apply(twitterEventTracker, args)
           : twitterEventTracker.queue.push(args);
       });
-      twitterEventTracker.version = '1.1';
+      twitterEventTracker.version = "1.1";
       twitterEventTracker.queue = [];
       const twitterScriptElement = documentObj.createElement(elementType);
       twitterScriptElement.async = true;
-      twitterScriptElement.src = 'https://static.ads-twitter.com/uwt.js';
+      twitterScriptElement.src = "https://static.ads-twitter.com/uwt.js";
       const a = documentObj.getElementsByTagName(elementType)[0];
       a.parentNode.insertBefore(twitterScriptElement, a);
     }
   };
   addTwitterScript();
-  initializeTwq(window, document, 'script');
-  window.twq('config', "oa4sn");
-}
+  initializeTwq(window, document, "script");
+  window.twq("config", "oa4sn");
+};
 
 export default IndexPage;

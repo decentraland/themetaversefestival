@@ -25,10 +25,10 @@ const Button = ({
 
 const StyledButton = styled.a`
   font-family: Gothic;
-  border: 2px solid #f37877;
-  border-radius: 5px;
+  border: 2px solid #FFA450;
+  border-radius: 32px;
   height: 60px;
-  padding: 0 32px;
+  padding: 37px 32px;
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -47,10 +47,10 @@ const StyledButton = styled.a`
       height: 48px;
       line-height: 48px;
       padding: 0 18px;
+      
   };
   @media screen and (min-width: ${breakpoints.md}) {
     min-width: 350px;
-};
   :hover {
     color: ${theme.accent};
   }

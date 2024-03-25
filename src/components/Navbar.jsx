@@ -5,9 +5,13 @@ import { Twitter } from "../components/icons/Vector-Twitter.js";
 import { Discord } from "../components/icons/Vector-Discord.js";
 import { Instagram } from "../components/icons/Vector-Instagram.js";
 import border from "../images/navbar-border.png";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { motion } from "framer-motion";
+import new_logo from "../images/logo_new.png"
+
 
 const Navbar = (props) => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const Links = [
     {
@@ -15,29 +19,25 @@ const Navbar = (props) => {
       targetId: "about",
     },
     {
-      label: "LINE UP",
+      label: "SCHEDULE",
       targetId: "lineup",
     },
     {
-      label: "STAGES",
-      targetId: "stages",
+      label: "GALLERIES",
+      targetId: "galleries",
     },
     {
       label: "EXPERIENCES",
       targetId: "experiences",
     },
     {
-      label: "SITEMAP",
+      label: "MAP",
       targetId: "sitemap",
     },
     {
       label: "FAQ",
       targetId: "faq",
     },
-    // {
-    //   label: 'SPONSORS',
-    //   targetId: 'sponsors'
-    // },
   ];
 
   const scrollTo = (targetId) => {
@@ -46,73 +46,127 @@ const Navbar = (props) => {
       target.scrollIntoView();
     }
   };
+
+  const handleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleCloseMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <Header>
-      <StyledNavbar className="navbar">
-        <Nav>
-          <LogoContainer href="#">
-            {/* <StaticImage src={"./../images/logo-navbar.svg"} height={140} /> */}
-          </LogoContainer>
-
-          <div>
-            <MenuList>
+      <Nav>
+        <MenuList>
+          {Links.map((link, i) => (
+            <MenuItem key={i}>
+              <a
+                onClick={() => {
+                  scrollTo(link.targetId);
+                }}
+              >
+                {link.label}
+              </a>
+            </MenuItem>
+          ))}
+        </MenuList>
+        <MenuMobile>
+          <img
+            alt={"Decentraland Logo"}
+            width="150px"
+            height="20px"
+            src={new_logo}
+          />
+          {isMobileMenuOpen ? (
+            <CloseMenuIcon onClick={handleMobileMenu} size={32} />
+          ) : (
+            <OpenMenuIcon onClick={handleMobileMenu} size={32} />
+          )}
+          {isMobileMenuOpen && (
+            <MenuListMobile
+              initial={{ x: 180 }}
+              animate={{ x: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.6 }}
+            >
               {Links.map((link, i) => (
-                <MenuItem key={i}>
+                <MenuItemMobile key={i}>
                   <a
                     onClick={() => {
                       scrollTo(link.targetId);
+                      handleCloseMobileMenu();
                     }}
                   >
                     {link.label}
                   </a>
-                </MenuItem>
+                </MenuItemMobile>
               ))}
-            </MenuList>
-          </div>
-          <div>
-            <SocialIcon
-              href="https://twitter.com/decentraland"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Twitter />
-            </SocialIcon>
-            <SocialIcon
-              href="https://www.instagram.com/decentraland_foundation/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Instagram />
-            </SocialIcon>
-            <SocialIcon
-              href="https://decentraland.org/discord/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Discord />
-            </SocialIcon>
-          </div>
-        </Nav>
-      </StyledNavbar>
-      <StyledBorder src={border} />
+            </MenuListMobile>
+          )}
+        </MenuMobile>
+      </Nav>
     </Header>
   );
 };
+
+const MenuListMobile = styled(motion.ul)`
+  display: flex;
+  background-color: black;
+  border: 2px solid ${theme.accent};
+  border-top: none;
+  width: 250px;
+  height: 30vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 16px;
+  position: fixed;
+  top: 85px;
+  padding: 16px;
+  right: 0;
+`;
+
+const MenuItemMobile = styled.li`
+  font-family: "Gothic";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+
+  a {
+    transition: color 0.5s ease;
+  }
+
+  a:hover {
+    color: ${theme.accent};
+  }
+`;
+
+const MenuMobile = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  @media screen and (min-width: ${breakpoints.md}) {
+    display: none;
+  }
+`;
+
+const OpenMenuIcon = styled(AiOutlineMenu)`
+  cursor: pointer;
+`;
+
+const CloseMenuIcon = styled(AiOutlineClose)`
+  cursor: pointer;
+`;
 
 const Header = styled.header`
   position: fixed;
   width: 100%;
   top: 0;
-  left: 0;
   background-color: black;
   z-index: 100;
-`
-
-const StyledNavbar = styled.section`
-  position: relative;
-  border-bottom: solid 5px ${theme.white};
-  display: flex;
-  justify-content: space-between;
+  border-bottom: solid 3px ${theme.accent};
 `;
 
 const SocialIcon = styled.a`
@@ -137,11 +191,12 @@ const SocialIcon = styled.a`
 const Nav = styled.nav`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   padding: 24px 24px;
   @media screen and (min-width: ${breakpoints.md}) {
-    padding: 18px 62px;
+    justify-content: center;
+    padding: 28px 62px;
   }
 `;
 
@@ -161,7 +216,7 @@ const LogoContainer = styled.a`
       transform: rotate(359deg);
     }
   }
-`
+`;
 
 const MenuItem = styled.li`
   font-family: "Gothic";
@@ -195,7 +250,7 @@ const StyledBorder = styled.div`
   bottom: 0;
   left: 0;
   z-index: 101;
-  background-image: url('/navbar-border.png');
-`
+  background-image: url("/navbar-border.png");
+`;
 
 export default Navbar;

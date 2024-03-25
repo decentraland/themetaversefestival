@@ -1,29 +1,94 @@
 import React from "react";
 
 export const questions = [
-    {
-        question: 'What is Decentraland?',
-        answer: () => <p>Launched in 2020, Decentraland is a virtual social world, the first decentralized metaverse, and the only one that is open source. Within the Decentraland platform, which can run on a browser or desktop client, users can create, experience, and monetize content and applications as well as socialize and attend a wide range of daily, community-driven events. Decentraland is unique in that it is owned, created, and governed by the people who use it every day. Through Decentraland’s decentralized autonomous organization (DAO) users can submit proposals and even apply for grants for the community to vote on.</p>
-    },
-    {
-        question: 'How do I enter Decentraland?',
-        answer: () => <p>Eager to jump into Decentraland but you’re not familiar with the platform? Don’t worry! <a href="https://twitter.com/decentraland/status/1585005786467483648?s=20&t=eBEuHxLSsPn6134dovmh-A" target="_blank">Here</a> are the basics for entering and navigating the virtual world so you can start exploring in no time. Go to <a href="https://play.decentraland.org/" target="_blank">https://play.decentraland.org/</a> or enter directly in your area of interest via the 
-        <a href="https://events.decentraland.org/schedule/?id=88d3c09d-1518-4b27-8cca-29099443b2b3&utm_source=landingpage&utm_medium=organic&utm_campaign=DCLMF23" target="_blank">festival event page</a> </p>
-    },
-    {
-        question: 'Where can I find the full festival schedule?',
-        answer: () => <p>The full schedule is above, but you can visit the <a href="https://events.decentraland.org/" target="_blank">Events Page DCLMF23</a> tab to get links to each individual event and jump right in.</p>
-    },
-    {
-        question: 'Do I need a crypto wallet to attend the festival?',
-        answer: () => <p>You don’t need a crypto wallet to attend the festival, or to enter Decentraland for that matter. You can enter as a guest without creating an account. However, if you would like to collect free Wearables as well as further customize your avatar’s look and moves with community-made Wearables and Emotes from the <a href="https://market.decentraland.org/DCLMF23?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true" target="_blank">Marketplace</a> (and in general save your avatar for return visits to Decentraland) you should sign up for a crypto wallet. Getting a crypto wallet is a simple process and you don’t need to enter any payment details if you just want to save your avatar and claim freebies. Learn more about getting a crypto wallet <a href="https://docs.decentraland.org/player/blockchain-integration/get-a-wallet/" target="_blank">here</a>.</p>
-    },
-    {
-        question: 'How do I get my avatar festival ready with special Wearables and Emotes?',
-        answer: () => <p>In addition to the free basic Wearables and Emotes that everyone can access upon entering Decentraland, you can also get Wearables and Emotes that have been created by the community from the Decentraland Marketplace.<br />In preparation for the Decentraland Music Festival, the Decentraland community created a wide variety of both Wearables and Emotes for the special occasion. You can find them all in a special Decentraland Music Festival tab of the <a href="https://market.decentraland.org/MF23?assetType=item&section=wearables&vendor=decentraland&page=1&sortBy=recently_listed&onlyOnSale=true" target="_blank">Marketplace</a>.<br />To purchase Wearables or Emotes, you’ll need a crypto wallet and MANA, the currency of Decentraland. Learn more about that <a href="https://docs.decentraland.org/player/blockchain-integration/get-a-wallet/" target="_blank">here</a>.</p>
-    },
-    {
-        question: 'How do I keep up to date with festival news, lineup announcements, etc?',
-        answer: () => <p>That’s easy. Just follow <a href="https://twitter.com/decentraland" target="_blank">@Decentraland</a> and #DCLMF23 on Twitter and subscribe to the Decentraland newsletter</p>
-    },
-]
+  {
+    question: "What is Decentraland?",
+    answer: () => (
+      <p>
+        Launched in 2020, Decentraland is a virtual social world, the first
+        decentralized metaverse, and the only one that is open source. Within
+        the Decentraland platform, which can run on a browser or desktop client,
+        users can create, experience, and monetize content and applications as
+        well as socialize and attend a wide range of daily, community-driven
+        events. Decentraland is unique in that it is owned, created, and
+        governed by the people who use it every day. Through Decentraland’s
+        decentralized autonomous organization (DAO) users can submit proposals
+        and even apply for grants for the community to vote on.
+      </p>
+    ),
+  },
+  {
+    question: "Where can I find the full event schedule?",
+    answer: () => (
+      <p>
+        To see all Art Week and MESH events, consult the schedule above or see
+        the <a href="https://decentraland.org/events/schedule/?id=ebf4f1e1-8cc2-4b02-a77b-2ed6a25674e3" target="_blank">Decentraland Art Week event page</a>.
+      </p>
+    ),
+  },
+  {
+    question: "How do I access Art Week?",
+    answer: () => (
+      <p>
+        Art Week will be taking place in Decentraland's Art Plaza at (61,61). If
+        you're new to Decentraland, you can easily attend any Art Week event by
+        clicking the 'Jump In' button at the bottom of each event listing. This
+        will take you in-world where you can explore as your avatar.
+      </p>
+    ),
+  },
+  {
+    question: "Where can I find special Wearables and Emotes for my avatar?",
+    answer: () => (
+      <p>
+        To customize your digital identity beyond the free Wearables and Emotes
+        available to all users, you can explore hundreds of unique
+        community-made items in Decentraland's Marketplace, all waiting to be
+        discovered by you!
+      </p>
+    ),
+  },
+  {
+    question:
+      "Do I need cryptocurrency or a digital wallet to use Decentraland?",
+    answer: () => (
+      <p>
+        You do not need to own cryptocurrency to enjoy Decentraland as it is
+        free to use. If you decide to purchase a community-made creation from
+        the Marketplace, there are multiple payment options available, such as
+        credit/debit card and bank transfer in addition to various
+        cryptocurrencies.
+        <br />
+        <br />
+        As for owning a <a href="https://docs.decentraland.org/player/blockchain-integration/get-a-wallet/" target="_blank">digital wallet</a>, if you don't already have one, you don't
+        need to get one yourself if you don't want to. When you sign-in to
+        Decentraland for the first time—creating your account—a digital wallet
+        will be created for you behind the scenes, it's as simple as that!
+        <br />
+        <br />
+        This digital wallet is part of your Decentraland account and is used to
+        store any digital assets you acquire, such as free Wearables you might
+        claim in-world or a fun Emote you purchase in the Marketplace.
+      </p>
+    ),
+  },
+  {
+    question: "How do I keep up to date with Art Week News?",
+    answer: () => (
+      <p>
+        Follow <a href="https://twitter.com/decentraland" target="_blank">@Decentraland</a> on Twitter and the <a href="https://twitter.com/hashtag/dclaw24?src=hashtag_click" target="_blank">#DCLAW24</a> hashtag for live
+        updates and <a href="https://decentraland.beehiiv.com/subscribe" target="_blank">subscribe</a> to Decentraland’s weekly newsletter.
+      </p>
+    ),
+  },
+  {
+    question: "I want to create in Decentraland, where can I learn more?",
+    answer: () => (
+      <p>
+        Anyone can become a Decentraland creator, all it takes is a little
+        knowhow and endless creative ideas! Everything you need to know to start
+        your creative journey can be found at <a href="https://decentraland.org/create/" target="_blank">decentraland.org/create.</a>
+      </p>
+    ),
+  },
+];

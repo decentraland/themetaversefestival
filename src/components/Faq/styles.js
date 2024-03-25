@@ -8,13 +8,13 @@ export const Section = styled.section`
 `;
 
 export const Title = styled.h2`
-  font-size: 80px;
+  font-size: 32px;
   font-family: Gothic;
   letter-spacing: 10px;
   margin-bottom: 40px;
 
   @media screen and (min-width: ${breakpoints.md}) {
-    font-size: 80px;
+    font-size: 48px;
   }
   @media screen and (min-width: ${breakpoints.l}) {
     font-size: 80px;

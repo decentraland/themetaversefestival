@@ -16,6 +16,7 @@ const Layout = (props) => {
 
 const StyledLayout = styled.div`
   background: transparent;
+  overflow-x: hidden;
   min-height: 100vh;
 `;
 

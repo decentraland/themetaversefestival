@@ -6,24 +6,25 @@ import polygon from "../../images/STD-polygon.svg";
 import { breakpoints } from "../../../utils/theme";
 import Button from "../Button";
 import styled from "styled-components";
+import heroPolygon from "../../images/hero/polygon2.svg";
 
 
 const Sitemap = () => (
     <Section id="sitemap">
         <Container>
             <Title>
-                SITE<span style={{'font-family': 'SaintRegular'}}>M</span>AP
+                SITEMAP
             </Title>
             <Map>
                 <StaticImage
-                    src={'./../../images/map_export.png'}
+                    src={'../../images/DCL_AW_MAP 2.png'}
                 />
             </Map>
             <SaveTheDate
-                href="https://events.decentraland.org/event/?id=97aff492-b4b9-4ba1-bd08-bfa7e32be036&utm_source=landingpage&utm_medium=organic&utm_campaign=DCLMF23"
+                href="https://decentraland.org/blog/announcements/the-ultimate-guide-to-decentraland-art-week-24?utm_org=dcl&utm_source=landing&utm_campaign=dclaw24"
                 target="_blank"
             >
-                <p style={{ fontSize: "20px", textAlign: "center", width: "100%" }}>JUMP IN <span><Polygon src={polygon} /></span></p>
+                <p style={{ fontSize: "20px", textAlign: "center", width: "100%" }}>READ ULTIMATE GUIDE <span><Polygon src={heroPolygon} /></span></p>
             </SaveTheDate>
         </Container>
     </Section>
